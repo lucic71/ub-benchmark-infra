@@ -25,3 +25,25 @@ Then to run the benchmark run:
 ```
 phoronix-test-suite benchmark yourtestsuite
 ```
+
+To delete a benchmark run:
+```
+rm -rf /var/lib/phoronix-test-suite/installed-tests/local/yourtestsuite
+rm -rf /var/lib/phoronix-test-suite/test-profiles/local/yourtestsuite
+```
+
+# UB benchmarking algorithm
+```
+for ts in test-suites
+	res = {}
+	for ub in undef_behaviors:
+		compile_testsuite(ts, {compiler, ub})
+		run_testsuite(ts)
+		res += fetch_testsuite_results()
+	compare_results(res)
+```
+
+The only problem that I see here is that at one moment I will want to
+combine multiple UBs to test their impact. I don't want to try all
+combinations of UBs, instead it would be helpful to do an analysis to
+see what UBs are required to be tested.
