@@ -47,3 +47,29 @@ The only problem that I see here is that at one moment I will want to
 combine multiple UBs to test their impact. I don't want to try all
 combinations of UBs, instead it would be helpful to do an analysis to
 see what UBs are required to be tested.
+
+# Filtered test suites
+We don't need to benchmark all the tests provided by phoronix. We need
+to filter them so that we get only the ones that are compiled with a C
+compiler. Now the question is: if a test is written in multiple
+programming languages, do we want to benchmark it too? I would say yes
+because if we see an impact the only place where it can have effect is
+in the part compiled with our modified compiler.
+
+I did a simple filtering in the tests provided by phoronix with the
+following command:
+```
+git clone https://github.com/phoronix-test-suite/test-profiles.git && cd test-profiles && grep -orP --include=*.xml '(?<=<ExternalDependencies>).*?(?=</ExternalDependencies>)' | grep "build-utilities"
+```
+
+The build-utilities dependency is translated in PTS into the following
+two dependencies: build-essential, autoconf. There are a lot of results
+for the above command.
+
+However there is one more step before benchmarking the test profiles
+against UB modifications. Some of the test profiles contain projects
+that are stupid. For example take pts/compress-pbzip2, please take a
+look at the makefile in http://www.bzip.org/1.0.6/bzip2-1.0.6.tar.gz
+and notice that it overwrites the CC set in the environment. In this
+case I need to manually modify the makefile and create a new test
+profile. I expect this problem with other test profiles too.
