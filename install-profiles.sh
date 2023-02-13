@@ -22,5 +22,10 @@
 #                                 switch($selected_action)
 #                                 {
 
+# /usr/bin/cc is a symbolink link to ./cc
+# /usr/bin/c++ is a symbolink link to ./c++
 
-/usr/bin/time sh -c 'cat profiles.txt | xargs -n1 phoronix-test-suite debug-install'
+export CC=/usr/bin/cc
+export CXX=/usr/bin/c++
+
+/usr/bin/time sh -c 'cat profiles.txt | xargs -n1 /usr/bin/time php /home/lucianp/git/phoronix-test-suite/pts-core/phoronix-test-suite.php debug-install | tee install-log.txt'
