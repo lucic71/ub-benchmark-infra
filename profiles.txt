@@ -40,7 +40,6 @@ pts/build-python
 pts/build-wasmer
 pts/build-webkitfltk
 pts/bullet
-pts/cairo-demos
 pts/cairo-perf-trace
 pts/chia-vdf
 pts/cockroach
@@ -55,15 +54,12 @@ pts/cpuminer-opt
 pts/cryptopp
 pts/cuda-mini-nbody
 pts/cyclictest
-pts/daphne
 pts/dav1d
 pts/ddnet
 pts/dolfyn
 pts/draco
 pts/encode-ape
 pts/encode-mp3
-pts/encode-ogg
-pts/encode-opus
 pts/encode-wavpack
 pts/etcpak
 pts/ffmpeg
@@ -75,8 +71,6 @@ pts/glibc-bench
 pts/gmpbench
 pts/gnupg
 pts/gpaw
-pts/gromacs
-pts/gromacs-gpu
 pts/hammerdb-mariadb
 pts/hammerdb-postgresql
 pts/hpl
