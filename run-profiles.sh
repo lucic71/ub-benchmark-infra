@@ -1,9 +1,6 @@
 #!/bin/sh -ex
 
-# run this for having the modified version of pts
-# php ../phoronix-test-suite/pts-core/phoronix-test-suite.php 
-
-# append this at the end of the command to save overall logs
-# | tee pts-run-out.txt
-
-/usr/bin/time sh -c 'cat profiles.txt | xargs -n1 phoronix-test-suite batch-run'
+export CC=/usr/bin/cc
+export CXX=/usr/bin/c++
+export LD=/usr/bin/ld
+/usr/bin/time sh -c 'cat rand-profiles.txt | xargs -n1 /usr/bin/time php /home/lucianp/git/phoronix-test-suite/pts-core/phoronix-test-suite.php batch-run 2>&1 | tee -a benchmark-log.txt'
