@@ -1,12 +1,17 @@
 pts/jpegxl
+pts/svt-vp9
 pts/xmrig
+pts/vkresample
 pts/minion
 pts/osbench
 pts/arrayfire
+pts/vkmark
 pts/libgav1
+pts/jpegxl-decode
 pts/svt-av1
 pts/cryptopp
 git/aom-av1
+pts/ddnet
 pts/yafaray
 pts/primesieve
 pts/fhourstones
@@ -14,4 +19,4 @@ pts/encode-wavpack
 pts/x265
 pts/securemark
 pts/draco
-pts/ddnet
+pts/tungsten
