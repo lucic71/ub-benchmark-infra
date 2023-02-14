@@ -1,0 +1,5 @@
+#!/bin/sh
+
+FLAGS=`cat flags.config`
+echo "This is the clang of LP with $FLAGS"
+/ssd/llvm-project-main/build/bin/clang "$FLAGS" "$@"
