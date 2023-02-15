@@ -14,4 +14,3 @@ pts/encode-wavpack
 pts/x265
 pts/securemark
 pts/draco
-pts/ddnet
