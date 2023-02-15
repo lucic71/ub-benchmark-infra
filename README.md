@@ -74,10 +74,23 @@ and notice that it overwrites the CC set in the environment. In this
 case I need to manually modify the makefile and create a new test
 profile. I expect this problem with other test profiles too.
 
-## Profiles
+# Profiles
 all.profiles.txt has all test profiles that are dependent on
 build-utilities. profiles.txt has profiles extracted from
 all.profiles.txt that respect the CC/CXX variables. rand-profiles.txt
 has 25 profiles randomly chosen from profiles.txt. Compiling all
 profiles.txt takes 22 hours which is too much. We reduce the number of
 profiles to move faster.
+
+# Showing results
+The plan is to merge the results for the profiles compiled with
+optimization flags and the ones without optimiztions flags. After the
+results are generated run:
+```
+phoronix-test-suite merge-results r1 r2 <-- will generate merged-r
+phoronix-test-suite show-result merged-r
+```
+
+I will use some smart grep to put togheter r1 and r2 that will be then
+merged. After that I will need to manually check every merged results
+and interpret it.
