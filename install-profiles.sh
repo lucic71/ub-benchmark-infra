@@ -27,5 +27,11 @@
 
 export CC=/usr/bin/cc
 export CXX=/usr/bin/c++
+export LD=/usr/bin/ld
 
-/usr/bin/time sh -c 'cat rand-profiles.txt | xargs -n1 /usr/bin/time php /home/lucianp/git/phoronix-test-suite/pts-core/phoronix-test-suite.php debug-install 2>&1 | tee install-log.txt'
+CONCAT_FLAGS=`echo "$@" | tr -d ' '`
+LOG_FILE="install-log"$CONCAT_FLAGS".txt"
+
+echo performance | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+
+/usr/bin/time sh -c 'cat rand-profiles.txt | xargs -n1 /usr/bin/time php /home/lucianp/git/phoronix-test-suite/pts-core/phoronix-test-suite.php debug-install' 2>&1 | tee $LOG_FILE

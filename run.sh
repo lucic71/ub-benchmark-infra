@@ -1,11 +1,15 @@
-#!/bin/sh
+#!/bin/sh -ex
 
-# run with unmodified compiler
-./install-compiler.sh
-./instal-profiles.sh
-./run-profiles.sh
+# array of flags separated by :
+FLAGS=":-fwrapv"
+FLAGSNO=$((`echo $FLAGS | tr -cd ':' | wc -c`+1))
 
-# run with modified compiler
-./install-compiler.sh -mod
-./instal-profiles.sh
-./run-profiles.sh
+for i in $(seq 1 $FLAGSNO);
+do
+	flags=`echo $FLAGS | cut -d':' -f$i`
+	./install-compiler.sh $flags
+	./install-profiles.sh $flags
+	./run-profiles.sh     $flags
+done
+
+echo powersave | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor

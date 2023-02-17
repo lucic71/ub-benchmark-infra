@@ -1,11 +1,28 @@
 #!/bin/sh -ex
 
-if [ "$1" = "-mod" ]; then
-	ln -sf `pwd`/mod-cc /usr/bin/cc
-	ln -sf `pwd`/mod-c++ /usr/bin/c++
-	ln -sf `pwd`/mod-lld /usr/bin/ld
-else
-	ln -sf `pwd`/cc /usr/bin/cc
-	ln -sf `pwd`/c++ /usr/bin/c++
-	ln -sf `pwd`/lld /usr/bin/ld
-fi
+echo '#!/bin/sh' > ./cc
+echo -n 'echo "This is clang with ' >> ./cc
+echo "$@"'"'>> ./cc
+echo -n '/ssd/llvm-project-main/build/bin/clang ' >> ./cc
+echo -n "$@"' '>> ./cc
+echo '"$@"' >> ./cc
+chmod +x ./cc
+ln -sf `pwd`/cc /usr/bin/cc
+
+echo '#!/bin/sh' > ./c++
+echo -n 'echo "This is clang++ with ' >> ./c++
+echo "$@"'"'>> ./c++
+echo -n '/ssd/llvm-project-main/build/bin/clang++ ' >> ./c++
+echo -n "$@"' '>> ./c++
+echo '"$@"' >> ./c++
+chmod +x ./c++
+ln -sf `pwd`/c++ /usr/bin/c++
+
+echo '#!/bin/sh' > ./ld
+echo -n 'echo "This is ld with ' >> ./ld
+echo "$@"'"'>> ./ld
+echo -n '/ssd/llvm-project-main/build/bin/ld.lld ' >> ./ld
+echo -n "$@"' '>> ./ld
+echo '"$@"' >> ./ld
+chmod +x ./ld
+ln -sf `pwd`/ld /usr/bin/ld
