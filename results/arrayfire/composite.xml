@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>arrayfire-base</Title>
+    <LastModified>2023-02-19 21:56:10</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.4</TestClient>
+    <Description>arrayfire-base</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>arrayfire-base</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: GCC 10.2.1 20210110 + Clang 11.0.1-2, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>root</User>
+    <TimeStamp>2023-02-19 11:45:32</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>arrayfire-fwrapv</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: GCC 10.2.1 20210110 + Clang 11.0.1-2, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>root</User>
+    <TimeStamp>2023-02-19 01:22:13</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/arrayfire-1.1.0</Identifier>
+    <Title>ArrayFire</Title>
+    <AppVersion>3.7</AppVersion>
+    <Arguments>blas_cpu</Arguments>
+    <Description>Test: BLAS CPU</Description>
+    <Scale>GFLOPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>arrayfire-base</Identifier>
+        <Value>733.694</Value>
+        <RawString>745.603:723.338:732.14</RawString>
+        <JSON>{"test-run-times":"16.35:15.18:16.18"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>arrayfire-fwrapv</Identifier>
+        <Value>758.462</Value>
+        <RawString>759.577:763.733:752.077</RawString>
+        <JSON>{"test-run-times":"16.82:16.64:16.50"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/arrayfire-1.1.0</Identifier>
+    <Title>ArrayFire</Title>
+    <AppVersion>3.7</AppVersion>
+    <Arguments>cg_cpu</Arguments>
+    <Description>Test: Conjugate Gradient CPU</Description>
+    <Scale>ms</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>arrayfire-base</Identifier>
+        <Value>23.03</Value>
+        <RawString>25.9:20.92:22.28:22.18:24.36:22.23:23.45:21.93:25.58:22.24:21.73:24.58:22.21:21.31:24.56</RawString>
+        <JSON>{"test-run-times":"4.61:4.60:4.72:4.46:4.54:4.72:4.71:4.63:4.62:4.64:4.65:4.59:4.60:4.67:4.61"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>arrayfire-fwrapv</Identifier>
+        <Value>23.36</Value>
+        <RawString>26.81:25.08:25.97:23.17:22.6:22.34:22.77:22.58:22.14:22.58:22.03:22.21</RawString>
+        <JSON>{"test-run-times":"4.75:4.61:4.80:4.76:4.65:4.57:4.58:4.68:4.64:4.77:4.59:4.58"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
