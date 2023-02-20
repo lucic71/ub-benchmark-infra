@@ -2,7 +2,7 @@
 <!--Phoronix Test Suite v10.8.4-->
 <PhoronixTestSuite>
   <Generated>
-    <Title>osbench-base</Title>
+    <Title>osbench</Title>
     <LastModified>2023-02-19 21:56:04</LastModified>
     <TestClient>Phoronix Test Suite v10.8.4</TestClient>
     <Description>osbench-base</Description>
@@ -12,7 +12,7 @@
     <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
   </Generated>
   <System>
-    <Identifier>osbench-base</Identifier>
+    <Identifier>base</Identifier>
     <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
     <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: GCC 10.2.1 20210110 + Clang 11.0.1-2, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
@@ -22,7 +22,7 @@
     <JSON>{"cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
-    <Identifier>osbench-fwrapv</Identifier>
+    <Identifier>fwrapv</Identifier>
     <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
     <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: GCC 10.2.1 20210110 + Clang 11.0.1-2, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
@@ -42,13 +42,13 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>osbench-base</Identifier>
+        <Identifier>base</Identifier>
         <Value>27.059887</Value>
         <RawString>27.042464:26.898359:27.238837</RawString>
         <JSON>{"test-run-times":"6.35:5.36:5.39"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>osbench-fwrapv</Identifier>
+        <Identifier>fwrapv</Identifier>
         <Value>26.349926</Value>
         <RawString>26.365521:26.254905:26.429351</RawString>
         <JSON>{"test-run-times":"6.21:5.19:5.24"}</JSON>
@@ -66,13 +66,13 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>osbench-base</Identifier>
+        <Identifier>base</Identifier>
         <Value>19.028982</Value>
         <RawString>19.037724:19.099712:18.949509</RawString>
         <JSON>{"test-run-times":"5.00:5.00:5.00"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>osbench-fwrapv</Identifier>
+        <Identifier>fwrapv</Identifier>
         <Value>19.540946</Value>
         <RawString>18.680096:22.43042:18.730164:18.708706:21.820068:22.242069:18.310547:18.651485:18.32962:18.930435:18.348694:22.59016:18.370152:18.639565:18.332005</RawString>
         <JSON>{"test-run-times":"5.00:5.00:5.00:5.00:5.00:5.00:5.01:5.00:5.00:5.00:5.00:5.00:5.00:5.00:5.00"}</JSON>
@@ -90,13 +90,13 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>osbench-base</Identifier>
+        <Identifier>base</Identifier>
         <Value>46.869119</Value>
         <RawString>47.09959:46.52977:46.977997</RawString>
         <JSON>{"test-run-times":"5.01:5.01:5.00"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>osbench-fwrapv</Identifier>
+        <Identifier>fwrapv</Identifier>
         <Value>46.919187</Value>
         <RawString>46.789646:46.899319:47.068596</RawString>
         <JSON>{"test-run-times":"5.01:5.00:5.01"}</JSON>
@@ -114,13 +114,13 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>osbench-base</Identifier>
+        <Identifier>base</Identifier>
         <Value>35.155614</Value>
         <RawString>35.719872:34.72805:35.018921</RawString>
         <JSON>{"test-run-times":"5.00:5.01:5.00"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>osbench-fwrapv</Identifier>
+        <Identifier>fwrapv</Identifier>
         <Value>35.912990</Value>
         <RawString>36.578178:35.569668:35.591125</RawString>
         <JSON>{"test-run-times":"5.01:5.00:5.00"}</JSON>
@@ -138,13 +138,13 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>osbench-base</Identifier>
+        <Identifier>base</Identifier>
         <Value>159.819365</Value>
         <RawString>160.239935:159.755945:159.462214</RawString>
         <JSON>{"test-run-times":"5.06:5.08:5.06"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>osbench-fwrapv</Identifier>
+        <Identifier>fwrapv</Identifier>
         <Value>157.481988</Value>
         <RawString>158.20384:157.303095:156.93903</RawString>
         <JSON>{"test-run-times":"5.16:5.16:5.16"}</JSON>
