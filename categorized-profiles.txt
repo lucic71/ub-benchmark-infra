@@ -1,6 +1,6 @@
 # LLVM Build Speed
 pts/build-linux-kernel
-pts/llvm
+pts/build-llvm
 # HPC
 pts/fftw
 # Neural Networks
@@ -12,9 +12,9 @@ pts/uvg266
 pts/brl-cad
 # Bioinformatics
 pts/mrbayes
-pts/hmmer <-- delete --enable-mpi
+pts/hmmer
 # Image Processing
-pts/jpegxl-decode
+pts/jpegxl
 pts/graphics-magick
 # Raytracing
 pts/tungsten
@@ -27,10 +27,9 @@ pts/openssl
 # Cryptography
 pts/chia-vdf
 # Password Cracking
-pts/john-the-ripper <-- https://github.com/openwall/john/pull/4611/files
+pts/john-the-ripper
 # Chess
 pts/lczero
-pts/stockfish
 # Database
 pts/redis
 pts/mysqlslap
@@ -41,7 +40,7 @@ pts/basis
 pts/draco
 # Compression
 pts/compress-zstd
-pts/compress-pbzip2 <-- resume here
+pts/compress-pbzip2
 # Speech
 pts/espeak
 pts/synthmark
@@ -56,4 +55,5 @@ pts/pjsip
 # Circuit Simulator
 pts/ngspice
 # Webserver
+pts/apache
 pts/nginx
