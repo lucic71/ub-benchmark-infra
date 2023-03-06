@@ -3,8 +3,6 @@ pts/build-linux-kernel
 pts/build-llvm
 # HPC
 pts/fftw
-# Neural Networks
-pts/mnn
 # Video Encoding
 pts/aom-av1
 pts/uvg266
@@ -24,15 +22,12 @@ pts/simdjson
 # Security
 pts/aircrack-ng
 pts/openssl
-# Cryptography
-pts/chia-vdf
 # Password Cracking
 pts/john-the-ripper
 # Chess
 pts/lczero
 # Database
 pts/redis
-pts/mysqlslap
 # Audio Encoding
 pts/encode-flac
 # Texture Compression
@@ -43,7 +38,7 @@ pts/compress-zstd
 pts/compress-pbzip2
 # Speech
 pts/espeak
-pts/synthmark
+pts/rnnoise
 # Software Defined Radio
 pts/liquid-dsp
 # GUI
