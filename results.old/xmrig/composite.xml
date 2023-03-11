@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>xmrig</Title>
+    <LastModified>2023-02-19 21:55:50</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.4</TestClient>
+    <Description>xmrig-base</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>base</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: GCC 10.2.1 20210110 + Clang 11.0.1-2, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>root</User>
+    <TimeStamp>2023-02-19 11:04:21</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>fwrapv</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: GCC 10.2.1 20210110 + Clang 11.0.1-2, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>root</User>
+    <TimeStamp>2023-02-19 00:16:30</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/xmrig-1.1.0</Identifier>
+    <Title>Xmrig</Title>
+    <AppVersion>6.18.1</AppVersion>
+    <Arguments>--bench=1M</Arguments>
+    <Description>Variant: Monero - Hash Count: 1M</Description>
+    <Scale>H/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>3368.1</Value>
+        <RawString>3368.9:3360.3:3375.1</RawString>
+        <JSON>{"test-run-times":"302.17:302.35:301.02"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>3374.9</Value>
+        <RawString>3378.3:3373.6:3372.7</RawString>
+        <JSON>{"test-run-times":"301.85:301.16:301.22"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/xmrig-1.1.0</Identifier>
+    <Title>Xmrig</Title>
+    <AppVersion>6.18.1</AppVersion>
+    <Arguments>-a rx/wow --bench=1M</Arguments>
+    <Description>Variant: Wownero - Hash Count: 1M</Description>
+    <Scale>H/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>7436.3</Value>
+        <RawString>7563.3:7448.5:7297.2</RawString>
+        <JSON>{"test-run-times":"136.95:139.02:141.81"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>7161.0</Value>
+        <RawString>7520.8:5599.4:7497.2:7147.4:7586.9:7491.6:7568.9:7193.1:7512.6:6230.6:7067.7:7515.5</RawString>
+        <JSON>{"test-run-times":"137.70:183.35:138.15:144.66:136.54:138.24:136.87:143.77:137.83:165.23:146.22:137.83"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

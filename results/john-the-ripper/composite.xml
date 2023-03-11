@@ -2,10 +2,10 @@
 <!--Phoronix Test Suite v10.8.4-->
 <PhoronixTestSuite>
   <Generated>
-    <Title>draco</Title>
-    <LastModified>2023-03-11 21:40:06</LastModified>
+    <Title>john-the-ripper</Title>
+    <LastModified>2023-03-11 21:39:33</LastModified>
     <TestClient>Phoronix Test Suite v10.8.4</TestClient>
-    <Description>draco-base</Description>
+    <Description>john-the-ripper-base</Description>
     <Notes></Notes>
     <InternalTags></InternalTags>
     <ReferenceID></ReferenceID>
@@ -16,7 +16,7 @@
     <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
     <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-07 21:23:42</TimeStamp>
+    <TimeStamp>2023-03-07 19:52:52</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
@@ -26,7 +26,7 @@
     <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
     <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-10 03:14:08</TimeStamp>
+    <TimeStamp>2023-03-10 02:26:21</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
@@ -36,7 +36,7 @@
     <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
     <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-11 05:20:46</TimeStamp>
+    <TimeStamp>2023-03-11 03:19:31</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
@@ -46,80 +46,80 @@
     <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
     <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-09 00:30:47</TimeStamp>
+    <TimeStamp>2023-03-08 22:27:25</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <Result>
-    <Identifier>pts/draco-1.5.0</Identifier>
-    <Title>Google Draco</Title>
-    <AppVersion>1.5.0</AppVersion>
-    <Arguments>-i lion.ply</Arguments>
-    <Description>Model: Lion</Description>
-    <Scale>ms</Scale>
-    <Proportion>LIB</Proportion>
+    <Identifier>pts/john-the-ripper-1.7.2</Identifier>
+    <Title>John The Ripper</Title>
+    <AppVersion>1.9.0-jumbo-1</AppVersion>
+    <Arguments>--format=bcrypt</Arguments>
+    <Description>Test: Blowfish</Description>
+    <Scale>Real C/S</Scale>
+    <Proportion>HIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>6567</Value>
-        <RawString>6542:6558:6602</RawString>
-        <JSON>{"test-run-times":"9.46:8.36:8.38"}</JSON>
+        <Value>1170</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"30.74:30.12:30.12"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>6482</Value>
-        <RawString>6474:6481:6492</RawString>
-        <JSON>{"test-run-times":"8.85:8.26:8.28"}</JSON>
+        <Value>1176</Value>
+        <RawString>1177:1175:1175</RawString>
+        <JSON>{"test-run-times":"30.75:30.12:30.12"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
-        <Value>6468</Value>
-        <RawString>6441:6535:6427</RawString>
-        <JSON>{"test-run-times":"8.82:8.28:8.17"}</JSON>
+        <Value>1181</Value>
+        <RawString>1180:1181:1181</RawString>
+        <JSON>{"test-run-times":"30.75:30.12:30.12"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>6609</Value>
-        <RawString>6553:6647:6627</RawString>
-        <JSON>{"test-run-times":"9.48:8.42:8.39"}</JSON>
+        <Value>1172</Value>
+        <RawString>1175:1174:1167</RawString>
+        <JSON>{"test-run-times":"30.76:30.12:30.12"}</JSON>
       </Entry>
     </Data>
   </Result>
   <Result>
-    <Identifier>pts/draco-1.5.0</Identifier>
-    <Title>Google Draco</Title>
-    <AppVersion>1.5.0</AppVersion>
-    <Arguments>-i church.ply</Arguments>
-    <Description>Model: Church Facade</Description>
-    <Scale>ms</Scale>
-    <Proportion>LIB</Proportion>
+    <Identifier>pts/john-the-ripper-1.7.2</Identifier>
+    <Title>John The Ripper</Title>
+    <AppVersion>1.9.0-jumbo-1</AppVersion>
+    <Arguments>--format=md5crypt</Arguments>
+    <Description>Test: MD5</Description>
+    <Scale>Real C/S</Scale>
+    <Proportion>HIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>8474</Value>
-        <RawString>8462:8509:8450</RawString>
-        <JSON>{"test-run-times":"10.71:10.28:10.21"}</JSON>
+        <Value>42132</Value>
+        <RawString>42103:42282:42012</RawString>
+        <JSON>{"test-run-times":"60.10:60.10:60.10"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>8437</Value>
-        <RawString>8427:8529:8355</RawString>
-        <JSON>{"test-run-times":"10.20:10.31:10.11"}</JSON>
+        <Value>42332</Value>
+        <RawString>42222:42390:42383</RawString>
+        <JSON>{"test-run-times":"60.10:60.10:60.10"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
-        <Value>8290</Value>
-        <RawString>8246:8306:8317</RawString>
-        <JSON>{"test-run-times":"10.13:10.03:10.04"}</JSON>
+        <Value>42502</Value>
+        <RawString>42507:42513:42486</RawString>
+        <JSON>{"test-run-times":"60.10:60.10:60.10"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>8412</Value>
-        <RawString>8421:8486:8328</RawString>
-        <JSON>{"test-run-times":"10.69:10.25:10.07"}</JSON>
+        <Value>42064</Value>
+        <RawString>42217:41966:42010</RawString>
+        <JSON>{"test-run-times":"60.11:60.10:60.10"}</JSON>
       </Entry>
     </Data>
   </Result>

@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>svt-av1</Title>
+    <LastModified>2023-02-19 21:56:24</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.4</TestClient>
+    <Description>svt-av1-base</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>base</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: GCC 10.2.1 20210110 + Clang 11.0.1-2, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>root</User>
+    <TimeStamp>2023-02-19 12:15:15</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>fwrapv</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: GCC 10.2.1 20210110 + Clang 11.0.1-2, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>root</User>
+    <TimeStamp>2023-02-19 01:52:52</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/svt-av1-2.7.0</Identifier>
+    <Title>SVT-AV1</Title>
+    <AppVersion>1.4</AppVersion>
+    <Arguments>--preset 4 -n 160 -i Bosphorus_3840x2160.y4m -w 3840 -h 2160</Arguments>
+    <Description>Encoder Mode: Preset 4 - Input: Bosphorus 4K</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>1.171</Value>
+        <RawString>1.185:1.123:1.19:1.181:1.178</RawString>
+        <JSON>{"test-run-times":"140.08:146.89:138.95:139.80:140.28"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>1.168</Value>
+        <RawString>1.164:1.155:1.185</RawString>
+        <JSON>{"test-run-times":"142.38:142.01:138.55"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/svt-av1-2.7.0</Identifier>
+    <Title>SVT-AV1</Title>
+    <AppVersion>1.4</AppVersion>
+    <Arguments>--preset 8 -i Bosphorus_3840x2160.y4m -w 3840 -h 2160</Arguments>
+    <Description>Encoder Mode: Preset 8 - Input: Bosphorus 4K</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>14.677</Value>
+        <RawString>14.767:14.455:14.809</RawString>
+        <JSON>{"test-run-times":"43.36:44.38:43.27"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>13.911</Value>
+        <RawString>13.456:14.198:13.894:14.094</RawString>
+        <JSON>{"test-run-times":"47.04:44.69:45.94:45.36"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/svt-av1-2.7.0</Identifier>
+    <Title>SVT-AV1</Title>
+    <AppVersion>1.4</AppVersion>
+    <Arguments>--preset 12 -i Bosphorus_3840x2160.y4m -w 3840 -h 2160</Arguments>
+    <Description>Encoder Mode: Preset 12 - Input: Bosphorus 4K</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>65.925</Value>
+        <RawString>66.592:65.263:65.919</RawString>
+        <JSON>{"test-run-times":"11.25:11.39:11.12"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>62.217</Value>
+        <RawString>61.953:62.628:62.07</RawString>
+        <JSON>{"test-run-times":"12.00:11.88:11.96"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/svt-av1-2.7.0</Identifier>
+    <Title>SVT-AV1</Title>
+    <AppVersion>1.4</AppVersion>
+    <Arguments>--preset 13 -i Bosphorus_3840x2160.y4m -w 3840 -h 2160</Arguments>
+    <Description>Encoder Mode: Preset 13 - Input: Bosphorus 4K</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>61.079</Value>
+        <RawString>61.225:61.063:60.95</RawString>
+        <JSON>{"test-run-times":"11.18:11.18:11.34"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>59.186</Value>
+        <RawString>59.111:58.85:59.598</RawString>
+        <JSON>{"test-run-times":"11.58:11.72:11.44"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/svt-av1-2.7.0</Identifier>
+    <Title>SVT-AV1</Title>
+    <AppVersion>1.4</AppVersion>
+    <Arguments>--preset 4 -n 160 -i Bosphorus_1920x1080_120fps_420_8bit_YUV.yuv -w 1920 -h 1080</Arguments>
+    <Description>Encoder Mode: Preset 4 - Input: Bosphorus 1080p</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>3.162</Value>
+        <RawString>3.108:3.223:3.156</RawString>
+        <JSON>{"test-run-times":"53.03:51.18:52.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>3.078</Value>
+        <RawString>3.082:3.081:3.072</RawString>
+        <JSON>{"test-run-times":"53.61:53.65:53.71"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/svt-av1-2.7.0</Identifier>
+    <Title>SVT-AV1</Title>
+    <AppVersion>1.4</AppVersion>
+    <Arguments>--preset 8 -i Bosphorus_1920x1080_120fps_420_8bit_YUV.yuv -w 1920 -h 1080</Arguments>
+    <Description>Encoder Mode: Preset 8 - Input: Bosphorus 1080p</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>45.522</Value>
+        <RawString>45.456:46.04:45.071</RawString>
+        <JSON>{"test-run-times":"14.15:14.08:14.26"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>43.600</Value>
+        <RawString>42.939:43.978:43.884</RawString>
+        <JSON>{"test-run-times":"15.01:14.68:14.61"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/svt-av1-2.7.0</Identifier>
+    <Title>SVT-AV1</Title>
+    <AppVersion>1.4</AppVersion>
+    <Arguments>--preset 12 -i Bosphorus_1920x1080_120fps_420_8bit_YUV.yuv -w 1920 -h 1080</Arguments>
+    <Description>Encoder Mode: Preset 12 - Input: Bosphorus 1080p</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>214.458</Value>
+        <RawString>216.779:214.307:212.289</RawString>
+        <JSON>{"test-run-times":"3.56:3.59:3.70"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>209.363</Value>
+        <RawString>209.657:207.386:211.046</RawString>
+        <JSON>{"test-run-times":"3.72:3.67:3.61"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/svt-av1-2.7.0</Identifier>
+    <Title>SVT-AV1</Title>
+    <AppVersion>1.4</AppVersion>
+    <Arguments>--preset 13 -i Bosphorus_1920x1080_120fps_420_8bit_YUV.yuv -w 1920 -h 1080</Arguments>
+    <Description>Encoder Mode: Preset 13 - Input: Bosphorus 1080p</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>217.755</Value>
+        <RawString>216.887:216.172:220.205</RawString>
+        <JSON>{"test-run-times":"3.44:3.37:3.38"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>211.915</Value>
+        <RawString>210.754:212.299:212.693</RawString>
+        <JSON>{"test-run-times":"3.49:3.48:3.40"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

@@ -1,0 +1,558 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>compress-zstd</Title>
+    <LastModified>2023-03-11 21:40:12</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.4</TestClient>
+    <Description>compress-zstd-base</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>base</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>root</User>
+    <TimeStamp>2023-03-07 21:25:13</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>fno-strict-aliasing</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>root</User>
+    <TimeStamp>2023-03-10 03:15:38</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>fstrict-enums</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>root</User>
+    <TimeStamp>2023-03-11 05:22:14</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>fwrapv</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>root</User>
+    <TimeStamp>2023-03-09 00:32:18</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b3</Arguments>
+    <Description>Compression Level: 3 - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>1334.3</Value>
+        <RawString>1320.1:1369.9:1313</RawString>
+        <JSON>{"test-run-times":"65.26:64.18:65.12"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>1356.3</Value>
+        <RawString>1379.6:1305:1399.7:1365.3:1345.3:1342.6</RawString>
+        <JSON>{"test-run-times":"64.43:64.11:63.94:63.71:64.01:63.74"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>1307.0</Value>
+        <RawString>1279.5:1327.7:1313.7</RawString>
+        <JSON>{"test-run-times":"66.24:64.06:64.34"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>1317.2</Value>
+        <RawString>1292:1257.2:1324.2:1346.2:1384.2:1368.4:1326.5:1325.6:1363:1253.4:1291.2:1316.5:1351.7:1297.5:1260.4</RawString>
+        <JSON>{"test-run-times":"64.85:63.92:64.30:63.86:64.30:64.33:63.78:64.22:64.25:63.97:64.77:64.45:64.26:64.01:63.63"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b3</Arguments>
+    <Description>Compression Level: 3 - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>692.5</Value>
+        <RawString>693.6:693.1:690.7</RawString>
+        <JSON>{"test-run-times":"65.26:64.18:65.12"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>693.4</Value>
+        <RawString>690.8:695.3:694.8:693.9:690.7:694.7</RawString>
+        <JSON>{"test-run-times":"64.43:64.11:63.94:63.71:64.01:63.74"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>691.4</Value>
+        <RawString>692.1:689.8:692.2</RawString>
+        <JSON>{"test-run-times":"66.24:64.06:64.34"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>698.5</Value>
+        <RawString>700.5:692.4:700.3:699.5:699.9:692.5:698.5:698.7:700.9:699.3:699.6:699.3:698.7:698.3:699.3</RawString>
+        <JSON>{"test-run-times":"64.85:63.92:64.30:63.86:64.30:64.33:63.78:64.22:64.25:63.97:64.77:64.45:64.26:64.01:63.63"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b8</Arguments>
+    <Description>Compression Level: 8 - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>388.3</Value>
+        <RawString>384.8:418.6:367.1:388.3:368.6:386:428.1:381.2:408.6:353.5:396.7:405.5:389.3:388.2:359.7</RawString>
+        <JSON>{"test-run-times":"64.72:63.63:63.15:63.39:63.98:63.89:63.65:64.80:63.80:64.15:64.11:63.79:64.13:64.77:64.74"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>386.3</Value>
+        <RawString>398.4:390.3:367.9:366.8:403.7:377.4:398.5:375.3:378.4:396.5:420:384:356.1:370:410.5</RawString>
+        <JSON>{"test-run-times":"63.88:63.85:63.56:64.08:64.79:64.74:64.25:64.40:64.62:64.36:63.94:64.69:62.92:64.67:64.96"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>380.5</Value>
+        <RawString>365.1:388.9:355.9:420:367.1:415.4:370:356.2:329.2:409.7:391.4:397.4</RawString>
+        <JSON>{"test-run-times":"65.13:62.98:63.34:65.20:63.43:64.32:63.54:63.59:63.23:63.32:64.37:63.28"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>391.3</Value>
+        <RawString>413.9:424.7:380.5:388.2:368.3:399:370.3:386.2:363.4:384.2:390.8:398.2:380.5:421.8:400.2</RawString>
+        <JSON>{"test-run-times":"63.71:63.60:64.08:64.23:64.28:64.56:64.31:64.62:63.88:64.56:64.34:64.70:64.64:64.02:64.42"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b8</Arguments>
+    <Description>Compression Level: 8 - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>719.6</Value>
+        <RawString>719.8:719.6:719.1:720.2:721.9:719.3:720:719.1:718.8:719.7:721:718.2:720.4:718.9:718.4</RawString>
+        <JSON>{"test-run-times":"64.72:63.63:63.15:63.39:63.98:63.89:63.65:64.80:63.80:64.15:64.11:63.79:64.13:64.77:64.74"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>720.0</Value>
+        <RawString>716.9:721:722:721.1:722.7:721.4:720.7:721.3:719.9:722.7:716.9:716.9:721.5:719.1:715.9</RawString>
+        <JSON>{"test-run-times":"63.88:63.85:63.56:64.08:64.79:64.74:64.25:64.40:64.62:64.36:63.94:64.69:62.92:64.67:64.96"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>714.4</Value>
+        <RawString>715.7:717:714.6:714.6:713.3:716.2:712.8:712.3:713.2:715.2:713.9:713.6</RawString>
+        <JSON>{"test-run-times":"65.13:62.98:63.34:65.20:63.43:64.32:63.54:63.59:63.23:63.32:64.37:63.28"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>726.4</Value>
+        <RawString>726.2:725.9:726.5:726.1:725.7:726.6:726.2:725.5:727.1:728.3:727.9:726.8:725.6:726.1:725.4</RawString>
+        <JSON>{"test-run-times":"63.71:63.60:64.08:64.23:64.28:64.56:64.31:64.62:63.88:64.56:64.34:64.70:64.64:64.02:64.42"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b12</Arguments>
+    <Description>Compression Level: 12 - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>128.6</Value>
+        <RawString>135.1:121.7:131.2:131.4:125.6:130.9:129.9:127.1:134.6:128.7:124.4:127:133.8:120:127.4</RawString>
+        <JSON>{"test-run-times":"64.73:64.97:63.98:64.72:64.62:64.44:65.05:63.95:64.48:63.57:64.62:64.30:63.05:64.33:64.18"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>126.9</Value>
+        <RawString>130.5:122.5:131.2:121:132.6:121.6:122.3:127.3:124:127.9:126.5:126.1:127.8:136.1:125.4</RawString>
+        <JSON>{"test-run-times":"65.12:64.83:64.94:63.65:64.49:63.64:63.15:63.49:64.14:64.56:64.35:63.32:63.97:64.38:63.28"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>119.5</Value>
+        <RawString>118:121.2:127.7:114.1:122.5:116.1:117.9:119.3:117.9:120:123.5:127.8:114.7:113.5:118.6</RawString>
+        <JSON>{"test-run-times":"64.83:64.35:64.86:63.22:64.85:65.22:65.38:64.89:64.91:63.56:64.71:65.40:65.62:65.46:63.88"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>127.7</Value>
+        <RawString>125.2:128:142:128.4:131.2:129.5:127.5:124.8:130.5:125.1:130.2:125.4:125.3:119.9:122.9</RawString>
+        <JSON>{"test-run-times":"64.36:64.28:64.21:64.32:64.75:64.01:64.60:63.37:63.43:64.25:64.85:63.35:64.11:63.38:64.00"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b12</Arguments>
+    <Description>Compression Level: 12 - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>692.5</Value>
+        <RawString>692.6:693.4:691.3:694.7:694.7:690.3:690.5:686.5:695.6:692.8:693.1:692.1:690.1:694:695.4</RawString>
+        <JSON>{"test-run-times":"64.73:64.97:63.98:64.72:64.62:64.44:65.05:63.95:64.48:63.57:64.62:64.30:63.05:64.33:64.18"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>695.6</Value>
+        <RawString>693.3:694.4:695.8:696.9:694.7:697:697.5:695.5:696.3:696.4:697:697.4:691.5:694.6:695.5</RawString>
+        <JSON>{"test-run-times":"65.12:64.83:64.94:63.65:64.49:63.64:63.15:63.49:64.14:64.56:64.35:63.32:63.97:64.38:63.28"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>669.8</Value>
+        <RawString>674.6:667.7:690.7:668.5:682.6:664.5:663.7:668.6:669.7:664:664.1:664.8:668.8:662.9:672.2</RawString>
+        <JSON>{"test-run-times":"64.83:64.35:64.86:63.22:64.85:65.22:65.38:64.89:64.91:63.56:64.71:65.40:65.62:65.46:63.88"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>697.5</Value>
+        <RawString>692.7:700.9:699.8:693.5:691.6:693.3:697.5:700.3:699.7:699.1:700.6:697.5:694.2:702.5:699.2</RawString>
+        <JSON>{"test-run-times":"64.36:64.28:64.21:64.32:64.75:64.01:64.60:63.37:63.43:64.25:64.85:63.35:64.11:63.38:64.00"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b19</Arguments>
+    <Description>Compression Level: 19 - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>12.9</Value>
+        <RawString>12.8:13:13</RawString>
+        <JSON>{"test-run-times":"65.23:65.33:65.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>12.4</Value>
+        <RawString>12.4:12.3:12.6</RawString>
+        <JSON>{"test-run-times":"67.05:67.03:66.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>12.5</Value>
+        <RawString>12:13:12.5:12.5:12.3:12.3:12.9:12.8:12.1:12.3:12.3:12.4</RawString>
+        <JSON>{"test-run-times":"68.95:66.00:66.73:67.46:66.58:66.64:67.07:66.61:66.97:66.98:67.52:67.15"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>12.9</Value>
+        <RawString>12.7:13:12.9</RawString>
+        <JSON>{"test-run-times":"66.41:66.00:65.38"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b19</Arguments>
+    <Description>Compression Level: 19 - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>639.6</Value>
+        <RawString>641.2:639.4:638.3</RawString>
+        <JSON>{"test-run-times":"65.23:65.33:65.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>640.1</Value>
+        <RawString>641:640.9:638.4</RawString>
+        <JSON>{"test-run-times":"67.05:67.03:66.21"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>641.1</Value>
+        <RawString>639.5:642.3:637.4:644:637.2:642.1:643.9:644.2:640.8:636.4:640.5:645.2</RawString>
+        <JSON>{"test-run-times":"68.95:66.00:66.73:67.46:66.58:66.64:67.07:66.61:66.97:66.98:67.52:67.15"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>645.7</Value>
+        <RawString>646.5:644.6:645.9</RawString>
+        <JSON>{"test-run-times":"66.41:66.00:65.38"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b3 --long</Arguments>
+    <Description>Compression Level: 3, Long Mode - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>608.4</Value>
+        <RawString>608.4:609.1:607.7</RawString>
+        <JSON>{"test-run-times":"64.38:64.24:63.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>600.6</Value>
+        <RawString>601.5:600.6:599.7</RawString>
+        <JSON>{"test-run-times":"64.26:64.36:64.49"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>611.4</Value>
+        <RawString>611.9:610.4:611.8</RawString>
+        <JSON>{"test-run-times":"63.98:64.04:63.86"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>607.0</Value>
+        <RawString>606.2:607.7:607.1</RawString>
+        <JSON>{"test-run-times":"63.89:64.14:64.36"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b3 --long</Arguments>
+    <Description>Compression Level: 3, Long Mode - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>720.8</Value>
+        <RawString>721.5:721.6:719.2</RawString>
+        <JSON>{"test-run-times":"64.38:64.24:63.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>723.6</Value>
+        <RawString>721.6:723.1:726.1</RawString>
+        <JSON>{"test-run-times":"64.26:64.36:64.49"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>721.8</Value>
+        <RawString>718.6:723.6:723.3</RawString>
+        <JSON>{"test-run-times":"63.98:64.04:63.86"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>728.6</Value>
+        <RawString>727:729.7:729.2</RawString>
+        <JSON>{"test-run-times":"63.89:64.14:64.36"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b8 --long</Arguments>
+    <Description>Compression Level: 8, Long Mode - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>431.4</Value>
+        <RawString>430.3:430.5:433.5</RawString>
+        <JSON>{"test-run-times":"64.23:64.21:64.25"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>415.7</Value>
+        <RawString>412.1:417.1:417.9</RawString>
+        <JSON>{"test-run-times":"64.18:63.57:64.16"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>418.2</Value>
+        <RawString>420.9:421.8:412</RawString>
+        <JSON>{"test-run-times":"65.12:63.32:64.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>419.3</Value>
+        <RawString>419.6:414.5:423.8</RawString>
+        <JSON>{"test-run-times":"64.49:64.22:64.19"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b8 --long</Arguments>
+    <Description>Compression Level: 8, Long Mode - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>729.6</Value>
+        <RawString>729.1:732.1:727.6</RawString>
+        <JSON>{"test-run-times":"64.23:64.21:64.25"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>731.0</Value>
+        <RawString>732.7:731.2:729.2</RawString>
+        <JSON>{"test-run-times":"64.18:63.57:64.16"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>725.2</Value>
+        <RawString>721.9:727.1:726.5</RawString>
+        <JSON>{"test-run-times":"65.12:63.32:64.47"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>733.7</Value>
+        <RawString>734.7:737.1:729.2</RawString>
+        <JSON>{"test-run-times":"64.49:64.22:64.19"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b19 --long</Arguments>
+    <Description>Compression Level: 19, Long Mode - Compression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>7.05</Value>
+        <RawString>7.11:7.01:7.03</RawString>
+        <JSON>{"test-run-times":"92.83:62.73:62.44"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>6.97</Value>
+        <RawString>6.95:7.27:6.85:6.95:6.85</RawString>
+        <JSON>{"test-run-times":"63.00:92.89:63.45:63.02:63.13"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>7.36</Value>
+        <RawString>7.18:7.56:7.12:7.64:7.13:7.19:7.19:7.64:7.53:7.08:7.64:7.63:7.18:7.04:7.63</RawString>
+        <JSON>{"test-run-times":"92.40:92.81:92.75:91.41:93.79:92.10:92.67:91.58:92.44:93.54:91.45:91.43:92.35:62.58:92.82"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>7.52</Value>
+        <RawString>7.36:7.65:7.54</RawString>
+        <JSON>{"test-run-times":"91.45:91.43:89.32"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-zstd-1.6.0</Identifier>
+    <Title>Zstd Compression</Title>
+    <AppVersion>1.5.4</AppVersion>
+    <Arguments>-b19 --long</Arguments>
+    <Description>Compression Level: 19, Long Mode - Decompression Speed</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>636.4</Value>
+        <RawString>631.9:638.6:638.7</RawString>
+        <JSON>{"test-run-times":"92.83:62.73:62.44"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>640.1</Value>
+        <RawString>640.5:639.9:640.2:639.9:640</RawString>
+        <JSON>{"test-run-times":"63.00:92.89:63.45:63.02:63.13"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>635.4</Value>
+        <RawString>635.5:636.2:633.7:636.4:635.4:634.3:633.8:635.5:637.9:634.6:637:637.1:635.6:632.4:635.6</RawString>
+        <JSON>{"test-run-times":"92.40:92.81:92.75:91.41:93.79:92.10:92.67:91.58:92.44:93.54:91.45:91.43:92.35:62.58:92.82"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>642.9</Value>
+        <RawString>642.7:642.1:643.8</RawString>
+        <JSON>{"test-run-times":"91.45:91.43:89.32"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

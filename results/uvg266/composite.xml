@@ -1,0 +1,414 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>uvg266</Title>
+    <LastModified>2023-03-11 21:38:20</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.4</TestClient>
+    <Description>uvg266-base</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>base</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>root</User>
+    <TimeStamp>2023-03-07 14:51:34</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>fno-strict-aliasing</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>root</User>
+    <TimeStamp>2023-03-09 20:26:06</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>fstrict-enums</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>root</User>
+    <TimeStamp>2023-03-10 22:42:54</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>fwrapv</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>root</User>
+    <TimeStamp>2023-03-08 17:13:39</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/uvg266-1.0.0</Identifier>
+    <Title>uvg266</Title>
+    <AppVersion>0.4.1</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset slow</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Slow</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>2.35</Value>
+        <RawString>2.34:2.35:2.35</RawString>
+        <JSON>{"test-run-times":"257.43:255.91:255.71"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>2.33</Value>
+        <RawString>2.32:2.33:2.33</RawString>
+        <JSON>{"test-run-times":"259.55:257.95:257.72"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>2.35</Value>
+        <RawString>2.34:2.35:2.35</RawString>
+        <JSON>{"test-run-times":"257.44:255.64:255.04"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>2.27</Value>
+        <RawString>2.27:2.27:2.27</RawString>
+        <JSON>{"test-run-times":"265.54:263.96:264.01"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/uvg266-1.0.0</Identifier>
+    <Title>uvg266</Title>
+    <AppVersion>0.4.1</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset medium</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Medium</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>2.61</Value>
+        <RawString>2.61:2.61:2.61</RawString>
+        <JSON>{"test-run-times":"229.99:230.15:230.05"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>2.59</Value>
+        <RawString>2.59:2.59:2.59</RawString>
+        <JSON>{"test-run-times":"231.76:231.87:231.85"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>2.61</Value>
+        <RawString>2.61:2.61:2.61</RawString>
+        <JSON>{"test-run-times":"230.13:229.85:230.30"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>2.57</Value>
+        <RawString>2.57:2.57:2.57</RawString>
+        <JSON>{"test-run-times":"233.10:233.45:233.09"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/uvg266-1.0.0</Identifier>
+    <Title>uvg266</Title>
+    <AppVersion>0.4.1</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset slow</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Slow</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>9.13</Value>
+        <RawString>9.11:9.13:9.16</RawString>
+        <JSON>{"test-run-times":"65.89:65.78:65.58"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>8.99</Value>
+        <RawString>9:9.02:8.96</RawString>
+        <JSON>{"test-run-times":"66.74:66.58:67.02"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>9.10</Value>
+        <RawString>9.08:9.13:9.09</RawString>
+        <JSON>{"test-run-times":"66.12:65.76:66.03"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>8.84</Value>
+        <RawString>8.86:8.84:8.83</RawString>
+        <JSON>{"test-run-times":"67.78:67.94:67.97"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/uvg266-1.0.0</Identifier>
+    <Title>uvg266</Title>
+    <AppVersion>0.4.1</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset medium</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Medium</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>10.18</Value>
+        <RawString>10.18:10.16:10.19</RawString>
+        <JSON>{"test-run-times":"58.97:59.11:58.91"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>10.04</Value>
+        <RawString>10.01:10.1:10</RawString>
+        <JSON>{"test-run-times":"60.00:59.45:60.03"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>10.15</Value>
+        <RawString>10.16:10.13:10.17</RawString>
+        <JSON>{"test-run-times":"59.13:59.29:59.05"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>10.01</Value>
+        <RawString>10.01:10.04:9.98</RawString>
+        <JSON>{"test-run-times":"60.02:59.84:60.17"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/uvg266-1.0.0</Identifier>
+    <Title>uvg266</Title>
+    <AppVersion>0.4.1</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset veryfast</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Very Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>7.32</Value>
+        <RawString>7.32:7.31:7.32</RawString>
+        <JSON>{"test-run-times":"82.01:82.15:81.97"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>7.25</Value>
+        <RawString>7.26:7.24:7.25</RawString>
+        <JSON>{"test-run-times":"82.69:82.88:82.86"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>7.33</Value>
+        <RawString>7.33:7.34:7.31</RawString>
+        <JSON>{"test-run-times":"81.94:81.83:82.11"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>7.18</Value>
+        <RawString>7.18:7.19:7.18</RawString>
+        <JSON>{"test-run-times":"83.59:83.48:83.66"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/uvg266-1.0.0</Identifier>
+    <Title>uvg266</Title>
+    <AppVersion>0.4.1</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset superfast</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Super Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>7.60</Value>
+        <RawString>7.6:7.61:7.6</RawString>
+        <JSON>{"test-run-times":"79.04:78.92:78.98"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>7.53</Value>
+        <RawString>7.54:7.53:7.53</RawString>
+        <JSON>{"test-run-times":"79.67:79.79:79.76"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>7.61</Value>
+        <RawString>7.6:7.62:7.62</RawString>
+        <JSON>{"test-run-times":"79.00:78.83:78.78"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>7.33</Value>
+        <RawString>7.33:7.34:7.33</RawString>
+        <JSON>{"test-run-times":"81.95:81.84:81.95"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/uvg266-1.0.0</Identifier>
+    <Title>uvg266</Title>
+    <AppVersion>0.4.1</AppVersion>
+    <Arguments>-i Bosphorus_3840x2160.y4m --preset ultrafast</Arguments>
+    <Description>Video Input: Bosphorus 4K - Video Preset: Ultra Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>10.53</Value>
+        <RawString>10.56:10.51:10.53</RawString>
+        <JSON>{"test-run-times":"56.89:57.12:57.03"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>10.40</Value>
+        <RawString>10.41:10.39:10.4</RawString>
+        <JSON>{"test-run-times":"57.72:57.78:57.78"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>10.54</Value>
+        <RawString>10.54:10.56:10.53</RawString>
+        <JSON>{"test-run-times":"56.97:56.88:57.05"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>9.99</Value>
+        <RawString>9.99:9.99:9.99</RawString>
+        <JSON>{"test-run-times":"60.09:60.14:60.11"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/uvg266-1.0.0</Identifier>
+    <Title>uvg266</Title>
+    <AppVersion>0.4.1</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset veryfast</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Very Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>28.45</Value>
+        <RawString>28.41:28.52:28.42</RawString>
+        <JSON>{"test-run-times":"21.17:21.09:21.16"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>28.21</Value>
+        <RawString>28.2:28.21:28.23</RawString>
+        <JSON>{"test-run-times":"21.33:21.32:21.30"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>28.47</Value>
+        <RawString>28.42:28.54:28.45</RawString>
+        <JSON>{"test-run-times":"21.16:21.08:21.14"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>27.70</Value>
+        <RawString>27.76:27.62:27.72</RawString>
+        <JSON>{"test-run-times":"21.66:21.77:21.69"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/uvg266-1.0.0</Identifier>
+    <Title>uvg266</Title>
+    <AppVersion>0.4.1</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset superfast</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Super Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>29.61</Value>
+        <RawString>29.62:29.59:29.61</RawString>
+        <JSON>{"test-run-times":"20.30:20.33:20.31"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>29.31</Value>
+        <RawString>29.27:29.36:29.3</RawString>
+        <JSON>{"test-run-times":"20.55:20.49:20.53"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>29.63</Value>
+        <RawString>29.69:29.62:29.59</RawString>
+        <JSON>{"test-run-times":"20.26:20.31:20.33"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>28.22</Value>
+        <RawString>28.35:28.16:28.15</RawString>
+        <JSON>{"test-run-times":"21.22:21.36:21.37"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/uvg266-1.0.0</Identifier>
+    <Title>uvg266</Title>
+    <AppVersion>0.4.1</AppVersion>
+    <Arguments>-i Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m --preset ultrafast</Arguments>
+    <Description>Video Input: Bosphorus 1080p - Video Preset: Ultra Fast</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>39.52</Value>
+        <RawString>39.54:39.63:39.39</RawString>
+        <JSON>{"test-run-times":"15.22:15.19:15.29"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>39.08</Value>
+        <RawString>39.17:39.06:39.02</RawString>
+        <JSON>{"test-run-times":"15.38:15.42:15.43"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>39.58</Value>
+        <RawString>39.62:39.58:39.53</RawString>
+        <JSON>{"test-run-times":"15.19:15.21:15.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>37.03</Value>
+        <RawString>36.84:37.19:37.06</RawString>
+        <JSON>{"test-run-times":"16.33:16.18:16.24"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

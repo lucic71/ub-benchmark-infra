@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>nginx</Title>
+    <LastModified>2023-03-11 21:41:18</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.4</TestClient>
+    <Description>nginx-base</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>base</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>root</User>
+    <TimeStamp>2023-03-08 00:55:14</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>fno-strict-aliasing</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>root</User>
+    <TimeStamp>2023-03-10 06:12:45</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>fstrict-enums</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>root</User>
+    <TimeStamp>2023-03-11 09:14:57</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>fwrapv</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>root</User>
+    <TimeStamp>2023-03-09 03:30:38</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/nginx-3.0.0</Identifier>
+    <Title>nginx</Title>
+    <AppVersion>1.23.2</AppVersion>
+    <Arguments>-c 1</Arguments>
+    <Description>Connections: 1</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/nginx-3.0.0</Identifier>
+    <Title>nginx</Title>
+    <AppVersion>1.23.2</AppVersion>
+    <Arguments>-c 20</Arguments>
+    <Description>Connections: 20</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/nginx-3.0.0</Identifier>
+    <Title>nginx</Title>
+    <AppVersion>1.23.2</AppVersion>
+    <Arguments>-c 100</Arguments>
+    <Description>Connections: 100</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>52624.61</Value>
+        <RawString>52692.51:52685.28:52496.03</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.20:90.15:90.15"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>52807.27</Value>
+        <RawString>52835.9:52833.94:52751.96</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.20:90.15:90.18"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>52051.93</Value>
+        <RawString>52299.28:51836.34:52020.16</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.24:90.15:90.17"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>52688.14</Value>
+        <RawString>52678.3:52672.85:52713.28</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.18:90.17:90.17"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/nginx-3.0.0</Identifier>
+    <Title>nginx</Title>
+    <AppVersion>1.23.2</AppVersion>
+    <Arguments>-c 200</Arguments>
+    <Description>Connections: 200</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>53560.83</Value>
+        <RawString>53595.71:53622.67:53464.12</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.24:90.29:90.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>53485.08</Value>
+        <RawString>53510.59:53475.05:53469.61</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.25:90.21:90.25"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>52849.71</Value>
+        <RawString>52821.48:52896.58:52831.07</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.31:90.21:90.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>53242.41</Value>
+        <RawString>53211.82:53211.1:53304.3</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.38:90.21:90.27"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/nginx-3.0.0</Identifier>
+    <Title>nginx</Title>
+    <AppVersion>1.23.2</AppVersion>
+    <Arguments>-c 500</Arguments>
+    <Description>Connections: 500</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>53212.05</Value>
+        <RawString>53150.44:53345.39:53140.31</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.29:90.40:90.36"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>53318.97</Value>
+        <RawString>53239.49:53344.82:53372.61</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.43:90.39:90.45"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>52225.28</Value>
+        <RawString>52290.6:52108.91:52276.34</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.28:90.26:90.43"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>53242.59</Value>
+        <RawString>53221.07:53367.31:53139.39</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.26:90.30:90.26"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/nginx-3.0.0</Identifier>
+    <Title>nginx</Title>
+    <AppVersion>1.23.2</AppVersion>
+    <Arguments>-c 1000</Arguments>
+    <Description>Connections: 1000</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value>52270.46</Value>
+        <RawString>52337.66:52278.3:52195.42</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.31:90.31:90.34"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value>52310.25</Value>
+        <RawString>52323.84:52260.02:52346.88</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.40:90.34:90.50"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value>51156.82</Value>
+        <RawString>51199.31:51101.51:51169.63</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.36:90.74:90.73"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value>52212.30</Value>
+        <RawString>52176.62:52318.78:52141.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.32:90.53:90.35"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/nginx-3.0.0</Identifier>
+    <Title>nginx</Title>
+    <AppVersion>1.23.2</AppVersion>
+    <Arguments>-c 4000</Arguments>
+    <Description>Connections: 4000</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>base</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.12:0.10:0.13","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.12:0.10:0.11","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fstrict-enums</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.10:0.11:0.11","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fwrapv</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.27:0.13:0.10","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
