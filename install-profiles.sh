@@ -1,37 +1,32 @@
 #!/bin/sh -ex
 
-# it's a shame that there is no batch-debug-install. i want to see the
-# steps for compiling the profile but i want to do it in an automated
-# way. pts sometimes goes crazy and says that there are missing
-# dependencies on the system even if it installs them. it then promts
-# a list of further steps. i patched the source code by exiting always
-# when something like this happens. the patch is the following:
-#
-# diff --git a/pts-core/objects/client/pts_external_dependencies.php b/pts-core/objects/client/pts_external_dependencies.php
-# index 3dd5877c4..c01f2c779 100644
-# --- a/pts-core/objects/client/pts_external_dependencies.php
-# +++ b/pts-core/objects/client/pts_external_dependencies.php
-# @@ -243,7 +244,8 @@ class pts_external_dependencies
-#                                         'QUIT' => 'Quit the current Phoronix Test Suite process.'
-#                                         );
-#  
-# -                               $selected_action = pts_user_io::prompt_text_menu('Missing dependencies action', $actions, false, true);
-# +                               //$selected_action = pts_user_io::prompt_text_menu('Missing dependencies action', $actions, false, true);
-# +                               $selected_action = 'QUIT';
-#  
-#                                 switch($selected_action)
-#                                 {
+LOG_DIR="install-logs""$@"
+mkdir $LOG_DIR || true
+mkdir $LOG_DIR/pts || true
+mkdir $LOG_DIR/local || true
 
-# /usr/bin/cc is a symbolink link to ./cc
-# /usr/bin/c++ is a symbolink link to ./c++
-
-export CC=/usr/bin/cc
-export CXX=/usr/bin/c++
-export LD=/usr/bin/ld
-
-CONCAT_FLAGS=`echo "$@" | tr -d ' '`
-LOG_FILE="install-log"$CONCAT_FLAGS".txt"
+PTS="/usr/bin/time php /home/lucianp/git/phoronix-test-suite/pts-core/phoronix-test-suite.php debug-install"
 
 echo performance | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 
-/usr/bin/time sh -c 'cat rand-profiles.txt | xargs -n1 /usr/bin/time php /home/lucianp/git/phoronix-test-suite/pts-core/phoronix-test-suite.php debug-install' 2>&1 | tee $LOG_FILE
+PTS_COMMAND="(trap 'kill 0' INT; "
+# Omit the profiles in LLVM Build Speed as they need special treatment
+for p in $(grep -v '#' categorized-profiles.txt | tail -n +3)
+do
+	PTS_COMMAND=$PTS_COMMAND"\$PTS $p 2>&1 | tee \$LOG_DIR/$p.log & "
+done
+PTS_COMMAND=$PTS_COMMAND"wait)"
+
+eval $PTS_COMMAND
+
+# Process the profiles in LLVM Build Speed
+COMPILED_CLANG_PATH=/ssd/llvm-project-llvmorg-15.0.7
+(cd $COMPILED_CLANG_PATH && ./build.sh)
+
+PTS_COMMAND="(trap 'kill 0' INT; "
+for p in $(grep -v '#' categorized-profiles.txt | head -n2)
+do
+	PTS_COMMAND=$PTS_COMMAND"PATH='$COMPILED_CLANG_PATH/build-clang/bin:$COMPILED_CLANG_PATH/build-llvm/bin:$PATH' CC=$COMPILED_CLANG_PATH/build-clang/bin/clang CXX=$COMPILED_CLANG_PATH/build-clang/bin/clang++ \$PTS $p 2>&1 | tee \$LOG_DIR/$p.log & "
+done
+PTS_COMMAND=$PTS_COMMAND"wait)"
+eval $PTS_COMMAND

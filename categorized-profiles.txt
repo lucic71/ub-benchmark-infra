@@ -52,3 +52,5 @@ pts/ngspice
 # Webserver
 pts/apache
 pts/nginx
+# Theorem Prover
+local/z3
