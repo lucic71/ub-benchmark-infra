@@ -22,7 +22,7 @@
     <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
-    <Identifier>fno-strict-aliasing</Identifier>
+    <Identifier>fno-strict-fno-strict-aliasing</Identifier>
     <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
     <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
@@ -32,7 +32,7 @@
     <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
-    <Identifier>fstrict-enums</Identifier>
+    <Identifier>fstrict-fstict-enums</Identifier>
     <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
     <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
@@ -68,13 +68,13 @@
         <JSON>{"test-run-times":"30.74:30.12:30.12"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fno-strict-aliasing</Identifier>
+        <Identifier>fno-strict-fno-strict-aliasing</Identifier>
         <Value>1176</Value>
         <RawString>1177:1175:1175</RawString>
         <JSON>{"test-run-times":"30.75:30.12:30.12"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
+        <Identifier>fstrict-fstict-enums</Identifier>
         <Value>1181</Value>
         <RawString>1180:1181:1181</RawString>
         <JSON>{"test-run-times":"30.75:30.12:30.12"}</JSON>
@@ -104,13 +104,13 @@
         <JSON>{"test-run-times":"60.10:60.10:60.10"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fno-strict-aliasing</Identifier>
+        <Identifier>fno-strict-fno-strict-aliasing</Identifier>
         <Value>42332</Value>
         <RawString>42222:42390:42383</RawString>
         <JSON>{"test-run-times":"60.10:60.10:60.10"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
+        <Identifier>fstrict-fstict-enums</Identifier>
         <Value>42502</Value>
         <RawString>42507:42513:42486</RawString>
         <JSON>{"test-run-times":"60.10:60.10:60.10"}</JSON>

@@ -22,7 +22,7 @@
     <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
-    <Identifier>fno-strict-aliasing</Identifier>
+    <Identifier>fno-strict-fno-strict-aliasing</Identifier>
     <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
     <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
@@ -32,7 +32,7 @@
     <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
-    <Identifier>fstrict-enums</Identifier>
+    <Identifier>fstrict-fstict-enums</Identifier>
     <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
     <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
@@ -68,13 +68,13 @@
         <JSON>{"test-run-times":"164.36:164.61:164.28"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fno-strict-aliasing</Identifier>
+        <Identifier>fno-strict-fno-strict-aliasing</Identifier>
         <Value>0.12</Value>
         <RawString>0.12:0.12:0.12</RawString>
         <JSON>{"test-run-times":"164.40:164.98:164.94"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
+        <Identifier>fstrict-fstict-enums</Identifier>
         <Value>0.12</Value>
         <RawString>0.12:0.12:0.12</RawString>
         <JSON>{"test-run-times":"165.98:164.80:166.24"}</JSON>
@@ -104,13 +104,13 @@
         <JSON>{"test-run-times":"182.51:182.88:182.90"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fno-strict-aliasing</Identifier>
+        <Identifier>fno-strict-fno-strict-aliasing</Identifier>
         <Value>3.92</Value>
         <RawString>3.98:3.91:3.86</RawString>
         <JSON>{"test-run-times":"182.55:184.42:186.28"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
+        <Identifier>fstrict-fstict-enums</Identifier>
         <Value>3.91</Value>
         <RawString>3.96:3.92:3.84</RawString>
         <JSON>{"test-run-times":"182.48:184.24:187.65"}</JSON>
@@ -140,13 +140,13 @@
         <JSON>{"test-run-times":"21.13:20.96:20.91"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fno-strict-aliasing</Identifier>
+        <Identifier>fno-strict-fno-strict-aliasing</Identifier>
         <Value>32.22</Value>
         <RawString>33.12:31.6:31.74:32.42</RawString>
         <JSON>{"test-run-times":"20.50:21.45:21.33:20.80"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
+        <Identifier>fstrict-fstict-enums</Identifier>
         <Value>32.1</Value>
         <RawString>32.1:32.1:32.2</RawString>
         <JSON>{"test-run-times":"21.13:21.17:20.95"}</JSON>
@@ -176,13 +176,13 @@
         <JSON>{"test-run-times":"103.36:103.53:103.23"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fno-strict-aliasing</Identifier>
+        <Identifier>fno-strict-fno-strict-aliasing</Identifier>
         <Value>7.36</Value>
         <RawString>7.39:7.44:7.26</RawString>
         <JSON>{"test-run-times":"104.32:103.52:104.64"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
+        <Identifier>fstrict-fstict-enums</Identifier>
         <Value>7.20</Value>
         <RawString>6.9:7.36:7.3:7.33:7.15:7.15</RawString>
         <JSON>{"test-run-times":"110.09:103.76:104.79:105.39:106.94:107.12"}</JSON>
@@ -212,13 +212,13 @@
         <JSON>{"test-run-times":"23.78:23.26:23.78"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fno-strict-aliasing</Identifier>
+        <Identifier>fno-strict-fno-strict-aliasing</Identifier>
         <Value>28.13</Value>
         <RawString>28.2:28.14:28.04</RawString>
         <JSON>{"test-run-times":"23.58:23.78:23.62"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
+        <Identifier>fstrict-fstict-enums</Identifier>
         <Value>28.32</Value>
         <RawString>28.05:28.2:28.72</RawString>
         <JSON>{"test-run-times":"23.89:23.74:23.23"}</JSON>
@@ -248,13 +248,13 @@
         <JSON>{"test-run-times":"20.05:20.02:19.83"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fno-strict-aliasing</Identifier>
+        <Identifier>fno-strict-fno-strict-aliasing</Identifier>
         <Value>34.19</Value>
         <RawString>34.02:34.55:34.01</RawString>
         <JSON>{"test-run-times":"19.98:19.79:20.04"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
+        <Identifier>fstrict-fstict-enums</Identifier>
         <Value>34.29</Value>
         <RawString>35.22:34.09:33.07:34.46:34.62</RawString>
         <JSON>{"test-run-times":"19.31:20.05:20.70:19.87:19.70"}</JSON>
@@ -284,13 +284,13 @@
         <JSON>{"test-run-times":"20.14:20.20:20.08"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fno-strict-aliasing</Identifier>
+        <Identifier>fno-strict-fno-strict-aliasing</Identifier>
         <Value>33.96</Value>
         <RawString>33.66:34.05:34.18</RawString>
         <JSON>{"test-run-times":"20.45:20.00:19.80"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
+        <Identifier>fstrict-fstict-enums</Identifier>
         <Value>34.38</Value>
         <RawString>33.84:34.39:34.9</RawString>
         <JSON>{"test-run-times":"20.10:19.87:19.54"}</JSON>
@@ -320,13 +320,13 @@
         <JSON>{"test-run-times":"57.24:57.65:57.71"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fno-strict-aliasing</Identifier>
+        <Identifier>fno-strict-fno-strict-aliasing</Identifier>
         <Value>0.35</Value>
         <RawString>0.35:0.35:0.35</RawString>
         <JSON>{"test-run-times":"56.92:57.03:57.35"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
+        <Identifier>fstrict-fstict-enums</Identifier>
         <Value>0.35</Value>
         <RawString>0.35:0.35:0.35</RawString>
         <JSON>{"test-run-times":"57.30:57.50:57.52"}</JSON>
@@ -356,13 +356,13 @@
         <JSON>{"test-run-times":"89.21:89.14:88.76"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fno-strict-aliasing</Identifier>
+        <Identifier>fno-strict-fno-strict-aliasing</Identifier>
         <Value>7.90</Value>
         <RawString>7.87:7.86:7.96</RawString>
         <JSON>{"test-run-times":"89.13:89.09:88.48"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
+        <Identifier>fstrict-fstict-enums</Identifier>
         <Value>7.93</Value>
         <RawString>7.93:7.96:7.89</RawString>
         <JSON>{"test-run-times":"88.47:88.26:89.21"}</JSON>
@@ -392,13 +392,13 @@
         <JSON>{"test-run-times":"9.92:9.94:9.94"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fno-strict-aliasing</Identifier>
+        <Identifier>fno-strict-fno-strict-aliasing</Identifier>
         <Value>63.82</Value>
         <RawString>64.2:64.36:62.9</RawString>
         <JSON>{"test-run-times":"9.97:9.94:10.20"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
+        <Identifier>fstrict-fstict-enums</Identifier>
         <Value>65.32</Value>
         <RawString>65.97:65.59:64.39</RawString>
         <JSON>{"test-run-times":"9.69:9.78:9.93"}</JSON>
@@ -428,13 +428,13 @@
         <JSON>{"test-run-times":"38.59:38.99:38.65"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fno-strict-aliasing</Identifier>
+        <Identifier>fno-strict-fno-strict-aliasing</Identifier>
         <Value>21.64</Value>
         <RawString>21.8:21.58:21.54</RawString>
         <JSON>{"test-run-times":"38.38:38.75:38.78"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
+        <Identifier>fstrict-fstict-enums</Identifier>
         <Value>21.85</Value>
         <RawString>21.81:21.78:21.95</RawString>
         <JSON>{"test-run-times":"38.62:38.77:38.60"}</JSON>
@@ -464,13 +464,13 @@
         <JSON>{"test-run-times":"10.50:10.72:10.24:10.28"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fno-strict-aliasing</Identifier>
+        <Identifier>fno-strict-fno-strict-aliasing</Identifier>
         <Value>62.15</Value>
         <RawString>60.99:63.04:62.42</RawString>
         <JSON>{"test-run-times":"10.49:10.20:10.26"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
+        <Identifier>fstrict-fstict-enums</Identifier>
         <Value>62.05</Value>
         <RawString>61.67:62.59:61.9</RawString>
         <JSON>{"test-run-times":"10.41:10.27:10.28"}</JSON>
@@ -500,13 +500,13 @@
         <JSON>{"test-run-times":"9.38:9.17:9.32"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fno-strict-aliasing</Identifier>
+        <Identifier>fno-strict-fno-strict-aliasing</Identifier>
         <Value>70.75</Value>
         <RawString>72.65:69.61:70</RawString>
         <JSON>{"test-run-times":"8.89:9.26:9.19"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
+        <Identifier>fstrict-fstict-enums</Identifier>
         <Value>69.76</Value>
         <RawString>68.26:70.64:72.05:66.5:68.31:72.84:67.08:68.74:70.62:69.41:71.12:71.94:68.99:71.1:68.84</RawString>
         <JSON>{"test-run-times":"9.41:9.15:8.92:9.67:9.42:8.87:9.63:9.38:9.14:9.27:9.09:8.93:9.33:9.02:9.37"}</JSON>
@@ -536,13 +536,13 @@
         <JSON>{"test-run-times":"9.62:8.78:9.16:9.19:9.13:9.08:9.31:9.25:9.56:9.17:8.85:9.32:9.48:9.23:9.48"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fno-strict-aliasing</Identifier>
+        <Identifier>fno-strict-fno-strict-aliasing</Identifier>
         <Value>69.90</Value>
         <RawString>69:70.14:70.57</RawString>
         <JSON>{"test-run-times":"9.28:9.16:9.17"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
+        <Identifier>fstrict-fstict-enums</Identifier>
         <Value>70.55</Value>
         <RawString>72.58:71.18:66.37:68.13:70.34:70.95:71.43:71.05:71.44:71.46:69.44:73.46:70.28:69.56:70.64</RawString>
         <JSON>{"test-run-times":"8.91:9.07:9.69:9.48:9.18:9.12:9.02:9.11:9.05:9.01:9.29:8.81:9.17:9.24:9.11"}</JSON>

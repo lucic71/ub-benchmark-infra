@@ -3,7 +3,7 @@
 <PhoronixTestSuite>
   <Generated>
     <Title>fftw</Title>
-    <LastModified>2023-03-11 21:38:07</LastModified>
+    <LastModified>2023-03-14 08:58:31</LastModified>
     <TestClient>Phoronix Test Suite v10.8.4</TestClient>
     <Description>fftw-base</Description>
     <Notes></Notes>
@@ -14,42 +14,42 @@
   <System>
     <Identifier>base</Identifier>
     <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
-    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-07 13:29:15</TimeStamp>
+    <TimeStamp>2023-03-13 18:31:49</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
-    <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+    <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
     <Identifier>fno-strict-aliasing</Identifier>
     <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
-    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-09 19:08:52</TimeStamp>
+    <TimeStamp>2023-03-14 00:21:59</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
-    <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+    <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
-    <Identifier>fstrict-enums</Identifier>
+    <Identifier>fstict-enums</Identifier>
     <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
-    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-10 21:14:27</TimeStamp>
+    <TimeStamp>2023-03-14 03:14:14</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
-    <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+    <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
     <Identifier>fwrapv</Identifier>
     <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
-    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-08 15:54:27</TimeStamp>
+    <TimeStamp>2023-03-13 21:26:51</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
-    <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+    <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <Result>
     <Identifier>pts/fftw-1.2.0</Identifier>
@@ -63,27 +63,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.58:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>6876.4</Value>
+        <RawString>6900.8:6921.8:6806.7</RawString>
+        <JSON>{"test-run-times":"3.70:3.08:3.14"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.59:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>6850.4</Value>
+        <RawString>6879.1:6818.7:6853.4</RawString>
+        <JSON>{"test-run-times":"3.72:3.13:3.11"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.60:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>6868.5</Value>
+        <RawString>6936.9:6836.5:6832</RawString>
+        <JSON>{"test-run-times":"3.69:3.11:3.12"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.61:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>6929.1</Value>
+        <RawString>6941.9:6927.7:6917.6</RawString>
+        <JSON>{"test-run-times":"3.68:3.07:3.08"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -99,27 +99,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>6977.8</Value>
+        <RawString>6978.5:6959.2:6995.6</RawString>
+        <JSON>{"test-run-times":"3.70:3.71:3.69"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>6971.3</Value>
+        <RawString>6967.7:6963.4:6982.7</RawString>
+        <JSON>{"test-run-times":"3.71:3.70:3.69"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>6983.8</Value>
+        <RawString>7001.4:6958.8:6991.3</RawString>
+        <JSON>{"test-run-times":"3.69:3.70:3.68"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>6997.4</Value>
+        <RawString>7004.9:6982:7005.3</RawString>
+        <JSON>{"test-run-times":"3.68:3.69:3.68"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -135,27 +135,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>7214.8</Value>
+        <RawString>7214.6:7219.6:7210.2</RawString>
+        <JSON>{"test-run-times":"3.01:3.01:3.01"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>7190.3</Value>
+        <RawString>7166.8:7190.4:7213.6</RawString>
+        <JSON>{"test-run-times":"3.02:3.02:3.00"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>7203.3</Value>
+        <RawString>7152.1:7225.1:7232.6</RawString>
+        <JSON>{"test-run-times":"3.02:3.00:2.99"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>7156.6</Value>
+        <RawString>7229.1:7029.9:7210.7</RawString>
+        <JSON>{"test-run-times":"2.99:3.07:3.00"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -171,27 +171,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>6255.2</Value>
+        <RawString>6247.7:6253.3:6264.5</RawString>
+        <JSON>{"test-run-times":"2.20:2.20:2.19"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>6200.7</Value>
+        <RawString>6245.9:6192.4:6163.9</RawString>
+        <JSON>{"test-run-times":"2.20:2.21:2.22"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>6258.7</Value>
+        <RawString>6262.6:6251.4:6262</RawString>
+        <JSON>{"test-run-times":"2.19:2.19:2.19"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>6257.9</Value>
+        <RawString>6249:6275.1:6249.6</RawString>
+        <JSON>{"test-run-times":"2.19:2.18:2.19"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -207,27 +207,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>6183.2</Value>
+        <RawString>6160.8:6202.5:6186.3</RawString>
+        <JSON>{"test-run-times":"2.57:2.55:2.56"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>6151.0</Value>
+        <RawString>6151:6160.8:6141.3</RawString>
+        <JSON>{"test-run-times":"2.57:2.56:2.57"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>6177.3</Value>
+        <RawString>6184.2:6188.4:6159.3</RawString>
+        <JSON>{"test-run-times":"2.55:2.55:2.56"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>6191.6</Value>
+        <RawString>6165:6192:6217.7</RawString>
+        <JSON>{"test-run-times":"2.56:2.55:2.54"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -243,27 +243,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>6058.7</Value>
+        <RawString>5984.2:6093.3:6098.6</RawString>
+        <JSON>{"test-run-times":"3.15:3.09:3.09"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>6097.7</Value>
+        <RawString>6084:6108.8:6100.4</RawString>
+        <JSON>{"test-run-times":"3.10:3.09:3.09"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>6095.4</Value>
+        <RawString>6084.9:6111.9:6089.3</RawString>
+        <JSON>{"test-run-times":"3.10:3.08:3.10"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>6088.2</Value>
+        <RawString>6170.4:6023.3:6070.8</RawString>
+        <JSON>{"test-run-times":"3.06:3.12:3.10"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -279,27 +279,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>6071.3</Value>
+        <RawString>6046.4:6113.4:6054.1</RawString>
+        <JSON>{"test-run-times":"3.73:3.70:3.72"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>6064.2</Value>
+        <RawString>6089.3:6041.3:6061.9</RawString>
+        <JSON>{"test-run-times":"3.71:3.74:3.73"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>6085.1</Value>
+        <RawString>6109.8:6038.6:6107</RawString>
+        <JSON>{"test-run-times":"3.70:3.73:3.70"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>6055.0</Value>
+        <RawString>6109.4:5999.5:6056.1</RawString>
+        <JSON>{"test-run-times":"3.69:3.75:3.72"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -315,27 +315,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>5504.0</Value>
+        <RawString>5497.3:5504.3:5510.5</RawString>
+        <JSON>{"test-run-times":"3.16:3.16:3.16"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>5478.5</Value>
+        <RawString>5496.9:5475.2:5463.4</RawString>
+        <JSON>{"test-run-times":"3.16:3.17:3.17"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>5510.5</Value>
+        <RawString>5513:5477.6:5540.9</RawString>
+        <JSON>{"test-run-times":"3.15:3.16:3.14"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>5484.6</Value>
+        <RawString>5500.6:5492:5461.3</RawString>
+        <JSON>{"test-run-times":"3.15:3.16:3.17"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -351,27 +351,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>5221.9</Value>
+        <RawString>5242.9:5228.5:5194.2</RawString>
+        <JSON>{"test-run-times":"4.29:4.30:4.35"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>5238.5</Value>
+        <RawString>5212.6:5255.4:5247.5</RawString>
+        <JSON>{"test-run-times":"4.30:4.28:4.29"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>5251.1</Value>
+        <RawString>5263.3:5246.2:5243.9</RawString>
+        <JSON>{"test-run-times":"4.26:4.28:4.28"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>5239.7</Value>
+        <RawString>5232.4:5248.8:5238</RawString>
+        <JSON>{"test-run-times":"4.28:4.27:4.28"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -387,27 +387,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>5391.4</Value>
+        <RawString>5402.9:5393.3:5377.9</RawString>
+        <JSON>{"test-run-times":"5.47:5.47:5.49"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>5356.0</Value>
+        <RawString>5340.5:5376.1:5351.4</RawString>
+        <JSON>{"test-run-times":"5.51:5.48:5.50"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>5385.9</Value>
+        <RawString>5397.6:5390.8:5369.4</RawString>
+        <JSON>{"test-run-times":"5.46:5.46:5.47"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>5364.1</Value>
+        <RawString>5386.5:5339.6:5366.3</RawString>
+        <JSON>{"test-run-times":"5.47:5.49:5.47"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -423,27 +423,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>6053.3</Value>
+        <RawString>6026:6067.4:6066.4</RawString>
+        <JSON>{"test-run-times":"4.45:4.44:4.43"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>6036.2</Value>
+        <RawString>6061.1:6020.8:6026.6</RawString>
+        <JSON>{"test-run-times":"4.43:4.45:4.45"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>6061.3</Value>
+        <RawString>6055.9:6055.5:6072.4</RawString>
+        <JSON>{"test-run-times":"4.42:4.43:4.42"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>6059.4</Value>
+        <RawString>6064.6:6073.1:6040.5</RawString>
+        <JSON>{"test-run-times":"4.42:4.41:4.44"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -459,27 +459,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>5685.3</Value>
+        <RawString>5696.5:5684.2:5675.2</RawString>
+        <JSON>{"test-run-times":"3.62:3.61:3.61"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>5669.9</Value>
+        <RawString>5679.7:5644.1:5685.9</RawString>
+        <JSON>{"test-run-times":"3.61:3.62:3.60"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>5666.9</Value>
+        <RawString>5654.1:5694.8:5651.9</RawString>
+        <JSON>{"test-run-times":"3.61:3.60:3.61"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>5658.0</Value>
+        <RawString>5686.4:5654.6:5633.1</RawString>
+        <JSON>{"test-run-times":"3.60:3.61:3.62"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -495,27 +495,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>5516.6</Value>
+        <RawString>5485.1:5542.6:5522.2</RawString>
+        <JSON>{"test-run-times":"4.96:4.92:4.95"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>5537.6</Value>
+        <RawString>5543.6:5546.6:5522.7</RawString>
+        <JSON>{"test-run-times":"4.92:4.92:4.94"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>5514.8</Value>
+        <RawString>5559.8:5485.1:5499.5</RawString>
+        <JSON>{"test-run-times":"4.91:4.94:4.93"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>5520.2</Value>
+        <RawString>5548.5:5541.7:5470.4</RawString>
+        <JSON>{"test-run-times":"4.90:4.92:4.94"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -531,27 +531,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>5444.1</Value>
+        <RawString>5451.4:5433.9:5446.9</RawString>
+        <JSON>{"test-run-times":"13.36:13.34:13.33"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>5433.8</Value>
+        <RawString>5418.4:5445.5:5437.5</RawString>
+        <JSON>{"test-run-times":"13.38:13.36:13.38"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>5462.9</Value>
+        <RawString>5463:5462.2:5463.6</RawString>
+        <JSON>{"test-run-times":"13.30:13.31:13.32"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>5435.1</Value>
+        <RawString>5449.7:5439:5416.5</RawString>
+        <JSON>{"test-run-times":"13.29:13.31:13.33"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -567,27 +567,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>4215.6</Value>
+        <RawString>4143.6:4300.4:4202.9</RawString>
+        <JSON>{"test-run-times":"91.94:91.55:91.62"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>4246.8</Value>
+        <RawString>4213.9:4229.4:4297</RawString>
+        <JSON>{"test-run-times":"91.97:91.71:90.92"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>4209.9</Value>
+        <RawString>4220.4:4210.8:4198.4</RawString>
+        <JSON>{"test-run-times":"91.70:91.37:91.93"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>4218.3</Value>
+        <RawString>4158.6:4257.9:4238.4</RawString>
+        <JSON>{"test-run-times":"91.40:91.31:91.90"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -603,27 +603,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>3915.8</Value>
+        <RawString>3893.3:3885.1:3969</RawString>
+        <JSON>{"test-run-times":"285.21:285.48:282.49"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>3899.1</Value>
+        <RawString>3916.8:3890.2:3890.3</RawString>
+        <JSON>{"test-run-times":"283.04:283.48:284.67"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>3941.7</Value>
+        <RawString>3890.5:3975.6:3958.9</RawString>
+        <JSON>{"test-run-times":"284.05:281.65:282.04"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value></Value>
-        <RawString></RawString>
-        <JSON>{"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status. E: .\/fftw: 4: .\/fftw-stock\/tests\/bench: not found"}</JSON>
+        <Value>3916.0</Value>
+        <RawString>3901.6:3963.5:3882.8</RawString>
+        <JSON>{"test-run-times":"283.00:278.44:284.18"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -639,27 +639,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>9867.7</Value>
-        <RawString>8287.2:10192:10221:10167:10169:9808.9:10165:9165.1:9956.1:9600.6:10175:10184:10189</RawString>
-        <JSON>{"test-run-times":"2.60:2.12:2.11:2.13:2.13:2.20:2.12:2.35:2.19:2.26:2.12:2.13:2.12"}</JSON>
+        <Value>9922.7</Value>
+        <RawString>10201:9489.4:10166:10168:10031:9657.2:9981.7:9269.6:9958.9:9721.6:10058:9657.2:10141:10170:10170</RawString>
+        <JSON>{"test-run-times":"2.11:2.30:2.14:2.12:2.14:2.23:2.15:2.32:2.16:2.21:2.14:2.23:2.13:2.12:2.12"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>10044.6</Value>
-        <RawString>9870.8:10128:10135</RawString>
-        <JSON>{"test-run-times":"2.18:2.13:2.13"}</JSON>
+        <Value>9948.6</Value>
+        <RawString>9856:9844.9:10145</RawString>
+        <JSON>{"test-run-times":"2.19:2.19:2.12"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value>10042.8</Value>
-        <RawString>10042:9905.3:10181</RawString>
-        <JSON>{"test-run-times":"2.14:2.17:2.11"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>9932.4</Value>
+        <RawString>9565.6:10053:10011:10195:9837.5</RawString>
+        <JSON>{"test-run-times":"2.25:2.14:2.15:2.11:2.18"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>9910.8</Value>
-        <RawString>9864.3:9417.8:10071:10169:9840.2:9962.7:10068:9893.2</RawString>
-        <JSON>{"test-run-times":"2.22:2.30:2.15:2.14:2.21:2.18:2.16:2.19"}</JSON>
+        <Value>9596.3</Value>
+        <RawString>10166:9368.1:9921.2:9767.8:9879.2:9994.1:9804.4:7980:10087:8213.2:10104:9870.8</RawString>
+        <JSON>{"test-run-times":"2.12:2.29:2.18:2.20:2.18:2.15:2.19:2.68:2.13:2.61:2.13:2.18"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -675,27 +675,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>14352</Value>
-        <RawString>13302:14076:14219:14691:14294:14043:14416:14680:14563:14646:14595:14577:13958:14606:14608</RawString>
-        <JSON>{"test-run-times":"3.92:3.69:3.66:3.55:3.64:3.70:3.61:3.56:3.57:3.55:3.56:3.57:3.72:3.57:3.56"}</JSON>
+        <Value>14532</Value>
+        <RawString>14505:14591:14499</RawString>
+        <JSON>{"test-run-times":"3.59:3.56:3.58"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>14309</Value>
-        <RawString>14466:14526:13935</RawString>
-        <JSON>{"test-run-times":"3.60:3.59:3.74"}</JSON>
+        <Value>14487</Value>
+        <RawString>14333:14501:14628</RawString>
+        <JSON>{"test-run-times":"3.63:3.59:3.56"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value>14437</Value>
-        <RawString>14408:14431:14471</RawString>
-        <JSON>{"test-run-times":"3.60:3.60:3.59"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>14349</Value>
+        <RawString>14553:14664:13630:14515:14730:14056:13866:14354:14489:14362:14624</RawString>
+        <JSON>{"test-run-times":"3.58:3.55:3.81:3.58:3.53:3.69:3.74:3.61:3.59:3.61:3.55"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>14504</Value>
-        <RawString>14433:14397:14682</RawString>
-        <JSON>{"test-run-times":"3.65:3.62:3.55"}</JSON>
+        <Value>14403</Value>
+        <RawString>14618:14583:13917:14007:14757:14537</RawString>
+        <JSON>{"test-run-times":"3.55:3.56:3.73:3.72:3.52:3.57"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -711,27 +711,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>22750</Value>
-        <RawString>23042:22942:22267</RawString>
-        <JSON>{"test-run-times":"3.77:3.78:3.91"}</JSON>
+        <Value>22670</Value>
+        <RawString>22542:22966:22503</RawString>
+        <JSON>{"test-run-times":"3.84:3.78:3.85"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>22536</Value>
-        <RawString>22496:22365:22746</RawString>
-        <JSON>{"test-run-times":"3.87:3.88:3.82"}</JSON>
+        <Value>22930</Value>
+        <RawString>23085:22674:23030</RawString>
+        <JSON>{"test-run-times":"3.76:3.82:3.76"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value>22477</Value>
-        <RawString>22444:22227:22760</RawString>
-        <JSON>{"test-run-times":"3.85:3.89:3.80"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>22443</Value>
+        <RawString>22629:22468:22231</RawString>
+        <JSON>{"test-run-times":"3.83:3.85:3.89"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>22673</Value>
-        <RawString>22857:22333:22829</RawString>
-        <JSON>{"test-run-times":"3.80:3.88:3.82"}</JSON>
+        <Value>22693</Value>
+        <RawString>22562:23104:22414</RawString>
+        <JSON>{"test-run-times":"3.83:3.74:3.86"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -747,27 +747,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>21963</Value>
-        <RawString>22066:22015:21809</RawString>
-        <JSON>{"test-run-times":"2.53:2.53:2.55"}</JSON>
+        <Value>22216</Value>
+        <RawString>22194:22530:21925</RawString>
+        <JSON>{"test-run-times":"2.50:2.46:2.52"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>22122</Value>
-        <RawString>21990:22112:22263</RawString>
-        <JSON>{"test-run-times":"2.53:2.52:2.50"}</JSON>
+        <Value>22307</Value>
+        <RawString>22380:22239:22302</RawString>
+        <JSON>{"test-run-times":"2.48:2.49:2.51"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value>22008</Value>
-        <RawString>22212:21646:22167</RawString>
-        <JSON>{"test-run-times":"2.50:2.55:2.50"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>22262</Value>
+        <RawString>21962:22629:22196</RawString>
+        <JSON>{"test-run-times":"2.52:2.45:2.49"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>22210</Value>
-        <RawString>22206:22502:21923</RawString>
-        <JSON>{"test-run-times":"2.52:2.48:2.54"}</JSON>
+        <Value>22256</Value>
+        <RawString>21925:22476:22366</RawString>
+        <JSON>{"test-run-times":"2.54:2.47:2.48"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -783,27 +783,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>17957</Value>
-        <RawString>18244:17090:18139:18226:17860:18183</RawString>
-        <JSON>{"test-run-times":"3.47:3.71:3.50:3.48:3.57:3.49"}</JSON>
+        <Value>18038</Value>
+        <RawString>16870:18312:18633:18229:17632:18514:18257:17240:17985:18059:17932:18288:18188:18254:18175</RawString>
+        <JSON>{"test-run-times":"3.74:3.46:3.41:3.48:3.58:3.42:3.47:3.66:3.52:3.50:3.53:3.46:3.49:3.47:3.48"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>18179</Value>
-        <RawString>18076:18163:18299</RawString>
-        <JSON>{"test-run-times":"3.51:3.49:3.47"}</JSON>
+        <Value>18186</Value>
+        <RawString>18426:18303:17829</RawString>
+        <JSON>{"test-run-times":"3.44:3.46:3.54"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value>18476</Value>
-        <RawString>18394:18352:18683</RawString>
-        <JSON>{"test-run-times":"3.44:3.44:3.39"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>17933</Value>
+        <RawString>18252:17990:17556</RawString>
+        <JSON>{"test-run-times":"3.47:3.52:3.61"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>18096</Value>
-        <RawString>17966:18107:18215</RawString>
-        <JSON>{"test-run-times":"3.53:3.51:3.48"}</JSON>
+        <Value>18126</Value>
+        <RawString>18186:18155:18038</RawString>
+        <JSON>{"test-run-times":"3.48:3.49:3.52"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -819,27 +819,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>19240</Value>
-        <RawString>19194:19188:19339</RawString>
-        <JSON>{"test-run-times":"3.99:3.99:3.96"}</JSON>
+        <Value>19784</Value>
+        <RawString>19283:20076:19994</RawString>
+        <JSON>{"test-run-times":"3.98:3.84:3.85"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>18993</Value>
-        <RawString>18771:19383:18824</RawString>
-        <JSON>{"test-run-times":"4.09:3.97:4.07"}</JSON>
+        <Value>19291</Value>
+        <RawString>19187:19287:19400</RawString>
+        <JSON>{"test-run-times":"3.99:3.97:3.95"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value>20022</Value>
-        <RawString>20223:19701:20143</RawString>
-        <JSON>{"test-run-times":"3.81:3.89:3.83"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>19300</Value>
+        <RawString>19250:19412:19239</RawString>
+        <JSON>{"test-run-times":"3.98:3.94:3.97"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>19348</Value>
-        <RawString>19162:19499:19383</RawString>
-        <JSON>{"test-run-times":"4.00:3.93:3.96"}</JSON>
+        <Value>19431</Value>
+        <RawString>19159:19362:19772</RawString>
+        <JSON>{"test-run-times":"4.02:3.96:3.89"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -855,27 +855,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>21452</Value>
-        <RawString>21499:21401:21457</RawString>
-        <JSON>{"test-run-times":"4.42:4.44:4.42"}</JSON>
+        <Value>21780</Value>
+        <RawString>22011:21469:21861</RawString>
+        <JSON>{"test-run-times":"4.35:4.43:4.36"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>21324</Value>
-        <RawString>21587:21199:21187</RawString>
-        <JSON>{"test-run-times":"4.42:4.49:4.49"}</JSON>
+        <Value>21274</Value>
+        <RawString>20851:21358:21614</RawString>
+        <JSON>{"test-run-times":"4.53:4.44:4.40"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value>21435</Value>
-        <RawString>21398:21502:21404</RawString>
-        <JSON>{"test-run-times":"4.43:4.41:4.43"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>21443</Value>
+        <RawString>21536:21414:21378</RawString>
+        <JSON>{"test-run-times":"4.40:4.43:4.43"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>20974</Value>
-        <RawString>21427:21370:20417:20680</RawString>
-        <JSON>{"test-run-times":"4.43:4.45:4.62:4.57"}</JSON>
+        <Value>21447</Value>
+        <RawString>21484:21517:21340</RawString>
+        <JSON>{"test-run-times":"4.43:4.42:4.45"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -891,27 +891,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>17948</Value>
-        <RawString>17807:18083:17954</RawString>
-        <JSON>{"test-run-times":"3.89:3.85:3.87"}</JSON>
+        <Value>17922</Value>
+        <RawString>18064:17897:17804</RawString>
+        <JSON>{"test-run-times":"3.85:3.88:3.93"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>17576</Value>
-        <RawString>17534:17704:17489</RawString>
-        <JSON>{"test-run-times":"3.95:3.93:3.97"}</JSON>
+        <Value>17918</Value>
+        <RawString>18056:18013:17685</RawString>
+        <JSON>{"test-run-times":"3.85:3.86:3.91"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value>17927</Value>
-        <RawString>17862:17942:17977</RawString>
-        <JSON>{"test-run-times":"3.88:3.86:3.85"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>17904</Value>
+        <RawString>17819:17877:18017</RawString>
+        <JSON>{"test-run-times":"3.88:3.88:3.85"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>17834</Value>
-        <RawString>17867:17915:17720</RawString>
-        <JSON>{"test-run-times":"3.89:3.88:3.91"}</JSON>
+        <Value>17842</Value>
+        <RawString>17950:17908:17668</RawString>
+        <JSON>{"test-run-times":"3.88:3.88:3.94"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -927,27 +927,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>16162</Value>
-        <RawString>16516:15857:16112</RawString>
-        <JSON>{"test-run-times":"3.63:3.72:3.68"}</JSON>
+        <Value>16216</Value>
+        <RawString>16095:16308:16244</RawString>
+        <JSON>{"test-run-times":"3.68:3.65:3.66"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>15989</Value>
-        <RawString>15869:15940:16158</RawString>
-        <JSON>{"test-run-times":"3.72:3.72:3.69"}</JSON>
+        <Value>16210</Value>
+        <RawString>16374:16292:15963</RawString>
+        <JSON>{"test-run-times":"3.64:3.65:3.69"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value>16295</Value>
-        <RawString>16557:16179:16149</RawString>
-        <JSON>{"test-run-times":"3.60:3.66:3.65"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>16203</Value>
+        <RawString>16049:16185:16376</RawString>
+        <JSON>{"test-run-times":"3.67:3.66:3.63"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>16246</Value>
-        <RawString>16347:16163:16229</RawString>
-        <JSON>{"test-run-times":"3.67:3.69:3.68"}</JSON>
+        <Value>16371</Value>
+        <RawString>16568:16165:16381</RawString>
+        <JSON>{"test-run-times":"3.63:3.67:3.65"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -963,27 +963,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>16768</Value>
-        <RawString>16785:16810:16710</RawString>
-        <JSON>{"test-run-times":"5.20:5.19:5.20"}</JSON>
+        <Value>16635</Value>
+        <RawString>16818:16672:16414</RawString>
+        <JSON>{"test-run-times":"5.18:5.21:5.23"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>16478</Value>
-        <RawString>16551:16474:16410</RawString>
-        <JSON>{"test-run-times":"5.24:5.25:5.26"}</JSON>
+        <Value>16791</Value>
+        <RawString>16739:16881:16753</RawString>
+        <JSON>{"test-run-times":"5.19:5.17:5.18"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value>16685</Value>
-        <RawString>16879:16697:16480</RawString>
-        <JSON>{"test-run-times":"5.15:5.18:5.22"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>16755</Value>
+        <RawString>16860:16650:16756</RawString>
+        <JSON>{"test-run-times":"5.16:5.18:5.17"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>16703</Value>
-        <RawString>16597:16867:16644</RawString>
-        <JSON>{"test-run-times":"5.23:5.19:5.22"}</JSON>
+        <Value>16655</Value>
+        <RawString>16786:16678:16501</RawString>
+        <JSON>{"test-run-times":"5.20:5.21:5.23"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -999,27 +999,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>22224</Value>
-        <RawString>22357:22131:22184</RawString>
-        <JSON>{"test-run-times":"5.19:5.22:5.21"}</JSON>
+        <Value>22424</Value>
+        <RawString>22533:22373:22367</RawString>
+        <JSON>{"test-run-times":"5.16:5.18:5.19"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>22172</Value>
-        <RawString>22056:22177:22284</RawString>
-        <JSON>{"test-run-times":"5.25:5.22:5.22"}</JSON>
+        <Value>22180</Value>
+        <RawString>22429:22027:22083</RawString>
+        <JSON>{"test-run-times":"5.17:5.24:5.24"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value>22422</Value>
-        <RawString>22625:22155:22486</RawString>
-        <JSON>{"test-run-times":"5.15:5.21:5.14"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>22136</Value>
+        <RawString>22116:21972:22320</RawString>
+        <JSON>{"test-run-times":"5.23:5.24:5.19"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>22469</Value>
-        <RawString>22481:22445:22480</RawString>
-        <JSON>{"test-run-times":"5.16:5.18:5.17"}</JSON>
+        <Value>22328</Value>
+        <RawString>22109:22389:22487</RawString>
+        <JSON>{"test-run-times":"5.23:5.19:5.17"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1035,27 +1035,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>21330</Value>
-        <RawString>21483:20920:21586</RawString>
-        <JSON>{"test-run-times":"4.40:4.47:4.40"}</JSON>
+        <Value>21218</Value>
+        <RawString>20843:21467:21344</RawString>
+        <JSON>{"test-run-times":"4.47:4.40:4.42"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>21452</Value>
-        <RawString>21507:21313:21535</RawString>
-        <JSON>{"test-run-times":"4.43:4.45:4.42"}</JSON>
+        <Value>21358</Value>
+        <RawString>21267:21216:21590</RawString>
+        <JSON>{"test-run-times":"4.42:4.42:4.39"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value>21318</Value>
-        <RawString>21358:21509:21087</RawString>
-        <JSON>{"test-run-times":"4.41:4.39:4.43"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>21276</Value>
+        <RawString>21360:21372:21096</RawString>
+        <JSON>{"test-run-times":"4.41:4.40:4.43"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>21485</Value>
-        <RawString>21378:21744:21334</RawString>
-        <JSON>{"test-run-times":"4.44:4.40:4.44"}</JSON>
+        <Value>21495</Value>
+        <RawString>21403:21572:21509</RawString>
+        <JSON>{"test-run-times":"4.42:4.40:4.41"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1071,27 +1071,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>19866</Value>
-        <RawString>19925:19842:19831</RawString>
-        <JSON>{"test-run-times":"6.15:6.16:6.16"}</JSON>
+        <Value>19784</Value>
+        <RawString>19420:20000:19933</RawString>
+        <JSON>{"test-run-times":"6.20:6.12:6.13"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>19568</Value>
-        <RawString>19724:19165:19816</RawString>
-        <JSON>{"test-run-times":"6.20:6.27:6.18"}</JSON>
+        <Value>19580</Value>
+        <RawString>19558:19784:19399</RawString>
+        <JSON>{"test-run-times":"6.16:6.14:6.20"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value>19416</Value>
-        <RawString>19253:19586:19409</RawString>
-        <JSON>{"test-run-times":"6.22:6.17:6.19"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>19638</Value>
+        <RawString>20029:19604:19281</RawString>
+        <JSON>{"test-run-times":"6.10:6.16:6.20"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>19993</Value>
-        <RawString>20033:20080:19866</RawString>
-        <JSON>{"test-run-times":"6.15:6.15:6.18"}</JSON>
+        <Value>19700</Value>
+        <RawString>19525:19696:19880</RawString>
+        <JSON>{"test-run-times":"6.21:6.19:6.16"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1107,27 +1107,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>17033</Value>
-        <RawString>16915:17270:16913</RawString>
-        <JSON>{"test-run-times":"17.52:17.49:17.52"}</JSON>
+        <Value>17076</Value>
+        <RawString>17127:17036:17065</RawString>
+        <JSON>{"test-run-times":"17.61:17.49:17.51"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>16955</Value>
-        <RawString>17114:17063:16689</RawString>
-        <JSON>{"test-run-times":"17.67:17.63:17.70"}</JSON>
+        <Value>17197</Value>
+        <RawString>17107:17094:17391</RawString>
+        <JSON>{"test-run-times":"17.50:17.49:17.45"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value>17036</Value>
-        <RawString>16992:17096:17021</RawString>
-        <JSON>{"test-run-times":"17.49:17.50:17.48"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>17238</Value>
+        <RawString>17428:17108:17179</RawString>
+        <JSON>{"test-run-times":"17.38:17.46:17.46"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>17285</Value>
-        <RawString>17333:17362:17159</RawString>
-        <JSON>{"test-run-times":"17.55:17.56:17.56"}</JSON>
+        <Value>17129</Value>
+        <RawString>17198:17038:17150</RawString>
+        <JSON>{"test-run-times":"17.57:17.63:17.58"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1143,27 +1143,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>11683</Value>
-        <RawString>11643:11699:11707</RawString>
-        <JSON>{"test-run-times":"113.56:113.02:115.44"}</JSON>
+        <Value>11810</Value>
+        <RawString>11863:11748:11819</RawString>
+        <JSON>{"test-run-times":"112.97:114.42:114.41"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>11541</Value>
-        <RawString>11653:11660:11311</RawString>
-        <JSON>{"test-run-times":"113.80:114.33:117.25"}</JSON>
+        <Value>11797</Value>
+        <RawString>11802:11851:11737</RawString>
+        <JSON>{"test-run-times":"114.93:113.03:113.64"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value>11697</Value>
-        <RawString>11703:11662:11725</RawString>
-        <JSON>{"test-run-times":"113.09:115.39:115.70"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>11877</Value>
+        <RawString>11904:11898:11829</RawString>
+        <JSON>{"test-run-times":"114.10:114.62:113.79"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>11738</Value>
-        <RawString>11669:11736:11808</RawString>
-        <JSON>{"test-run-times":"114.47:113.30:114.22"}</JSON>
+        <Value>11808</Value>
+        <RawString>11841:11749:11833</RawString>
+        <JSON>{"test-run-times":"115.39:113.83:115.54"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -1179,27 +1179,27 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>10169</Value>
-        <RawString>10174:10161:10173</RawString>
-        <JSON>{"test-run-times":"310.60:311.61:312.17"}</JSON>
+        <Value>10181</Value>
+        <RawString>10136:10189:10217</RawString>
+        <JSON>{"test-run-times":"311.76:312.87:312.96"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>10099</Value>
-        <RawString>10047:10121:10129</RawString>
-        <JSON>{"test-run-times":"315.08:314.87:314.50"}</JSON>
+        <Value>10242</Value>
+        <RawString>10212:10312:10202</RawString>
+        <JSON>{"test-run-times":"310.68:310.31:313.01"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-enums</Identifier>
-        <Value>10148</Value>
-        <RawString>10112:10132:10201</RawString>
-        <JSON>{"test-run-times":"312.65:314.04:312.89"}</JSON>
+        <Identifier>fstict-enums</Identifier>
+        <Value>10169</Value>
+        <RawString>10182:10138:10187</RawString>
+        <JSON>{"test-run-times":"312.05:311.78:311.85"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>10227</Value>
-        <RawString>10224:10213:10244</RawString>
-        <JSON>{"test-run-times":"312.72:313.91:311.71"}</JSON>
+        <Value>10156</Value>
+        <RawString>10204:10185:10078</RawString>
+        <JSON>{"test-run-times":"313.89:317.12:315.15"}</JSON>
       </Entry>
     </Data>
   </Result>
