@@ -1,5 +1,5 @@
 # LLVM Build Speed
-pts/build-linux-kernel
+pts/build-gcc
 pts/build-llvm
 # HPC
 pts/fftw
