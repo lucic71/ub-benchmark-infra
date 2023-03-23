@@ -1,0 +1,112 @@
+hardware info:
+
+	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L
+
+uvg266 0.4.1
+Video Input: Bosphorus 4K - Video Preset: Slow
+Frames Per Second > Higher Is Better
+base ........................... 2.35 |=========================================
+fconstrain-shift-value ......... 2.33 |=========================================
+fno-delete-null-pointer-checks . 2.34 |=========================================
+fno-strict-aliasing ............ 2.33 |=========================================
+fstrict-enums .................. 2.35 |=========================================
+fwrapv ......................... 2.27 |========================================
+
+
+uvg266 0.4.1
+Video Input: Bosphorus 4K - Video Preset: Medium
+Frames Per Second > Higher Is Better
+base ........................... 2.61 |=========================================
+fconstrain-shift-value ......... 2.59 |=========================================
+fno-delete-null-pointer-checks . 2.60 |=========================================
+fno-strict-aliasing ............ 2.59 |=========================================
+fstrict-enums .................. 2.61 |=========================================
+fwrapv ......................... 2.57 |========================================
+
+
+uvg266 0.4.1
+Video Input: Bosphorus 1080p - Video Preset: Slow
+Frames Per Second > Higher Is Better
+base ........................... 9.13 |=========================================
+fconstrain-shift-value ......... 9.06 |=========================================
+fno-delete-null-pointer-checks . 9.09 |=========================================
+fno-strict-aliasing ............ 8.99 |========================================
+fstrict-enums .................. 9.10 |=========================================
+fwrapv ......................... 8.84 |========================================
+
+
+uvg266 0.4.1
+Video Input: Bosphorus 1080p - Video Preset: Medium
+Frames Per Second > Higher Is Better
+base ........................... 10.18 |========================================
+fconstrain-shift-value ......... 10.10 |========================================
+fno-delete-null-pointer-checks . 10.14 |========================================
+fno-strict-aliasing ............ 10.04 |=======================================
+fstrict-enums .................. 10.15 |========================================
+fwrapv ......................... 10.01 |=======================================
+
+
+uvg266 0.4.1
+Video Input: Bosphorus 4K - Video Preset: Very Fast
+Frames Per Second > Higher Is Better
+base ........................... 7.32 |=========================================
+fconstrain-shift-value ......... 7.25 |=========================================
+fno-delete-null-pointer-checks . 7.26 |=========================================
+fno-strict-aliasing ............ 7.25 |=========================================
+fstrict-enums .................. 7.33 |=========================================
+fwrapv ......................... 7.18 |========================================
+
+
+uvg266 0.4.1
+Video Input: Bosphorus 4K - Video Preset: Super Fast
+Frames Per Second > Higher Is Better
+base ........................... 7.60 |=========================================
+fconstrain-shift-value ......... 7.52 |=========================================
+fno-delete-null-pointer-checks . 7.54 |=========================================
+fno-strict-aliasing ............ 7.53 |=========================================
+fstrict-enums .................. 7.61 |=========================================
+fwrapv ......................... 7.33 |=======================================
+
+
+uvg266 0.4.1
+Video Input: Bosphorus 4K - Video Preset: Ultra Fast
+Frames Per Second > Higher Is Better
+base ........................... 10.53 |========================================
+fconstrain-shift-value ......... 10.35 |=======================================
+fno-delete-null-pointer-checks . 10.41 |========================================
+fno-strict-aliasing ............ 10.40 |=======================================
+fstrict-enums .................. 10.54 |========================================
+fwrapv ......................... 9.99  |======================================
+
+
+uvg266 0.4.1
+Video Input: Bosphorus 1080p - Video Preset: Very Fast
+Frames Per Second > Higher Is Better
+base ........................... 28.45 |========================================
+fconstrain-shift-value ......... 28.15 |========================================
+fno-delete-null-pointer-checks . 28.19 |========================================
+fno-strict-aliasing ............ 28.21 |========================================
+fstrict-enums .................. 28.47 |========================================
+fwrapv ......................... 27.70 |=======================================
+
+
+uvg266 0.4.1
+Video Input: Bosphorus 1080p - Video Preset: Super Fast
+Frames Per Second > Higher Is Better
+base ........................... 29.61 |========================================
+fconstrain-shift-value ......... 29.28 |========================================
+fno-delete-null-pointer-checks . 29.35 |========================================
+fno-strict-aliasing ............ 29.31 |========================================
+fstrict-enums .................. 29.63 |========================================
+fwrapv ......................... 28.22 |======================================
+
+
+uvg266 0.4.1
+Video Input: Bosphorus 1080p - Video Preset: Ultra Fast
+Frames Per Second > Higher Is Better
+base ........................... 39.52 |========================================
+fconstrain-shift-value ......... 38.98 |=======================================
+fno-delete-null-pointer-checks . 39.18 |========================================
+fno-strict-aliasing ............ 39.08 |=======================================
+fstrict-enums .................. 39.58 |========================================
+fwrapv ......................... 37.03 |=====================================

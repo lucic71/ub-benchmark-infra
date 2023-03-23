@@ -1,0 +1,85 @@
+hardware info:
+
+	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L
+
+OpenSSL 3.0
+Algorithm: SHA256
+byte/s > Higher Is Better
+base ................ 4352510033 |==============================================
+fno-strict-aliasing . 4351297320 |==============================================
+fstrict-enums ....... 4344546247 |==============================================
+fwrapv .............. 4373523067 |==============================================
+
+
+OpenSSL 3.0
+Algorithm: RSA4096
+sign/s > Higher Is Better
+base ................ 2633.1 |==================================================
+fno-strict-aliasing . 2634.7 |==================================================
+fstrict-enums ....... 2634.4 |==================================================
+fwrapv .............. 2633.7 |==================================================
+
+
+OpenSSL 3.0
+Algorithm: RSA4096
+verify/s > Higher Is Better
+base ................ 174624.7 |================================================
+fno-strict-aliasing . 174332.1 |================================================
+fstrict-enums ....... 174503.4 |================================================
+fwrapv .............. 174716.0 |================================================
+
+
+OpenSSL 3.1
+Algorithm: SHA256
+byte/s > Higher Is Better
+fconstrain-shift-value ......... 4347280330 |===================================
+fno-delete-null-pointer-checks . 4343189827 |===================================
+
+
+OpenSSL 3.1
+Algorithm: SHA512
+byte/s > Higher Is Better
+fconstrain-shift-value ......... 4689430907 |===================================
+fno-delete-null-pointer-checks . 4698616350 |===================================
+
+
+OpenSSL 3.1
+Algorithm: RSA4096
+sign/s > Higher Is Better
+fconstrain-shift-value ......... 2634.7 |=======================================
+fno-delete-null-pointer-checks . 2634.8 |=======================================
+
+
+OpenSSL 3.1
+Algorithm: RSA4096
+verify/s > Higher Is Better
+fconstrain-shift-value ......... 173819.0 |=====================================
+fno-delete-null-pointer-checks . 174707.3 |=====================================
+
+
+OpenSSL 3.1
+Algorithm: ChaCha20
+byte/s > Higher Is Better
+fconstrain-shift-value ......... 29508418763 |==================================
+fno-delete-null-pointer-checks . 29508801607 |==================================
+
+
+OpenSSL 3.1
+Algorithm: AES-128-GCM
+byte/s > Higher Is Better
+fconstrain-shift-value ......... 28790807667 |==================================
+fno-delete-null-pointer-checks . 28295671720 |=================================
+
+
+OpenSSL 3.1
+Algorithm: AES-256-GCM
+byte/s > Higher Is Better
+fconstrain-shift-value ......... 25593342633 |==================================
+fno-delete-null-pointer-checks . 24419858297 |================================
+
+
+OpenSSL 3.1
+Algorithm: ChaCha20-Poly1305
+byte/s > Higher Is Better
+fconstrain-shift-value ......... 19581215997 |==================================
+fno-delete-null-pointer-checks . 19585108103 |==================================

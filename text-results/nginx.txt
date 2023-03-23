@@ -1,0 +1,61 @@
+hardware info:
+
+	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L
+
+nginx 1.23.2
+Connections: 1
+Requests Per Second > Higher Is Better
+
+
+nginx 1.23.2
+Connections: 20
+Requests Per Second > Higher Is Better
+
+
+nginx 1.23.2
+Connections: 100
+Requests Per Second > Higher Is Better
+base ........................... 52641.25 |=====================================
+fconstrain-shift-value ......... 52701.33 |=====================================
+fno-delete-null-pointer-checks . 52642.00 |=====================================
+fno-strict-aliasing ............ 52748.78 |=====================================
+fstrict-enums .................. 52549.65 |=====================================
+fwrapv ......................... 52549.90 |=====================================
+
+
+nginx 1.23.2
+Connections: 200
+Requests Per Second > Higher Is Better
+base ........................... 53361.75 |=====================================
+fconstrain-shift-value ......... 53747.03 |=====================================
+fno-delete-null-pointer-checks . 53808.23 |=====================================
+fno-strict-aliasing ............ 53223.72 |=====================================
+fstrict-enums .................. 53502.80 |=====================================
+fwrapv ......................... 53423.44 |=====================================
+
+
+nginx 1.23.2
+Connections: 500
+Requests Per Second > Higher Is Better
+base ........................... 53046.86 |=====================================
+fconstrain-shift-value ......... 53286.73 |=====================================
+fno-delete-null-pointer-checks . 53025.92 |=====================================
+fno-strict-aliasing ............ 53202.48 |=====================================
+fstrict-enums .................. 53249.97 |=====================================
+fwrapv ......................... 53136.88 |=====================================
+
+
+nginx 1.23.2
+Connections: 1000
+Requests Per Second > Higher Is Better
+base ........................... 52399.48 |=====================================
+fconstrain-shift-value ......... 52483.13 |=====================================
+fno-delete-null-pointer-checks . 52726.43 |=====================================
+fno-strict-aliasing ............ 52389.22 |=====================================
+fstrict-enums .................. 52281.35 |=====================================
+fwrapv ......................... 52523.32 |=====================================
+
+
+nginx 1.23.2
+Connections: 4000
+Requests Per Second > Higher Is Better

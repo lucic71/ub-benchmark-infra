@@ -1,0 +1,35 @@
+hardware info:
+
+	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L
+
+PJSIP 2.11
+Method: INVITE
+Responses Per Second > Higher Is Better
+base ........................... 4527 |========================================
+fconstrain-shift-value ......... 4616 |=========================================
+fno-delete-null-pointer-checks . 4564 |========================================
+fno-strict-aliasing ............ 4517 |========================================
+fstrict-enums .................. 4662 |=========================================
+fwrapv ......................... 4533 |========================================
+
+
+PJSIP 2.11
+Method: OPTIONS, Stateful
+Responses Per Second > Higher Is Better
+base ........................... 7695 |========================================
+fconstrain-shift-value ......... 7465 |=======================================
+fno-delete-null-pointer-checks . 7700 |========================================
+fno-strict-aliasing ............ 7844 |=========================================
+fstrict-enums .................. 7697 |========================================
+fwrapv ......................... 7452 |=======================================
+
+
+PJSIP 2.11
+Method: OPTIONS, Stateless
+Responses Per Second > Higher Is Better
+base ........................... 41741 |=======================================
+fconstrain-shift-value ......... 41734 |=======================================
+fno-delete-null-pointer-checks . 41785 |=======================================
+fno-strict-aliasing ............ 42087 |=======================================
+fstrict-enums .................. 42233 |========================================
+fwrapv ......................... 42656 |========================================

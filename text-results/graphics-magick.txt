@@ -1,0 +1,79 @@
+hardware info:
+
+	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L
+
+GraphicsMagick 1.3.38
+Operation: Swirl
+Iterations Per Minute > Higher Is Better
+base ........................... 31 |===========================================
+fconstrain-shift-value ......... 29 |========================================
+fno-delete-null-pointer-checks . 30 |==========================================
+fno-strict-aliasing ............ 30 |==========================================
+fstrict-enums .................. 31 |===========================================
+fwrapv ......................... 30 |==========================================
+
+
+GraphicsMagick 1.3.38
+Operation: Rotate
+Iterations Per Minute > Higher Is Better
+base ........................... 567 |======================================
+fconstrain-shift-value ......... 555 |=====================================
+fno-delete-null-pointer-checks . 591 |========================================
+fno-strict-aliasing ............ 557 |======================================
+fstrict-enums .................. 623 |==========================================
+fwrapv ......................... 558 |======================================
+
+
+GraphicsMagick 1.3.38
+Operation: Sharpen
+Iterations Per Minute > Higher Is Better
+base ........................... 13 |===========================================
+fconstrain-shift-value ......... 13 |===========================================
+fno-delete-null-pointer-checks . 13 |===========================================
+fno-strict-aliasing ............ 13 |===========================================
+fstrict-enums .................. 13 |===========================================
+fwrapv ......................... 13 |===========================================
+
+
+GraphicsMagick 1.3.38
+Operation: Enhanced
+Iterations Per Minute > Higher Is Better
+base ........................... 12 |===========================================
+fconstrain-shift-value ......... 12 |===========================================
+fno-delete-null-pointer-checks . 12 |===========================================
+fno-strict-aliasing ............ 12 |===========================================
+fstrict-enums .................. 12 |===========================================
+fwrapv ......................... 12 |===========================================
+
+
+GraphicsMagick 1.3.38
+Operation: Resizing
+Iterations Per Minute > Higher Is Better
+base ........................... 85 |===========================================
+fconstrain-shift-value ......... 85 |===========================================
+fno-delete-null-pointer-checks . 86 |===========================================
+fno-strict-aliasing ............ 84 |==========================================
+fstrict-enums .................. 86 |===========================================
+fwrapv ......................... 84 |==========================================
+
+
+GraphicsMagick 1.3.38
+Operation: Noise-Gaussian
+Iterations Per Minute > Higher Is Better
+base ........................... 18 |===========================================
+fconstrain-shift-value ......... 18 |===========================================
+fno-delete-null-pointer-checks . 18 |===========================================
+fno-strict-aliasing ............ 18 |===========================================
+fstrict-enums .................. 18 |===========================================
+fwrapv ......................... 18 |===========================================
+
+
+GraphicsMagick 1.3.38
+Operation: HWB Color Space
+Iterations Per Minute > Higher Is Better
+base ........................... 129 |==========================================
+fconstrain-shift-value ......... 129 |==========================================
+fno-delete-null-pointer-checks . 130 |==========================================
+fno-strict-aliasing ............ 127 |=========================================
+fstrict-enums .................. 129 |==========================================
+fwrapv ......................... 128 |=========================================

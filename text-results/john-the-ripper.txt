@@ -1,0 +1,55 @@
+hardware info:
+
+	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L
+
+John The Ripper 1.9.0-jumbo-1
+Test: Blowfish
+Real C/S > Higher Is Better
+base ................ 1170 |====================================================
+fno-strict-aliasing . 1176 |====================================================
+fstrict-enums ....... 1181 |====================================================
+fwrapv .............. 1172 |====================================================
+
+
+John The Ripper 1.9.0-jumbo-1
+Test: MD5
+Real C/S > Higher Is Better
+base ................ 42132 |===================================================
+fno-strict-aliasing . 42332 |===================================================
+fstrict-enums ....... 42502 |===================================================
+fwrapv .............. 42064 |==================================================
+
+
+John The Ripper 2023.03.14
+Test: bcrypt
+Real C/S > Higher Is Better
+fconstrain-shift-value ......... 1175 |=========================================
+fno-delete-null-pointer-checks . 1176 |=========================================
+
+
+John The Ripper 2023.03.14
+Test: WPA PSK
+Real C/S > Higher Is Better
+fconstrain-shift-value ......... 1511 |=========================================
+fno-delete-null-pointer-checks . 1512 |=========================================
+
+
+John The Ripper 2023.03.14
+Test: Blowfish
+Real C/S > Higher Is Better
+fconstrain-shift-value ......... 1174 |=========================================
+fno-delete-null-pointer-checks . 1176 |=========================================
+
+
+John The Ripper 2023.03.14
+Test: HMAC-SHA512
+Real C/S > Higher Is Better
+fconstrain-shift-value ......... 2042000 |======================================
+fno-delete-null-pointer-checks . 2044333 |======================================
+
+
+John The Ripper 2023.03.14
+Test: MD5
+Real C/S > Higher Is Better
+fconstrain-shift-value ......... 42177 |========================================
+fno-delete-null-pointer-checks . 42351 |========================================

@@ -1,0 +1,46 @@
+hardware info:
+
+	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L
+
+Basis Universal 1.13
+Settings: ETC1S
+Seconds < Lower Is Better
+base ........................... 37.80 |=======================================
+fconstrain-shift-value ......... 37.98 |=======================================
+fno-delete-null-pointer-checks . 37.71 |=======================================
+fno-strict-aliasing ............ 38.02 |=======================================
+fstrict-enums .................. 38.77 |========================================
+fwrapv ......................... 38.32 |========================================
+
+
+Basis Universal 1.13
+Settings: UASTC Level 0
+Seconds < Lower Is Better
+base ........................... 10.52 |========================================
+fconstrain-shift-value ......... 10.24 |=======================================
+fno-delete-null-pointer-checks . 10.40 |=======================================
+fno-strict-aliasing ............ 10.46 |========================================
+fstrict-enums .................. 10.52 |========================================
+fwrapv ......................... 10.54 |========================================
+
+
+Basis Universal 1.13
+Settings: UASTC Level 2
+Seconds < Lower Is Better
+base ........................... 27.56 |========================================
+fconstrain-shift-value ......... 27.34 |=======================================
+fno-delete-null-pointer-checks . 27.46 |========================================
+fno-strict-aliasing ............ 27.56 |========================================
+fstrict-enums .................. 27.56 |========================================
+fwrapv ......................... 27.70 |========================================
+
+
+Basis Universal 1.13
+Settings: UASTC Level 3
+Seconds < Lower Is Better
+base ........................... 46.57 |========================================
+fconstrain-shift-value ......... 46.19 |========================================
+fno-delete-null-pointer-checks . 46.33 |========================================
+fno-strict-aliasing ............ 46.51 |========================================
+fstrict-enums .................. 46.40 |========================================
+fwrapv ......................... 46.75 |========================================

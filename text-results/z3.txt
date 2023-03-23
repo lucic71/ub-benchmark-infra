@@ -1,0 +1,24 @@
+hardware info:
+
+	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L
+
+z3 1.0
+smt file: 1.smt2
+Seconds < Lower Is Better
+base ........................... 28.32 |=======================================
+fconstrain-shift-value ......... 28.11 |=======================================
+fno-delete-null-pointer-checks . 27.74 |======================================
+fno-strict-aliasing ............ 29.05 |========================================
+fstrict-enums .................. 28.02 |=======================================
+fwrapv ......................... 28.14 |=======================================
+
+
+z3 1.0
+smt file: 2.smt2
+Seconds < Lower Is Better
+base ........................... 120.54 |=======================================
+fconstrain-shift-value ......... 119.45 |======================================
+fno-delete-null-pointer-checks . 119.23 |======================================
+fno-strict-aliasing ............ 119.78 |=======================================
+fstrict-enums .................. 119.63 |=======================================
+fwrapv ......................... 121.11 |=======================================
