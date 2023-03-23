@@ -1,17 +1,24 @@
 #!/bin/sh -ex
 
 # array of flags separated by :
-FLAGS=":-fwrapv:-fno-strict-aliasing:-fstrict-enums"
+#FLAGS=":-fwrapv:-fno-strict-aliasing:-fstrict-enums"
+FLAGS="-fno-delete-null-pointer-checks:-fconstrain-shift-value"
 FLAGSNO=$((`echo $FLAGS | tr -cd ':' | wc -c`+1))
+
+rm -rf /var/lib/phoronix-test-suite/installed-tests/*
+rm -rf /var/lib/phoronix-test-suite/test-results/*
+rm -rf /var/lib/phoronix-test-suite/test-results-*
+
+ulimit -s unlimited
 
 for i in $(seq 1 $FLAGSNO);
 do
 	flags=`echo $FLAGS | cut -d':' -f$i`
 
 	# PATH is set for the linker to be found
-	export PATH="/ssd/llvm-project-master/build-clang/bin:/ssd/llvm-project-master/build-llvm/bin:$PATH"
-	export CC="/ssd/llvm-project-master/build-clang/bin/clang $flags"
-	export CXX="/ssd/llvm-project-master/build-clang/bin/clang++ $flags"
+	export PATH="/git/llvm-ub-free/build/bin:$PATH"
+	export CC="/git/llvm-ub-free/build/bin/clang $flags"
+	export CXX="/git/llvm-ub-free/build/bin/clang++ $flags"
 
 	if [ "$flags" = "" ]
 	then
