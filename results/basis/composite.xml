@@ -3,7 +3,7 @@
 <PhoronixTestSuite>
   <Generated>
     <Title>basis</Title>
-    <LastModified>2023-03-11 21:39:59</LastModified>
+    <LastModified>2023-03-23 17:04:10</LastModified>
     <TestClient>Phoronix Test Suite v10.8.4</TestClient>
     <Description>basis-base</Description>
     <Notes></Notes>
@@ -22,7 +22,27 @@
     <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
-    <Identifier>fno-strict-fno-strict-aliasing</Identifier>
+    <Identifier>fconstrain-shift-value</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>root</User>
+    <TimeStamp>2023-03-23 09:18:44</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>fno-delete-null-pointer-checks</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>root</User>
+    <TimeStamp>2023-03-22 18:01:13</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>fno-strict-aliasing</Identifier>
     <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
     <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
@@ -32,7 +52,7 @@
     <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
-    <Identifier>fstrict-fstict-enums</Identifier>
+    <Identifier>fstrict-enums</Identifier>
     <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
     <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
@@ -68,13 +88,25 @@
         <JSON>{"test-run-times":"38.54:38.11:37.62"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fno-strict-fno-strict-aliasing</Identifier>
+        <Identifier>fconstrain-shift-value</Identifier>
+        <Value>37.983</Value>
+        <RawString>38.265:37.95:37.735</RawString>
+        <JSON>{"test-run-times":"38.90:38.03:37.81"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-delete-null-pointer-checks</Identifier>
+        <Value>37.714</Value>
+        <RawString>37.717:37.913:37.513</RawString>
+        <JSON>{"test-run-times":"38.34:37.99:37.59"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
         <Value>38.020</Value>
         <RawString>38.412:37.647:38</RawString>
         <JSON>{"test-run-times":"39.18:37.74:38.09"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-fstict-enums</Identifier>
+        <Identifier>fstrict-enums</Identifier>
         <Value>38.772</Value>
         <RawString>38.582:38.692:39.043</RawString>
         <JSON>{"test-run-times":"39.37:38.83:39.21"}</JSON>
@@ -104,13 +136,25 @@
         <JSON>{"test-run-times":"10.57:10.61:10.54"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fno-strict-fno-strict-aliasing</Identifier>
+        <Identifier>fconstrain-shift-value</Identifier>
+        <Value>10.242</Value>
+        <RawString>10.253:10.244:10.228</RawString>
+        <JSON>{"test-run-times":"10.31:10.30:10.28"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-delete-null-pointer-checks</Identifier>
+        <Value>10.397</Value>
+        <RawString>10.386:10.443:10.363</RawString>
+        <JSON>{"test-run-times":"10.44:10.50:10.42"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
         <Value>10.463</Value>
         <RawString>10.475:10.465:10.448</RawString>
         <JSON>{"test-run-times":"10.53:10.52:10.50"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-fstict-enums</Identifier>
+        <Identifier>fstrict-enums</Identifier>
         <Value>10.524</Value>
         <RawString>10.562:10.526:10.483</RawString>
         <JSON>{"test-run-times":"10.66:10.60:10.55"}</JSON>
@@ -140,13 +184,25 @@
         <JSON>{"test-run-times":"27.61:27.56:27.68"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fno-strict-fno-strict-aliasing</Identifier>
+        <Identifier>fconstrain-shift-value</Identifier>
+        <Value>27.337</Value>
+        <RawString>27.314:27.368:27.328</RawString>
+        <JSON>{"test-run-times":"27.37:27.42:27.38"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-delete-null-pointer-checks</Identifier>
+        <Value>27.462</Value>
+        <RawString>27.498:27.449:27.438</RawString>
+        <JSON>{"test-run-times":"27.55:27.50:27.49"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
         <Value>27.557</Value>
         <RawString>27.578:27.541:27.552</RawString>
         <JSON>{"test-run-times":"27.63:27.60:27.61"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-fstict-enums</Identifier>
+        <Identifier>fstrict-enums</Identifier>
         <Value>27.563</Value>
         <RawString>27.57:27.529:27.591</RawString>
         <JSON>{"test-run-times":"27.64:27.59:27.66"}</JSON>
@@ -176,13 +232,25 @@
         <JSON>{"test-run-times":"46.61:46.61:46.65"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fno-strict-fno-strict-aliasing</Identifier>
+        <Identifier>fconstrain-shift-value</Identifier>
+        <Value>46.190</Value>
+        <RawString>46.167:46.235:46.168</RawString>
+        <JSON>{"test-run-times":"46.22:46.29:46.22"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-delete-null-pointer-checks</Identifier>
+        <Value>46.325</Value>
+        <RawString>46.306:46.279:46.389</RawString>
+        <JSON>{"test-run-times":"46.36:46.33:46.44"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-strict-aliasing</Identifier>
         <Value>46.505</Value>
         <RawString>46.507:46.49:46.518</RawString>
         <JSON>{"test-run-times":"46.56:46.55:46.57"}</JSON>
       </Entry>
       <Entry>
-        <Identifier>fstrict-fstict-enums</Identifier>
+        <Identifier>fstrict-enums</Identifier>
         <Value>46.397</Value>
         <RawString>46.418:46.381:46.392</RawString>
         <JSON>{"test-run-times":"46.47:46.44:46.45"}</JSON>
