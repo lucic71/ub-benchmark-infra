@@ -1,5 +1,4 @@
 # LLVM Build Speed
-pts/build-gcc
 pts/build-llvm
 # HPC
 pts/fftw
@@ -24,8 +23,6 @@ pts/aircrack-ng
 pts/openssl
 # Password Cracking
 pts/john-the-ripper
-# Chess
-pts/lczero
 # Database
 pts/redis
 # Audio Encoding
