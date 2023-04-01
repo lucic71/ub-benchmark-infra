@@ -1,34 +1,26 @@
 hardware info:
 
-	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L
-
-Google Draco 1.5.0
-Model: Lion
-ms < Lower Is Better
-base ................ 6567 |====================================================
-fno-strict-aliasing . 6482 |===================================================
-fstrict-enums ....... 6468 |===================================================
-fwrapv .............. 6609 |====================================================
-
-
-Google Draco 1.5.0
-Model: Church Facade
-ms < Lower Is Better
-base ................ 8474 |====================================================
-fno-strict-aliasing . 8437 |====================================================
-fstrict-enums ....... 8290 |===================================================
-fwrapv .............. 8412 |====================================================
-
+	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L
 
 Google Draco 1.5.6
 Model: Lion
 ms < Lower Is Better
-fconstrain-shift-value ......... 6444 |=========================================
-fno-delete-null-pointer-checks . 6476 |=========================================
+base ........................... 6530 |=========================================
+fconstrain-shift-value ......... 6485 |=========================================
+fno-delete-null-pointer-checks . 6499 |=========================================
+fno-strict-aliasing ............ 6487 |=========================================
+fstrict-enums .................. 6493 |=========================================
+fwrapv ......................... 6551 |=========================================
 
 
 Google Draco 1.5.6
 Model: Church Facade
 ms < Lower Is Better
-fconstrain-shift-value ......... 8393 |=========================================
-fno-delete-null-pointer-checks . 8348 |=========================================
+base ........................... 8373 |========================================
+fconstrain-shift-value ......... 8363 |========================================
+fno-delete-null-pointer-checks . 8459 |=========================================
+fno-strict-aliasing ............ 8395 |========================================
+fstrict-enums .................. 8314 |========================================
+fwrapv ......................... 8502 |=========================================
+
+

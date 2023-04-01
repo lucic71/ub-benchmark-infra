@@ -3,7 +3,7 @@
 <PhoronixTestSuite>
   <Generated>
     <Title>tungsten</Title>
-    <LastModified>2023-03-23 17:03:14</LastModified>
+    <LastModified>2023-04-01 09:52:16</LastModified>
     <TestClient>Phoronix Test Suite v10.8.4</TestClient>
     <Description>tungsten-base</Description>
     <Notes></Notes>
@@ -13,63 +13,63 @@
   </Generated>
   <System>
     <Identifier>base</Identifier>
-    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
-    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-07 19:15:50</TimeStamp>
+    <TimeStamp>2023-04-01 00:12:38</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
-    <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+    <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
     <Identifier>fconstrain-shift-value</Identifier>
-    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L</Hardware>
     <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-23 07:03:15</TimeStamp>
+    <TimeStamp>2023-03-30 20:22:59</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
     <Identifier>fno-delete-null-pointer-checks</Identifier>
-    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L</Hardware>
     <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-22 15:43:00</TimeStamp>
+    <TimeStamp>2023-03-29 05:06:02</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
     <Identifier>fno-strict-aliasing</Identifier>
-    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
-    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-10 01:48:47</TimeStamp>
+    <TimeStamp>2023-03-28 00:26:17</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
-    <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+    <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
     <Identifier>fstrict-enums</Identifier>
-    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
-    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-11 02:43:15</TimeStamp>
+    <TimeStamp>2023-03-28 13:39:55</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
-    <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+    <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
     <Identifier>fwrapv</Identifier>
-    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
-    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-08 21:50:57</TimeStamp>
+    <TimeStamp>2023-03-27 10:50:12</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
-    <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+    <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <Result>
     <Identifier>pts/tungsten-1.0.0</Identifier>
@@ -83,39 +83,39 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>16.5341</Value>
-        <RawString>16.6339:16.6403:16.3281</RawString>
-        <JSON>{"test-run-times":"17.66:17.08:16.76"}</JSON>
+        <Value>16.5444</Value>
+        <RawString>16.5942:16.626:16.413</RawString>
+        <JSON>{"test-run-times":"17.60:17.10:16.86"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fconstrain-shift-value</Identifier>
-        <Value>16.5254</Value>
-        <RawString>16.471:16.6356:16.4696</RawString>
-        <JSON>{"test-run-times":"17.54:17.07:16.99"}</JSON>
+        <Value>16.6003</Value>
+        <RawString>16.5943:16.6113:16.5953</RawString>
+        <JSON>{"test-run-times":"17.59:17.06:17.03"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
-        <Value>16.5934</Value>
-        <RawString>16.6188:16.6281:16.5334</RawString>
-        <JSON>{"test-run-times":"17.62:17.07:17.00"}</JSON>
+        <Value>16.6610</Value>
+        <RawString>16.615:16.6009:16.7672</RawString>
+        <JSON>{"test-run-times":"17.71:17.05:17.23"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>16.4425</Value>
-        <RawString>16.4683:16.4595:16.3996</RawString>
-        <JSON>{"test-run-times":"17.54:16.91:16.83"}</JSON>
+        <Value>16.5922</Value>
+        <RawString>16.668:16.6111:16.4975</RawString>
+        <JSON>{"test-run-times":"17.67:17.05:16.93"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
-        <Value>16.5667</Value>
-        <RawString>16.6378:16.5404:16.5219</RawString>
-        <JSON>{"test-run-times":"17.67:16.97:16.95"}</JSON>
+        <Value>16.5361</Value>
+        <RawString>16.5966:16.4424:16.5693</RawString>
+        <JSON>{"test-run-times":"17.61:16.88:17.01"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>16.6730</Value>
-        <RawString>16.5877:16.7194:16.712</RawString>
-        <JSON>{"test-run-times":"17.75:17.16:17.14"}</JSON>
+        <Value>16.5636</Value>
+        <RawString>16.4677:16.6165:16.6065</RawString>
+        <JSON>{"test-run-times":"17.57:17.05:17.04"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -131,39 +131,39 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>25.7284</Value>
-        <RawString>25.9091:25.2062:26.0699</RawString>
-        <JSON>{"test-run-times":"28.03:27.32:28.18"}</JSON>
+        <Value>25.9181</Value>
+        <RawString>25.8531:26.1431:25.758</RawString>
+        <JSON>{"test-run-times":"28.21:28.50:28.13"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fconstrain-shift-value</Identifier>
-        <Value>25.7588</Value>
-        <RawString>25.6824:25.7446:25.8493</RawString>
-        <JSON>{"test-run-times":"27.43:29.21:27.60"}</JSON>
+        <Value>26.3672</Value>
+        <RawString>26.0179:26.5698:26.5139</RawString>
+        <JSON>{"test-run-times":"28.51:28.35:28.25"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
-        <Value>25.6654</Value>
-        <RawString>25.964:25.539:25.4932</RawString>
-        <JSON>{"test-run-times":"28.31:28.98:27.66"}</JSON>
+        <Value>25.8510</Value>
+        <RawString>25.6839:25.9527:25.9163</RawString>
+        <JSON>{"test-run-times":"28.61:27.66:27.61"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>25.3184</Value>
-        <RawString>25.016:25.3366:25.6027</RawString>
-        <JSON>{"test-run-times":"26.77:27.09:27.71"}</JSON>
+        <Value>25.6353</Value>
+        <RawString>25.9002:25.5442:25.4614</RawString>
+        <JSON>{"test-run-times":"27.64:27.26:27.38"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
-        <Value>25.4859</Value>
-        <RawString>25.7098:25.4852:25.2626</RawString>
-        <JSON>{"test-run-times":"29.45:29.26:28.17"}</JSON>
+        <Value>26.0706</Value>
+        <RawString>26.3654:26.4386:25.4077</RawString>
+        <JSON>{"test-run-times":"32.03:29.84:31.07"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>25.8929</Value>
-        <RawString>25.9583:26.0669:25.6534</RawString>
-        <JSON>{"test-run-times":"27.77:27.84:27.42"}</JSON>
+        <Value>25.8036</Value>
+        <RawString>25.7316:26.0187:25.6605</RawString>
+        <JSON>{"test-run-times":"27.74:28.12:27.67"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -179,39 +179,39 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>8.02295</Value>
-        <RawString>7.63214:8.08248:8.07802:8.06183:8.15579:8.12741</RawString>
-        <JSON>{"test-run-times":"7.71:8.15:8.15:8.13:8.23:8.19"}</JSON>
+        <Value>8.10171</Value>
+        <RawString>8.08843:8.09835:8.11836</RawString>
+        <JSON>{"test-run-times":"8.16:8.17:8.19"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fconstrain-shift-value</Identifier>
-        <Value>8.11756</Value>
-        <RawString>8.11037:8.09472:8.1476</RawString>
-        <JSON>{"test-run-times":"8.18:8.16:8.22"}</JSON>
+        <Value>8.13998</Value>
+        <RawString>8.17368:8.15909:8.08717</RawString>
+        <JSON>{"test-run-times":"8.24:8.23:8.16"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
-        <Value>8.09446</Value>
-        <RawString>8.11625:8.1021:8.06504</RawString>
-        <JSON>{"test-run-times":"8.18:8.17:8.13"}</JSON>
+        <Value>8.11436</Value>
+        <RawString>8.1655:8.0824:8.09518</RawString>
+        <JSON>{"test-run-times":"8.23:8.15:8.16"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>8.32756</Value>
-        <RawString>8.3203:8.3444:8.31798</RawString>
-        <JSON>{"test-run-times":"8.39:8.41:8.38"}</JSON>
+        <Value>8.30692</Value>
+        <RawString>8.34768:8.28595:8.28712</RawString>
+        <JSON>{"test-run-times":"8.41:8.35:8.35"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
-        <Value>8.23526</Value>
-        <RawString>8.28977:8.22576:8.19026</RawString>
-        <JSON>{"test-run-times":"8.37:8.29:8.26"}</JSON>
+        <Value>8.25210</Value>
+        <RawString>8.21312:8.26591:8.27726</RawString>
+        <JSON>{"test-run-times":"8.28:8.34:8.34"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>8.28762</Value>
-        <RawString>8.2855:8.29904:8.27832</RawString>
-        <JSON>{"test-run-times":"8.35:8.37:8.35"}</JSON>
+        <Value>8.28254</Value>
+        <RawString>8.29962:8.30289:8.2451</RawString>
+        <JSON>{"test-run-times":"8.38:8.37:8.31"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -227,39 +227,39 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>7.67207</Value>
-        <RawString>7.66056:7.67955:7.67611</RawString>
-        <JSON>{"test-run-times":"7.76:7.78:7.77"}</JSON>
+        <Value>7.69675</Value>
+        <RawString>7.68531:7.70812:7.69681</RawString>
+        <JSON>{"test-run-times":"7.78:7.81:7.80"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fconstrain-shift-value</Identifier>
-        <Value>7.75314</Value>
-        <RawString>7.75755:7.75231:7.74957</RawString>
-        <JSON>{"test-run-times":"7.86:7.85:7.85"}</JSON>
+        <Value>7.71573</Value>
+        <RawString>7.72871:7.73402:7.68445</RawString>
+        <JSON>{"test-run-times":"7.83:7.84:7.78"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
-        <Value>7.64514</Value>
-        <RawString>7.64561:7.60102:7.68879</RawString>
-        <JSON>{"test-run-times":"7.74:7.71:7.79"}</JSON>
+        <Value>7.66656</Value>
+        <RawString>7.67667:7.70977:7.61325</RawString>
+        <JSON>{"test-run-times":"7.77:7.81:7.71"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>7.81739</Value>
-        <RawString>7.78032:7.81591:7.85593</RawString>
-        <JSON>{"test-run-times":"7.88:7.91:7.95"}</JSON>
+        <Value>7.74073</Value>
+        <RawString>7.77949:7.74371:7.699</RawString>
+        <JSON>{"test-run-times":"7.88:7.84:7.80"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
-        <Value>7.71980</Value>
-        <RawString>7.70789:7.7207:7.7308</RawString>
-        <JSON>{"test-run-times":"7.80:7.82:7.83"}</JSON>
+        <Value>7.74706</Value>
+        <RawString>7.70724:7.76433:7.76962</RawString>
+        <JSON>{"test-run-times":"7.80:7.86:7.87"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>7.68575</Value>
-        <RawString>7.69511:7.69836:7.66378</RawString>
-        <JSON>{"test-run-times":"7.79:7.80:7.76"}</JSON>
+        <Value>7.70579</Value>
+        <RawString>7.71259:7.64435:7.76043</RawString>
+        <JSON>{"test-run-times":"7.81:7.74:7.86"}</JSON>
       </Entry>
     </Data>
   </Result>

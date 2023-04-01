@@ -1,24 +1,26 @@
 hardware info:
 
-	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L
+	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L
 
 Ngspice 34
 Circuit: C2670
 Seconds < Lower Is Better
-base ........................... 206.66 |=======================================
-fconstrain-shift-value ......... 202.64 |======================================
-fno-delete-null-pointer-checks . 205.75 |=======================================
-fno-strict-aliasing ............ 204.34 |=======================================
-fstrict-enums .................. 204.40 |=======================================
-fwrapv ......................... 206.56 |=======================================
+base ........................... 205.82 |=======================================
+fconstrain-shift-value ......... 202.83 |======================================
+fno-delete-null-pointer-checks . 203.94 |=======================================
+fno-strict-aliasing ............ 201.27 |======================================
+fstrict-enums .................. 203.11 |======================================
+fwrapv ......................... 203.03 |======================================
 
 
 Ngspice 34
 Circuit: C7552
 Seconds < Lower Is Better
-base ........................... 152.79 |=======================================
-fconstrain-shift-value ......... 152.17 |=======================================
-fno-delete-null-pointer-checks . 150.98 |======================================
-fno-strict-aliasing ............ 153.36 |=======================================
-fstrict-enums .................. 151.77 |======================================
-fwrapv ......................... 153.79 |=======================================
+base ........................... 152.59 |=======================================
+fconstrain-shift-value ......... 153.29 |=======================================
+fno-delete-null-pointer-checks . 151.95 |=======================================
+fno-strict-aliasing ............ 151.87 |=======================================
+fstrict-enums .................. 151.36 |=======================================
+fwrapv ......................... 152.73 |=======================================
+
+

@@ -3,7 +3,7 @@
 <PhoronixTestSuite>
   <Generated>
     <Title>apache</Title>
-    <LastModified>2023-03-23 17:05:27</LastModified>
+    <LastModified>2023-04-01 09:54:29</LastModified>
     <TestClient>Phoronix Test Suite v10.8.4</TestClient>
     <Description>apache-base</Description>
     <Notes></Notes>
@@ -13,116 +13,116 @@
   </Generated>
   <System>
     <Identifier>base</Identifier>
-    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
-    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-13 19:30:48</TimeStamp>
+    <TimeStamp>2023-04-01 05:03:31</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
     <Identifier>fconstrain-shift-value</Identifier>
-    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L</Hardware>
     <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-23 12:10:21</TimeStamp>
+    <TimeStamp>2023-03-31 01:18:54</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
     <Identifier>fno-delete-null-pointer-checks</Identifier>
-    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L</Hardware>
     <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-22 21:07:11</TimeStamp>
+    <TimeStamp>2023-03-29 10:33:19</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
     <Identifier>fno-strict-aliasing</Identifier>
-    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
-    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-14 01:18:08</TimeStamp>
+    <TimeStamp>2023-03-28 05:08:30</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
     <Identifier>fstrict-enums</Identifier>
-    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
-    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-14 04:11:35</TimeStamp>
+    <TimeStamp>2023-03-28 19:05:17</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
     <Identifier>fwrapv</Identifier>
-    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
-    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-13 22:24:28</TimeStamp>
+    <TimeStamp>2023-03-27 16:12:51</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <Result>
-    <Identifier>pts/apache-2.0.1</Identifier>
+    <Identifier>pts/apache-3.0.0</Identifier>
     <Title>Apache HTTP Server</Title>
-    <AppVersion>2.4.48</AppVersion>
-    <Arguments>-c 1</Arguments>
-    <Description>Concurrent Requests: 1</Description>
+    <AppVersion>2.4.56</AppVersion>
+    <Arguments>-c 4</Arguments>
+    <Description>Concurrent Requests: 4</Description>
     <Scale>Requests Per Second</Scale>
     <Proportion>HIB</Proportion>
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>6822.90</Value>
-        <RawString>6785:6952.66:6731.04</RawString>
-        <JSON>{"test-run-times":"90.05:90.05:90.05"}</JSON>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status."}</JSON>
       </Entry>
       <Entry>
         <Identifier>fconstrain-shift-value</Identifier>
-        <Value>6030.94</Value>
-        <RawString>6020.53:6426.96:6316:6191.09:5847.34:6083.1:5976.83:6126.22:5863.64:6127.76:5937.48:5788.36:5961.93:5985.94:5810.86</RawString>
-        <JSON>{"test-run-times":"90.05:90.05:90.05:90.05:90.05:90.05:90.05:90.05:90.05:90.05:90.05:90.05:90.05:90.05:90.05"}</JSON>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status."}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
-        <Value>6560.60</Value>
-        <RawString>6858.47:6467.96:6418.66:6550.1:6495.34:6573.05</RawString>
-        <JSON>{"test-run-times":"90.05:90.05:90.05:90.05:90.05:90.05"}</JSON>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status."}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>6761.50</Value>
-        <RawString>6812.87:6667.74:6803.88</RawString>
-        <JSON>{"test-run-times":"90.05:90.05:90.05"}</JSON>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status."}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
-        <Value>6895.23</Value>
-        <RawString>6753.88:7072.45:6859.35</RawString>
-        <JSON>{"test-run-times":"90.05:90.05:90.05"}</JSON>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status."}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>6918.04</Value>
-        <RawString>6808.48:7120.33:6779.54:6963.79</RawString>
-        <JSON>{"test-run-times":"90.05:90.05:90.05:90.05"}</JSON>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status."}</JSON>
       </Entry>
     </Data>
   </Result>
   <Result>
-    <Identifier>pts/apache-2.0.1</Identifier>
+    <Identifier>pts/apache-3.0.0</Identifier>
     <Title>Apache HTTP Server</Title>
-    <AppVersion>2.4.48</AppVersion>
+    <AppVersion>2.4.56</AppVersion>
     <Arguments>-c 20</Arguments>
     <Description>Concurrent Requests: 20</Description>
     <Scale>Requests Per Second</Scale>
@@ -131,46 +131,46 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>47665.46</Value>
-        <RawString>47786.42:47681.72:47528.24</RawString>
-        <JSON>{"test-run-times":"90.05:90.05:90.05"}</JSON>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status."}</JSON>
       </Entry>
       <Entry>
         <Identifier>fconstrain-shift-value</Identifier>
-        <Value>48262.06</Value>
-        <RawString>48359.3:48267.47:48159.42</RawString>
-        <JSON>{"test-run-times":"90.05:90.04:90.05"}</JSON>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status."}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
-        <Value>48574.31</Value>
-        <RawString>48425.16:48721.21:48576.56</RawString>
-        <JSON>{"test-run-times":"90.05:90.04:90.05"}</JSON>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status."}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>47158.52</Value>
-        <RawString>47260:47193.75:47021.8</RawString>
-        <JSON>{"test-run-times":"90.05:90.05:90.05"}</JSON>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status."}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
-        <Value>47413.25</Value>
-        <RawString>47413.35:47336.47:47489.92</RawString>
-        <JSON>{"test-run-times":"90.06:90.05:90.05"}</JSON>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status."}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>46780.10</Value>
-        <RawString>46775.52:46571.03:46993.76</RawString>
-        <JSON>{"test-run-times":"90.05:90.05:90.05"}</JSON>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status."}</JSON>
       </Entry>
     </Data>
   </Result>
   <Result>
-    <Identifier>pts/apache-2.0.1</Identifier>
+    <Identifier>pts/apache-3.0.0</Identifier>
     <Title>Apache HTTP Server</Title>
-    <AppVersion>2.4.48</AppVersion>
+    <AppVersion>2.4.56</AppVersion>
     <Arguments>-c 100</Arguments>
     <Description>Concurrent Requests: 100</Description>
     <Scale>Requests Per Second</Scale>
@@ -179,46 +179,46 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>82187.05</Value>
-        <RawString>82128.18:82215.44:82217.53</RawString>
-        <JSON>{"test-run-times":"90.09:90.08:90.12"}</JSON>
+        <Value>83850.43</Value>
+        <RawString>83872.29:83864.41:83814.58</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.13:90.15:90.15"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fconstrain-shift-value</Identifier>
-        <Value>79435.97</Value>
-        <RawString>79571.18:79465.49:79271.25</RawString>
-        <JSON>{"test-run-times":"90.09:90.09:90.08"}</JSON>
+        <Value>82200.05</Value>
+        <RawString>82152.57:82253.47:82194.11</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.16:90.15:90.16"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
-        <Value>83210.13</Value>
-        <RawString>82708.49:84011.38:82910.52</RawString>
-        <JSON>{"test-run-times":"90.11:90.10:90.10"}</JSON>
+        <Value>83398.44</Value>
+        <RawString>83366.07:83437.5:83391.76</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.14:90.16:90.15"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>83205.44</Value>
-        <RawString>83867.36:83727.67:82021.29</RawString>
-        <JSON>{"test-run-times":"90.11:90.09:90.09"}</JSON>
+        <Value>85039.95</Value>
+        <RawString>85025.86:85037.78:85056.21</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.16:90.15:90.16"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
-        <Value>82686.27</Value>
-        <RawString>82737.07:82402.27:82919.48</RawString>
-        <JSON>{"test-run-times":"90.10:90.09:90.13"}</JSON>
+        <Value>81839.32</Value>
+        <RawString>82884.63:81949.43:80683.9</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.15:90.16:90.16"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>82325.77</Value>
-        <RawString>82759.58:81671.89:82545.83</RawString>
-        <JSON>{"test-run-times":"90.09:90.09:90.09"}</JSON>
+        <Value>83884.21</Value>
+        <RawString>83982.19:83764.73:83905.72</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.15:90.15:90.16"}</JSON>
       </Entry>
     </Data>
   </Result>
   <Result>
-    <Identifier>pts/apache-2.0.1</Identifier>
+    <Identifier>pts/apache-3.0.0</Identifier>
     <Title>Apache HTTP Server</Title>
-    <AppVersion>2.4.48</AppVersion>
+    <AppVersion>2.4.56</AppVersion>
     <Arguments>-c 200</Arguments>
     <Description>Concurrent Requests: 200</Description>
     <Scale>Requests Per Second</Scale>
@@ -227,46 +227,46 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>93664.32</Value>
-        <RawString>93713.66:93964.1:93315.2</RawString>
-        <JSON>{"test-run-times":"90.18:90.21:90.21"}</JSON>
+        <Value>101591.20</Value>
+        <RawString>100720.68:102015.49:102037.42</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.22:90.19:90.18"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fconstrain-shift-value</Identifier>
-        <Value>90059.08</Value>
-        <RawString>88824.54:90481.31:90871.38</RawString>
-        <JSON>{"test-run-times":"90.16:90.18:90.20"}</JSON>
+        <Value>103498.45</Value>
+        <RawString>104035.65:105154.18:101305.53</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.23:90.21:90.19"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
-        <Value>89319.94</Value>
-        <RawString>89541.4:88788.4:89630.02</RawString>
-        <JSON>{"test-run-times":"90.17:90.18:90.18"}</JSON>
+        <Value>104117.49</Value>
+        <RawString>103357.52:104445.06:104549.9</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.19:90.19:90.22"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>93737.82</Value>
-        <RawString>93869.66:93620.38:93723.41</RawString>
-        <JSON>{"test-run-times":"90.19:90.19:90.19"}</JSON>
+        <Value>105406.16</Value>
+        <RawString>104908.45:104941.16:106368.86</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.20:90.22:90.20"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
-        <Value>93908.82</Value>
-        <RawString>94134.96:93722.49:93869.01</RawString>
-        <JSON>{"test-run-times":"90.20:90.20:90.03"}</JSON>
+        <Value>101051.98</Value>
+        <RawString>102876.51:98925.53:101353.89</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.22:90.23:90.19"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>93923.80</Value>
-        <RawString>93862.76:94100.26:93808.39</RawString>
-        <JSON>{"test-run-times":"90.21:90.04:90.21"}</JSON>
+        <Value>101847.29</Value>
+        <RawString>102503.28:100791.05:102247.53</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.21:90.20:90.19"}</JSON>
       </Entry>
     </Data>
   </Result>
   <Result>
-    <Identifier>pts/apache-2.0.1</Identifier>
+    <Identifier>pts/apache-3.0.0</Identifier>
     <Title>Apache HTTP Server</Title>
-    <AppVersion>2.4.48</AppVersion>
+    <AppVersion>2.4.56</AppVersion>
     <Arguments>-c 500</Arguments>
     <Description>Concurrent Requests: 500</Description>
     <Scale>Requests Per Second</Scale>
@@ -275,46 +275,46 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>86485.04</Value>
-        <RawString>86434.71:86585.73:86434.69</RawString>
-        <JSON>{"test-run-times":"90.06:90.08:90.14"}</JSON>
+        <Value>102070.20</Value>
+        <RawString>101888.29:102025.42:102296.88</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.35:90.30:90.30"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fconstrain-shift-value</Identifier>
-        <Value>87650.46</Value>
-        <RawString>87336.09:87892.88:87722.42</RawString>
-        <JSON>{"test-run-times":"90.13:90.14:90.17"}</JSON>
+        <Value>102223.57</Value>
+        <RawString>102124.82:102215.62:102330.28</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.25:90.28:90.34"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
-        <Value>87040.92</Value>
-        <RawString>86783.34:87604.17:86735.25</RawString>
-        <JSON>{"test-run-times":"90.16:90.08:90.07"}</JSON>
+        <Value>102101.39</Value>
+        <RawString>101990.72:101953.86:102359.58</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.24:90.32:90.26"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>86340.74</Value>
-        <RawString>85515.84:86743.87:86762.51</RawString>
-        <JSON>{"test-run-times":"90.14:90.07:90.15"}</JSON>
+        <Value>102788.62</Value>
+        <RawString>102561.12:103296.63:102508.12</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.25:90.29:90.26"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
-        <Value>86044.19</Value>
-        <RawString>85922.04:86274.35:85936.19</RawString>
-        <JSON>{"test-run-times":"90.06:90.06:90.14"}</JSON>
+        <Value>88201.41</Value>
+        <RawString>101715.24:95059.57:86965.79:90511.18:84929.43:86304.53:88670.24:85793.24:88766.77:84840.62:87630.03:85206.27:85177.43:84213.53:87237.31</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.27:90.28:90.26:90.29:90.33:90.34:90.28:90.27:90.27:90.37:90.28:90.28:90.31:90.28:90.24"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>86290.20</Value>
-        <RawString>86389.31:86161.32:86319.97</RawString>
-        <JSON>{"test-run-times":"90.05:90.20:90.12"}</JSON>
+        <Value>102584.93</Value>
+        <RawString>102277.43:102854.88:102622.47</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.28:90.24:90.29"}</JSON>
       </Entry>
     </Data>
   </Result>
   <Result>
-    <Identifier>pts/apache-2.0.1</Identifier>
+    <Identifier>pts/apache-3.0.0</Identifier>
     <Title>Apache HTTP Server</Title>
-    <AppVersion>2.4.48</AppVersion>
+    <AppVersion>2.4.56</AppVersion>
     <Arguments>-c 1000</Arguments>
     <Description>Concurrent Requests: 1000</Description>
     <Scale>Requests Per Second</Scale>
@@ -323,39 +323,39 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>80985.26</Value>
-        <RawString>80666.98:80882.8:81406.01</RawString>
-        <JSON>{"test-run-times":"92.79:90.96:90.75"}</JSON>
+        <Value>90873.11</Value>
+        <RawString>89633.62:90425.42:92560.29</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.40:90.36:90.27"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fconstrain-shift-value</Identifier>
-        <Value>81911.10</Value>
-        <RawString>81408.11:81986.43:82338.76</RawString>
-        <JSON>{"test-run-times":"90.60:90.59:90.84"}</JSON>
+        <Value>90171.84</Value>
+        <RawString>89570.9:90706.35:90238.28</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.27:90.41:90.34"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
-        <Value>81920.71</Value>
-        <RawString>81611.27:81755.05:82395.81</RawString>
-        <JSON>{"test-run-times":"92.20:90.89:92.05"}</JSON>
+        <Value>91224.11</Value>
+        <RawString>90192.09:92855.31:90624.94</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.39:90.41:90.30"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>79470.84</Value>
-        <RawString>81131.03:79713.7:77567.79</RawString>
-        <JSON>{"test-run-times":"91.48:92.06:90.72"}</JSON>
+        <Value>91912.26</Value>
+        <RawString>90646.22:91229.79:93860.77</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.35:90.35:90.44"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
-        <Value>80709.38</Value>
-        <RawString>80772.07:81217.53:80138.53</RawString>
-        <JSON>{"test-run-times":"93.05:90.55:90.84"}</JSON>
+        <Value>79608.19</Value>
+        <RawString>89658.17:89828.54:82415.02:75812.52:75541.59:74809.13:75305.18:75025.46:76658.91:75163.75:79171.81:85908.18</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.32:90.42:90.34:90.47:90.39:90.43:90.43:90.41:90.43:90.34:90.29:90.40"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>80847.03</Value>
-        <RawString>80757.29:80920:80863.8</RawString>
-        <JSON>{"test-run-times":"92.01:91.03:90.97"}</JSON>
+        <Value>90155.61</Value>
+        <RawString>90000.38:90706.56:89759.89</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.28:90.35:90.34"}</JSON>
       </Entry>
     </Data>
   </Result>

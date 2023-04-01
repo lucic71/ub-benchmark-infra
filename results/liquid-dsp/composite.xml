@@ -3,7 +3,7 @@
 <PhoronixTestSuite>
   <Generated>
     <Title>liquid-dsp</Title>
-    <LastModified>2023-03-23 17:04:52</LastModified>
+    <LastModified>2023-04-01 09:53:54</LastModified>
     <TestClient>Phoronix Test Suite v10.8.4</TestClient>
     <Description>liquid-dsp-base</Description>
     <Notes></Notes>
@@ -13,63 +13,63 @@
   </Generated>
   <System>
     <Identifier>base</Identifier>
-    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
-    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-07 22:38:19</TimeStamp>
+    <TimeStamp>2023-04-01 03:27:32</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
-    <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+    <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
     <Identifier>fconstrain-shift-value</Identifier>
-    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L</Hardware>
     <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-23 10:39:12</TimeStamp>
+    <TimeStamp>2023-03-30 23:52:01</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
     <Identifier>fno-delete-null-pointer-checks</Identifier>
-    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L</Hardware>
     <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-22 19:34:07</TimeStamp>
+    <TimeStamp>2023-03-29 08:42:52</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
     <Identifier>fno-strict-aliasing</Identifier>
-    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
-    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-10 04:21:58</TimeStamp>
+    <TimeStamp>2023-03-28 03:36:53</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
-    <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+    <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
     <Identifier>fstrict-enums</Identifier>
-    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
-    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-11 06:58:23</TimeStamp>
+    <TimeStamp>2023-03-28 17:15:03</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
-    <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+    <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
     <Identifier>fwrapv</Identifier>
-    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
-    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + GCC 10.2.1 20210110 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-03-09 02:00:39</TimeStamp>
+    <TimeStamp>2023-03-27 14:27:40</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
-    <JSON>{"compiler-configuration":"Optimized build; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+    <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <Result>
     <Identifier>pts/liquid-dsp-1.0.0</Identifier>
@@ -83,39 +83,39 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>38407214</Value>
-        <RawString>41173000:37699000:37747000:38218000:38360000:38690000:38201000:39726000:38093000:38076000:37736000:37771000:37849000:38362000</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.60:20.02:20.02:20.02:20.02:20.02:20.02:20.02:20.02:20.02:20.02:20.02:20.02:20.02"}</JSON>
+        <Value>38308333</Value>
+        <RawString>38207000:38409000:38309000</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.58:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fconstrain-shift-value</Identifier>
-        <Value>38612600</Value>
-        <RawString>41304000:37649000:38366000:38096000:38727000:41209000:37562000:37775000:40149000:38337000:38099000:37599000:37594000:39071000:37652000</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.63:20.02:20.01:20.02:20.02:20.01:20.02:20.01:20.02:20.02:20.02:20.01:20.02:20.01:20.01"}</JSON>
+        <Value>37881000</Value>
+        <RawString>37577000:38229000:37837000</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.58:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
-        <Value>37596000</Value>
-        <RawString>37627000:37506000:37655000</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.59:20.02:20.02"}</JSON>
+        <Value>38505667</Value>
+        <RawString>37680000:40460000:37347000:37879000:39032000:37636000:37514000:37833000:40461000:37540000:40106000:37604000:37502000:37824000:41167000</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.59:20.02:20.02:20.02:20.02:20.02:20.02:20.02:20.02:20.02:20.02:20.02:20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>39102750</Value>
-        <RawString>41301000:38076000:39055000:38867000:38852000:38838000:38835000:38998000</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.70:20.02:20.02:20.02:20.02:20.02:20.02:20.02"}</JSON>
+        <Value>38027000</Value>
+        <RawString>38023000:38032000:38026000</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.57:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
-        <Value>38472667</Value>
-        <RawString>38534000:38308000:38576000</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.65:20.02:20.02"}</JSON>
+        <Value>38518455</Value>
+        <RawString>41173000:38456000:38112000:38019000:37535000:38599000:38760000:37944000:38389000:38405000:38311000</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.64:20.02:20.02:20.02:20.02:20.02:20.02:20.02:20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>37679000</Value>
-        <RawString>37733000:37370000:37934000</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.73:20.02:20.02"}</JSON>
+        <Value>38117000</Value>
+        <RawString>37979000:38190000:38182000</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.59:20.02:20.02"}</JSON>
       </Entry>
     </Data>
   </Result>
@@ -131,38 +131,38 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>74234000</Value>
-        <RawString>76146000:72936000:73620000</RawString>
+        <Value>75628333</Value>
+        <RawString>76572000:74608000:75705000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fconstrain-shift-value</Identifier>
-        <Value>73708333</Value>
-        <RawString>75738000:72707000:72680000</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
+        <Value>74610600</Value>
+        <RawString>77509000:74310000:72976000:74045000:74213000</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
-        <Value>74456000</Value>
-        <RawString>76121000:75714000:72559000:73430000</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02:20.02"}</JSON>
+        <Value>73543500</Value>
+        <RawString>73160000:72446000:77020000:72916000:72787000:72932000</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02:20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>73652000</Value>
-        <RawString>73450000:73382000:74124000</RawString>
+        <Value>74617333</Value>
+        <RawString>75082000:74430000:74340000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
-        <Value>73536000</Value>
-        <RawString>73949000:72659000:74000000</RawString>
+        <Value>72513000</Value>
+        <RawString>72913000:72370000:72256000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>72966000</Value>
-        <RawString>73610000:72888000:72400000</RawString>
+        <Value>74977000</Value>
+        <RawString>74493000:74515000:75923000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
     </Data>
@@ -179,38 +179,38 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>141313333</Value>
-        <RawString>142430000:140670000:140840000</RawString>
+        <Value>142950000</Value>
+        <RawString>143100000:142330000:143420000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fconstrain-shift-value</Identifier>
-        <Value>148406667</Value>
-        <RawString>147010000:150680000:147530000</RawString>
+        <Value>150016667</Value>
+        <RawString>147080000:150830000:152140000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
-        <Value>147040000</Value>
-        <RawString>150370000:142260000:149380000:144920000:148270000</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02:20.02:20.02"}</JSON>
+        <Value>142890000</Value>
+        <RawString>146370000:141450000:140850000</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>146446667</Value>
-        <RawString>143380000:147460000:148500000</RawString>
+        <Value>144620000</Value>
+        <RawString>145990000:146310000:141560000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
-        <Value>143213333</Value>
-        <RawString>142870000:142570000:144200000</RawString>
+        <Value>145136667</Value>
+        <RawString>146610000:146540000:142260000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>142876667</Value>
-        <RawString>140700000:145900000:142030000</RawString>
+        <Value>143080000</Value>
+        <RawString>144610000:142960000:141670000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
     </Data>
@@ -227,38 +227,38 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>273100000</Value>
-        <RawString>274740000:271540000:273020000</RawString>
+        <Value>274383333</Value>
+        <RawString>277690000:274580000:270880000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fconstrain-shift-value</Identifier>
-        <Value>274523333</Value>
-        <RawString>277720000:273330000:272520000</RawString>
+        <Value>271496667</Value>
+        <RawString>274490000:269130000:270870000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
-        <Value>277333333</Value>
-        <RawString>278740000:277420000:275840000</RawString>
+        <Value>270460000</Value>
+        <RawString>269580000:273520000:268280000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>272846667</Value>
-        <RawString>275660000:270330000:272550000</RawString>
+        <Value>275490000</Value>
+        <RawString>280730000:273870000:271870000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
-        <Value>275713333</Value>
-        <RawString>279690000:275020000:272430000</RawString>
+        <Value>274726667</Value>
+        <RawString>276310000:272220000:275650000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>273123333</Value>
-        <RawString>274560000:271250000:273560000</RawString>
+        <Value>275503333</Value>
+        <RawString>272090000:277210000:277210000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
     </Data>
@@ -275,38 +275,38 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>508643333</Value>
-        <RawString>509790000:508480000:507660000</RawString>
+        <Value>509486667</Value>
+        <RawString>509170000:512510000:506780000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fconstrain-shift-value</Identifier>
-        <Value>503096667</Value>
-        <RawString>501830000:502760000:504700000</RawString>
+        <Value>510626667</Value>
+        <RawString>509020000:507520000:515340000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
-        <Value>510750000</Value>
-        <RawString>517350000:508530000:506370000</RawString>
+        <Value>504933333</Value>
+        <RawString>506020000:504360000:504420000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>511446667</Value>
-        <RawString>512980000:509580000:511780000</RawString>
+        <Value>508986667</Value>
+        <RawString>516530000:512040000:498390000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
-        <Value>506690000</Value>
-        <RawString>505340000:508190000:506540000</RawString>
+        <Value>503596667</Value>
+        <RawString>501670000:501380000:507740000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>505510000</Value>
-        <RawString>503220000:500540000:512770000</RawString>
+        <Value>507550000</Value>
+        <RawString>509640000:503980000:509030000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
     </Data>
@@ -323,38 +323,38 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>796406667</Value>
-        <RawString>793230000:797010000:798980000</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.03:20.02"}</JSON>
+        <Value>799536667</Value>
+        <RawString>796140000:803570000:798900000</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fconstrain-shift-value</Identifier>
-        <Value>801430000</Value>
-        <RawString>796420000:807880000:799990000</RawString>
+        <Value>801116667</Value>
+        <RawString>797440000:804100000:801810000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
-        <Value>805676667</Value>
-        <RawString>803540000:806900000:806590000</RawString>
+        <Value>801136667</Value>
+        <RawString>795690000:800990000:806730000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>802140000</Value>
-        <RawString>800790000:801070000:804560000</RawString>
+        <Value>800086667</Value>
+        <RawString>795600000:798160000:806500000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
-        <Value>804750000</Value>
-        <RawString>801080000:806840000:806330000</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
+        <Value>802423333</Value>
+        <RawString>797150000:807500000:802620000</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.03"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>797786667</Value>
-        <RawString>791990000:800080000:801290000</RawString>
+        <Value>804456667</Value>
+        <RawString>799090000:805280000:809000000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
     </Data>
@@ -371,38 +371,38 @@
     <Data>
       <Entry>
         <Identifier>base</Identifier>
-        <Value>906010000</Value>
-        <RawString>907400000:905110000:905520000</RawString>
+        <Value>903670000</Value>
+        <RawString>903750000:902740000:904520000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.03:20.03:20.03"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fconstrain-shift-value</Identifier>
-        <Value>905810000</Value>
-        <RawString>904710000:906250000:906470000</RawString>
+        <Value>904133333</Value>
+        <RawString>905140000:903810000:903450000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.03:20.03:20.03"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
-        <Value>906773333</Value>
-        <RawString>906930000:906400000:906990000</RawString>
+        <Value>900946667</Value>
+        <RawString>900040000:903280000:899520000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.03:20.03:20.03"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-strict-aliasing</Identifier>
-        <Value>902370000</Value>
-        <RawString>902330000:902200000:902580000</RawString>
+        <Value>905160000</Value>
+        <RawString>903430000:906000000:906050000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.03:20.03:20.03"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
-        <Value>894420000</Value>
-        <RawString>890950000:894680000:897630000</RawString>
+        <Value>900990000</Value>
+        <RawString>902070000:901380000:899520000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.03:20.03:20.03"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fwrapv</Identifier>
-        <Value>905676667</Value>
-        <RawString>904650000:906670000:905710000</RawString>
+        <Value>902370000</Value>
+        <RawString>901070000:903650000:902390000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.03:20.03:20.03"}</JSON>
       </Entry>
     </Data>
