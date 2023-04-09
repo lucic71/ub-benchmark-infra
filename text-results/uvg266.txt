@@ -1,12 +1,19 @@
 hardware info:
 
 	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L
+fwrapv: 
+
+	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L
+
+	OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080
+
 
 uvg266 0.4.1
 Video Input: Bosphorus 4K - Video Preset: Slow
 Frames Per Second > Higher Is Better
 base ........................... 2.34 |=========================================
 fconstrain-shift-value ......... 2.32 |========================================
+fno-constrain-bool-value ....... 2.35 |=========================================
 fno-delete-null-pointer-checks . 2.33 |=========================================
 fno-strict-aliasing ............ 2.33 |=========================================
 fstrict-enums .................. 2.35 |=========================================
@@ -18,6 +25,7 @@ Video Input: Bosphorus 4K - Video Preset: Medium
 Frames Per Second > Higher Is Better
 base ........................... 2.60 |=========================================
 fconstrain-shift-value ......... 2.58 |=========================================
+fno-constrain-bool-value ....... 2.61 |=========================================
 fno-delete-null-pointer-checks . 2.59 |=========================================
 fno-strict-aliasing ............ 2.59 |=========================================
 fstrict-enums .................. 2.61 |=========================================
@@ -28,7 +36,8 @@ uvg266 0.4.1
 Video Input: Bosphorus 1080p - Video Preset: Slow
 Frames Per Second > Higher Is Better
 base ........................... 9.11 |=========================================
-fconstrain-shift-value ......... 9.05 |=========================================
+fconstrain-shift-value ......... 9.05 |========================================
+fno-constrain-bool-value ....... 9.17 |=========================================
 fno-delete-null-pointer-checks . 9.07 |=========================================
 fno-strict-aliasing ............ 9.06 |=========================================
 fstrict-enums .................. 9.12 |=========================================
@@ -40,10 +49,11 @@ Video Input: Bosphorus 1080p - Video Preset: Medium
 Frames Per Second > Higher Is Better
 base ........................... 10.14 |========================================
 fconstrain-shift-value ......... 10.08 |========================================
+fno-constrain-bool-value ....... 10.20 |========================================
 fno-delete-null-pointer-checks . 10.12 |========================================
 fno-strict-aliasing ............ 10.11 |========================================
 fstrict-enums .................. 10.11 |========================================
-fwrapv ......................... 10.03 |========================================
+fwrapv ......................... 10.03 |=======================================
 
 
 uvg266 0.4.1
@@ -51,6 +61,7 @@ Video Input: Bosphorus 4K - Video Preset: Very Fast
 Frames Per Second > Higher Is Better
 base ........................... 7.31 |=========================================
 fconstrain-shift-value ......... 7.24 |========================================
+fno-constrain-bool-value ....... 7.32 |=========================================
 fno-delete-null-pointer-checks . 7.23 |========================================
 fno-strict-aliasing ............ 7.24 |========================================
 fstrict-enums .................. 7.33 |=========================================
@@ -62,6 +73,7 @@ Video Input: Bosphorus 4K - Video Preset: Super Fast
 Frames Per Second > Higher Is Better
 base ........................... 7.60 |=========================================
 fconstrain-shift-value ......... 7.51 |========================================
+fno-constrain-bool-value ....... 7.61 |=========================================
 fno-delete-null-pointer-checks . 7.52 |=========================================
 fno-strict-aliasing ............ 7.53 |=========================================
 fstrict-enums .................. 7.61 |=========================================
@@ -73,6 +85,7 @@ Video Input: Bosphorus 4K - Video Preset: Ultra Fast
 Frames Per Second > Higher Is Better
 base ........................... 10.49 |========================================
 fconstrain-shift-value ......... 10.32 |=======================================
+fno-constrain-bool-value ....... 10.54 |========================================
 fno-delete-null-pointer-checks . 10.37 |=======================================
 fno-strict-aliasing ............ 10.39 |=======================================
 fstrict-enums .................. 10.55 |========================================
@@ -84,6 +97,7 @@ Video Input: Bosphorus 1080p - Video Preset: Very Fast
 Frames Per Second > Higher Is Better
 base ........................... 28.35 |========================================
 fconstrain-shift-value ......... 28.14 |========================================
+fno-constrain-bool-value ....... 28.42 |========================================
 fno-delete-null-pointer-checks . 28.20 |========================================
 fno-strict-aliasing ............ 28.09 |========================================
 fstrict-enums .................. 28.40 |========================================
@@ -94,7 +108,8 @@ uvg266 0.4.1
 Video Input: Bosphorus 1080p - Video Preset: Super Fast
 Frames Per Second > Higher Is Better
 base ........................... 29.45 |========================================
-fconstrain-shift-value ......... 29.19 |========================================
+fconstrain-shift-value ......... 29.19 |=======================================
+fno-constrain-bool-value ....... 29.56 |========================================
 fno-delete-null-pointer-checks . 29.35 |========================================
 fno-strict-aliasing ............ 29.25 |========================================
 fstrict-enums .................. 29.54 |========================================
@@ -106,6 +121,7 @@ Video Input: Bosphorus 1080p - Video Preset: Ultra Fast
 Frames Per Second > Higher Is Better
 base ........................... 39.36 |========================================
 fconstrain-shift-value ......... 38.88 |=======================================
+fno-constrain-bool-value ....... 39.54 |========================================
 fno-delete-null-pointer-checks . 38.98 |=======================================
 fno-strict-aliasing ............ 39.08 |========================================
 fstrict-enums .................. 39.57 |========================================

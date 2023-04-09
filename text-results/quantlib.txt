@@ -1,13 +1,20 @@
 hardware info:
 
 	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L
+fwrapv: 
+
+	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L
+
+	OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080
+
 
 QuantLib 1.21
 
 MFLOPS > Higher Is Better
 base ........................... 1717.3 |=======================================
 fconstrain-shift-value ......... 1715.0 |=======================================
-fno-delete-null-pointer-checks . 1698.0 |=======================================
+fno-constrain-bool-value ....... 1721.4 |=======================================
+fno-delete-null-pointer-checks . 1698.0 |======================================
 fno-strict-aliasing ............ 1626.5 |=====================================
 fstrict-enums .................. 1711.6 |=======================================
 fwrapv ......................... 1693.0 |======================================

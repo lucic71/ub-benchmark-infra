@@ -1,12 +1,19 @@
 hardware info:
 
 	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L
+fwrapv: 
+
+	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L
+
+	OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080
+
 
 JPEG XL libjxl 0.7
 Input: PNG - Quality: 80
 MP/s > Higher Is Better
 base ........................... 8.31 |=========================================
 fconstrain-shift-value ......... 8.30 |=========================================
+fno-constrain-bool-value ....... 7.74 |======================================
 fno-delete-null-pointer-checks . 8.10 |========================================
 fno-strict-aliasing ............ 8.34 |=========================================
 fstrict-enums .................. 7.80 |======================================
@@ -18,6 +25,7 @@ Input: PNG - Quality: 90
 MP/s > Higher Is Better
 base ........................... 8.18 |=========================================
 fconstrain-shift-value ......... 8.18 |=========================================
+fno-constrain-bool-value ....... 7.61 |======================================
 fno-delete-null-pointer-checks . 7.94 |========================================
 fno-strict-aliasing ............ 8.20 |=========================================
 fstrict-enums .................. 7.60 |======================================
@@ -29,6 +37,7 @@ Input: JPEG - Quality: 80
 MP/s > Higher Is Better
 base ........................... 7.95 |=========================================
 fconstrain-shift-value ......... 7.96 |=========================================
+fno-constrain-bool-value ....... 7.42 |======================================
 fno-delete-null-pointer-checks . 7.46 |======================================
 fno-strict-aliasing ............ 8.01 |=========================================
 fstrict-enums .................. 7.11 |====================================
@@ -40,6 +49,7 @@ Input: JPEG - Quality: 90
 MP/s > Higher Is Better
 base ........................... 7.75 |=========================================
 fconstrain-shift-value ......... 7.71 |=========================================
+fno-constrain-bool-value ....... 7.57 |========================================
 fno-delete-null-pointer-checks . 7.29 |=======================================
 fno-strict-aliasing ............ 7.75 |=========================================
 fstrict-enums .................. 7.11 |======================================
@@ -51,6 +61,7 @@ Input: PNG - Quality: 100
 MP/s > Higher Is Better
 base ........................... 0.40 |========================================
 fconstrain-shift-value ......... 0.41 |=========================================
+fno-constrain-bool-value ....... 0.40 |========================================
 fno-delete-null-pointer-checks . 0.40 |========================================
 fno-strict-aliasing ............ 0.37 |=====================================
 fstrict-enums .................. 0.41 |=========================================
@@ -62,6 +73,7 @@ Input: JPEG - Quality: 100
 MP/s > Higher Is Better
 base ........................... 0.38 |========================================
 fconstrain-shift-value ......... 0.39 |=========================================
+fno-constrain-bool-value ....... 0.39 |=========================================
 fno-delete-null-pointer-checks . 0.37 |=======================================
 fno-strict-aliasing ............ 0.35 |=====================================
 fstrict-enums .................. 0.38 |========================================

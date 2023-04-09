@@ -1,12 +1,19 @@
 hardware info:
 
 	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L
+fwrapv: 
+
+	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L
+
+	OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080
+
 
 John The Ripper 2023.03.14
 Test: bcrypt
 Real C/S > Higher Is Better
 base ........................... 1179 |=========================================
 fconstrain-shift-value ......... 1174 |=========================================
+fno-constrain-bool-value ....... 1177 |=========================================
 fno-delete-null-pointer-checks . 1171 |=========================================
 fno-strict-aliasing ............ 1175 |=========================================
 fstrict-enums .................. 1178 |=========================================
@@ -18,6 +25,7 @@ Test: WPA PSK
 Real C/S > Higher Is Better
 base ........................... 1513 |=========================================
 fconstrain-shift-value ......... 1505 |=========================================
+fno-constrain-bool-value ....... 1506 |=========================================
 fno-delete-null-pointer-checks . 1509 |=========================================
 fno-strict-aliasing ............ 1507 |=========================================
 fstrict-enums .................. 1511 |=========================================
@@ -29,6 +37,7 @@ Test: Blowfish
 Real C/S > Higher Is Better
 base ........................... 1179 |=========================================
 fconstrain-shift-value ......... 1174 |=========================================
+fno-constrain-bool-value ....... 1176 |=========================================
 fno-delete-null-pointer-checks . 1172 |=========================================
 fno-strict-aliasing ............ 1175 |=========================================
 fstrict-enums .................. 1178 |=========================================
@@ -40,6 +49,7 @@ Test: HMAC-SHA512
 Real C/S > Higher Is Better
 base ........................... 2052333 |======================================
 fconstrain-shift-value ......... 2044000 |======================================
+fno-constrain-bool-value ....... 2043667 |======================================
 fno-delete-null-pointer-checks . 2038333 |======================================
 fno-strict-aliasing ............ 2045000 |======================================
 fstrict-enums .................. 2049667 |======================================
@@ -51,6 +61,7 @@ Test: MD5
 Real C/S > Higher Is Better
 base ........................... 42478 |========================================
 fconstrain-shift-value ......... 42197 |========================================
+fno-constrain-bool-value ....... 42268 |========================================
 fno-delete-null-pointer-checks . 42192 |========================================
 fno-strict-aliasing ............ 42307 |========================================
 fstrict-enums .................. 42455 |========================================

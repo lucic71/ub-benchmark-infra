@@ -1,6 +1,12 @@
 hardware info:
 
 	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L
+fwrapv: 
+
+	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L
+
+	OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080
+
 
 nginx 1.23.2
 Connections: 1
@@ -17,6 +23,7 @@ Connections: 100
 Requests Per Second > Higher Is Better
 base ........................... 52380.64 |=====================================
 fconstrain-shift-value ......... 52527.11 |=====================================
+fno-constrain-bool-value ....... 52748.17 |=====================================
 fno-delete-null-pointer-checks . 52497.66 |=====================================
 fno-strict-aliasing ............ 52784.53 |=====================================
 fstrict-enums .................. 52156.43 |=====================================
@@ -28,7 +35,8 @@ Connections: 200
 Requests Per Second > Higher Is Better
 base ........................... 53429.41 |=====================================
 fconstrain-shift-value ......... 53343.34 |=====================================
-fno-delete-null-pointer-checks . 52848.87 |=====================================
+fno-constrain-bool-value ....... 53681.32 |=====================================
+fno-delete-null-pointer-checks . 52848.87 |====================================
 fno-strict-aliasing ............ 53556.04 |=====================================
 fstrict-enums .................. 53435.22 |=====================================
 fwrapv ......................... 53524.87 |=====================================
@@ -39,6 +47,7 @@ Connections: 500
 Requests Per Second > Higher Is Better
 base ........................... 52974.69 |=====================================
 fconstrain-shift-value ......... 52942.77 |=====================================
+fno-constrain-bool-value ....... 53433.93 |=====================================
 fno-delete-null-pointer-checks . 52932.85 |=====================================
 fno-strict-aliasing ............ 53225.53 |=====================================
 fstrict-enums .................. 53083.94 |=====================================
@@ -50,6 +59,7 @@ Connections: 1000
 Requests Per Second > Higher Is Better
 base ........................... 52194.93 |=====================================
 fconstrain-shift-value ......... 52579.08 |=====================================
+fno-constrain-bool-value ....... 52627.28 |=====================================
 fno-delete-null-pointer-checks . 52005.02 |=====================================
 fno-strict-aliasing ............ 52589.07 |=====================================
 fstrict-enums .................. 51976.93 |=====================================

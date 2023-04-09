@@ -1,12 +1,19 @@
 hardware info:
 
 	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L
+fwrapv: 
+
+	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L
+
+	OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080
+
 
 Zstd Compression 1.5.4
 Compression Level: 3 - Compression Speed
 MB/s > Higher Is Better
 base ........................... 1310.0 |=======================================
 fconstrain-shift-value ......... 1266.1 |=====================================
+fno-constrain-bool-value ....... 1314.6 |=======================================
 fno-delete-null-pointer-checks . 1298.0 |======================================
 fno-strict-aliasing ............ 1305.6 |=======================================
 fstrict-enums .................. 1264.8 |=====================================
@@ -18,6 +25,7 @@ Compression Level: 3 - Decompression Speed
 MB/s > Higher Is Better
 base ........................... 693.5 |========================================
 fconstrain-shift-value ......... 694.0 |========================================
+fno-constrain-bool-value ....... 692.0 |========================================
 fno-delete-null-pointer-checks . 692.2 |========================================
 fno-strict-aliasing ............ 694.2 |========================================
 fstrict-enums .................. 689.4 |=======================================
@@ -29,6 +37,7 @@ Compression Level: 8 - Compression Speed
 MB/s > Higher Is Better
 base ........................... 399.8 |========================================
 fconstrain-shift-value ......... 391.6 |=======================================
+fno-constrain-bool-value ....... 382.5 |======================================
 fno-delete-null-pointer-checks . 391.3 |=======================================
 fno-strict-aliasing ............ 372.2 |=====================================
 fstrict-enums .................. 390.9 |=======================================
@@ -40,6 +49,7 @@ Compression Level: 8 - Decompression Speed
 MB/s > Higher Is Better
 base ........................... 719.3 |========================================
 fconstrain-shift-value ......... 720.2 |========================================
+fno-constrain-bool-value ....... 718.0 |========================================
 fno-delete-null-pointer-checks . 720.7 |========================================
 fno-strict-aliasing ............ 720.8 |========================================
 fstrict-enums .................. 719.9 |========================================
@@ -51,6 +61,7 @@ Compression Level: 12 - Compression Speed
 MB/s > Higher Is Better
 base ........................... 128.8 |=======================================
 fconstrain-shift-value ......... 130.0 |========================================
+fno-constrain-bool-value ....... 127.2 |=======================================
 fno-delete-null-pointer-checks . 124.3 |======================================
 fno-strict-aliasing ............ 128.3 |=======================================
 fstrict-enums .................. 131.5 |========================================
@@ -62,6 +73,7 @@ Compression Level: 12 - Decompression Speed
 MB/s > Higher Is Better
 base ........................... 693.0 |========================================
 fconstrain-shift-value ......... 694.5 |========================================
+fno-constrain-bool-value ....... 692.2 |========================================
 fno-delete-null-pointer-checks . 694.4 |========================================
 fno-strict-aliasing ............ 695.6 |========================================
 fstrict-enums .................. 694.9 |========================================
@@ -73,6 +85,7 @@ Compression Level: 19 - Compression Speed
 MB/s > Higher Is Better
 base ........................... 12.9 |========================================
 fconstrain-shift-value ......... 12.9 |========================================
+fno-constrain-bool-value ....... 12.8 |========================================
 fno-delete-null-pointer-checks . 13.2 |=========================================
 fno-strict-aliasing ............ 12.7 |=======================================
 fstrict-enums .................. 12.5 |=======================================
@@ -84,6 +97,7 @@ Compression Level: 19 - Decompression Speed
 MB/s > Higher Is Better
 base ........................... 642.4 |========================================
 fconstrain-shift-value ......... 640.3 |========================================
+fno-constrain-bool-value ....... 640.7 |========================================
 fno-delete-null-pointer-checks . 643.0 |========================================
 fno-strict-aliasing ............ 642.1 |========================================
 fstrict-enums .................. 643.3 |========================================
@@ -95,6 +109,7 @@ Compression Level: 3, Long Mode - Compression Speed
 MB/s > Higher Is Better
 base ........................... 613.9 |========================================
 fconstrain-shift-value ......... 616.9 |========================================
+fno-constrain-bool-value ....... 608.1 |=======================================
 fno-delete-null-pointer-checks . 613.2 |========================================
 fno-strict-aliasing ............ 600.7 |=======================================
 fstrict-enums .................. 617.9 |========================================
@@ -106,6 +121,7 @@ Compression Level: 3, Long Mode - Decompression Speed
 MB/s > Higher Is Better
 base ........................... 720.8 |========================================
 fconstrain-shift-value ......... 723.1 |========================================
+fno-constrain-bool-value ....... 716.8 |=======================================
 fno-delete-null-pointer-checks . 723.7 |========================================
 fno-strict-aliasing ............ 724.1 |========================================
 fstrict-enums .................. 722.6 |========================================
@@ -117,6 +133,7 @@ Compression Level: 8, Long Mode - Compression Speed
 MB/s > Higher Is Better
 base ........................... 423.7 |========================================
 fconstrain-shift-value ......... 422.7 |========================================
+fno-constrain-bool-value ....... 418.2 |=======================================
 fno-delete-null-pointer-checks . 420.8 |========================================
 fno-strict-aliasing ............ 418.5 |========================================
 fstrict-enums .................. 421.8 |========================================
@@ -128,6 +145,7 @@ Compression Level: 8, Long Mode - Decompression Speed
 MB/s > Higher Is Better
 base ........................... 727.8 |========================================
 fconstrain-shift-value ......... 730.8 |========================================
+fno-constrain-bool-value ....... 723.6 |=======================================
 fno-delete-null-pointer-checks . 727.9 |========================================
 fno-strict-aliasing ............ 731.2 |========================================
 fstrict-enums .................. 730.7 |========================================
@@ -139,6 +157,7 @@ Compression Level: 19, Long Mode - Compression Speed
 MB/s > Higher Is Better
 base ........................... 7.10 |=======================================
 fconstrain-shift-value ......... 7.23 |========================================
+fno-constrain-bool-value ....... 7.38 |=========================================
 fno-delete-null-pointer-checks . 7.28 |========================================
 fno-strict-aliasing ............ 6.95 |=======================================
 fstrict-enums .................. 7.37 |=========================================
@@ -150,6 +169,7 @@ Compression Level: 19, Long Mode - Decompression Speed
 MB/s > Higher Is Better
 base ........................... 634.8 |=======================================
 fconstrain-shift-value ......... 633.5 |=======================================
+fno-constrain-bool-value ....... 633.7 |=======================================
 fno-delete-null-pointer-checks . 637.0 |========================================
 fno-strict-aliasing ............ 640.2 |========================================
 fstrict-enums .................. 631.9 |=======================================

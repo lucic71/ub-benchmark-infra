@@ -3,7 +3,7 @@
 <PhoronixTestSuite>
   <Generated>
     <Title>liquid-dsp</Title>
-    <LastModified>2023-04-01 09:53:54</LastModified>
+    <LastModified>2023-04-09 09:47:42</LastModified>
     <TestClient>Phoronix Test Suite v10.8.4</TestClient>
     <Description>liquid-dsp-base</Description>
     <Notes></Notes>
@@ -27,6 +27,16 @@
     <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
     <TimeStamp>2023-03-30 23:52:01</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>fno-constrain-bool-value</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>root</User>
+    <TimeStamp>2023-04-08 22:26:07</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
@@ -94,6 +104,12 @@
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.58:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
+        <Identifier>fno-constrain-bool-value</Identifier>
+        <Value>37490667</Value>
+        <RawString>37608000:37654000:37210000</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.66:20.02:20.02"}</JSON>
+      </Entry>
+      <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
         <Value>38505667</Value>
         <RawString>37680000:40460000:37347000:37879000:39032000:37636000:37514000:37833000:40461000:37540000:40106000:37604000:37502000:37824000:41167000</RawString>
@@ -140,6 +156,12 @@
         <Value>74610600</Value>
         <RawString>77509000:74310000:72976000:74045000:74213000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02:20.02:20.02"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-constrain-bool-value</Identifier>
+        <Value>73794000</Value>
+        <RawString>72475000:73528000:75379000</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
@@ -190,6 +212,12 @@
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
+        <Identifier>fno-constrain-bool-value</Identifier>
+        <Value>145295000</Value>
+        <RawString>148250000:145460000:140650000:140050000:151190000:141740000:145650000:147970000:146900000:145090000</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02:20.02:20.02:20.02:20.02:20.02:20.02:20.02"}</JSON>
+      </Entry>
+      <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
         <Value>142890000</Value>
         <RawString>146370000:141450000:140850000</RawString>
@@ -235,6 +263,12 @@
         <Identifier>fconstrain-shift-value</Identifier>
         <Value>271496667</Value>
         <RawString>274490000:269130000:270870000</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-constrain-bool-value</Identifier>
+        <Value>271486667</Value>
+        <RawString>267850000:273550000:273060000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
@@ -286,6 +320,12 @@
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
+        <Identifier>fno-constrain-bool-value</Identifier>
+        <Value>507890000</Value>
+        <RawString>510530000:505140000:508000000</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
+      </Entry>
+      <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
         <Value>504933333</Value>
         <RawString>506020000:504360000:504420000</RawString>
@@ -334,6 +374,12 @@
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
+        <Identifier>fno-constrain-bool-value</Identifier>
+        <Value>801486667</Value>
+        <RawString>798540000:801640000:804280000</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
+      </Entry>
+      <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
         <Value>801136667</Value>
         <RawString>795690000:800990000:806730000</RawString>
@@ -379,6 +425,12 @@
         <Identifier>fconstrain-shift-value</Identifier>
         <Value>904133333</Value>
         <RawString>905140000:903810000:903450000</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.03:20.03:20.03"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-constrain-bool-value</Identifier>
+        <Value>904046667</Value>
+        <RawString>902290000:905980000:903870000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.03:20.03:20.03"}</JSON>
       </Entry>
       <Entry>

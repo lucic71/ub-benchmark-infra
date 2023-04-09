@@ -3,7 +3,7 @@
 <PhoronixTestSuite>
   <Generated>
     <Title>compress-zstd</Title>
-    <LastModified>2023-04-01 09:53:26</LastModified>
+    <LastModified>2023-04-09 09:47:14</LastModified>
     <TestClient>Phoronix Test Suite v10.8.4</TestClient>
     <Description>compress-zstd-base</Description>
     <Notes></Notes>
@@ -27,6 +27,16 @@
     <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
     <TimeStamp>2023-03-30 22:43:32</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>fno-constrain-bool-value</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>root</User>
+    <TimeStamp>2023-04-08 20:59:29</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
@@ -94,6 +104,12 @@
         <JSON>{"test-run-times":"64.72:64.88:64.35"}</JSON>
       </Entry>
       <Entry>
+        <Identifier>fno-constrain-bool-value</Identifier>
+        <Value>1314.6</Value>
+        <RawString>1350.2:1294.6:1267.9:1259.6:1279.8:1400.3:1321.9:1343.3:1300.9:1313.2:1264.9:1370.2:1327.6:1305.5:1319.2</RawString>
+        <JSON>{"test-run-times":"66.29:65.02:64.73:64.73:64.01:63.08:63.16:63.19:64.24:64.63:64.67:63.63:64.32:64.62:64.75"}</JSON>
+      </Entry>
+      <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
         <Value>1298.0</Value>
         <RawString>1294.9:1305.8:1293.4</RawString>
@@ -140,6 +156,12 @@
         <Value>694.0</Value>
         <RawString>695:693.1:693.9</RawString>
         <JSON>{"test-run-times":"64.72:64.88:64.35"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-constrain-bool-value</Identifier>
+        <Value>692.0</Value>
+        <RawString>691.4:691.9:691:692.4:692:691.9:692.3:692:691.6:692.5:693.1:692.2:693.1:691.2:691.4</RawString>
+        <JSON>{"test-run-times":"66.29:65.02:64.73:64.73:64.01:63.08:63.16:63.19:64.24:64.63:64.67:63.63:64.32:64.62:64.75"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
@@ -190,6 +212,12 @@
         <JSON>{"test-run-times":"64.01:64.28:63.75:64.22:64.53:64.00:63.98:64.54:64.60:64.76:64.28:64.72:63.80:62.57:64.00"}</JSON>
       </Entry>
       <Entry>
+        <Identifier>fno-constrain-bool-value</Identifier>
+        <Value>382.5</Value>
+        <RawString>377.2:337.1:338.7:382:417.9:396:391:359.5:374.2:382.3:421:399.5:401.7:390.8:368.2</RawString>
+        <JSON>{"test-run-times":"63.76:65.10:64.10:63.88:64.44:64.47:63.44:64.17:63.53:63.90:63.93:64.33:64.53:63.04:63.68"}</JSON>
+      </Entry>
+      <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
         <Value>391.3</Value>
         <RawString>376.3:412.8:379.4:362.3:414.1:351.9:409.7:387.2:348:438.4:385.5:406.8:385.8:421.1:390.7</RawString>
@@ -236,6 +264,12 @@
         <Value>720.2</Value>
         <RawString>719.1:719.5:721.6:722.1:720.6:719.8:720.4:720.4:719.6:721.2:718.5:719.7:719.3:720.4:720.2</RawString>
         <JSON>{"test-run-times":"64.01:64.28:63.75:64.22:64.53:64.00:63.98:64.54:64.60:64.76:64.28:64.72:63.80:62.57:64.00"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-constrain-bool-value</Identifier>
+        <Value>718.0</Value>
+        <RawString>718.2:718.7:719.1:716.7:719.4:717.4:716.7:717.6:717.4:716.9:716.5:717:720:717.8:720.3</RawString>
+        <JSON>{"test-run-times":"63.76:65.10:64.10:63.88:64.44:64.47:63.44:64.17:63.53:63.90:63.93:64.33:64.53:63.04:63.68"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
@@ -286,6 +320,12 @@
         <JSON>{"test-run-times":"64.03:63.74:63.96"}</JSON>
       </Entry>
       <Entry>
+        <Identifier>fno-constrain-bool-value</Identifier>
+        <Value>127.2</Value>
+        <RawString>130.5:131.9:123.4:117.6:132.7:126.8:131.3:126:128.9:129.6:120.2:135.1:124.6:118.9:130.4</RawString>
+        <JSON>{"test-run-times":"64.99:63.32:63.61:64.34:65.09:64.43:64.53:63.60:64.91:64.39:63.87:65.01:64.42:63.98:63.63"}</JSON>
+      </Entry>
+      <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
         <Value>124.3</Value>
         <RawString>123.2:123.5:126.3</RawString>
@@ -332,6 +372,12 @@
         <Value>694.5</Value>
         <RawString>694.9:693.8:694.9</RawString>
         <JSON>{"test-run-times":"64.03:63.74:63.96"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-constrain-bool-value</Identifier>
+        <Value>692.2</Value>
+        <RawString>694.6:693.4:692.7:688.9:690.2:692.4:689.4:691.1:688.3:694.3:693.1:694.8:696.6:693:689.9</RawString>
+        <JSON>{"test-run-times":"64.99:63.32:63.61:64.34:65.09:64.43:64.53:63.60:64.91:64.39:63.87:65.01:64.42:63.98:63.63"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
@@ -382,6 +428,12 @@
         <JSON>{"test-run-times":"65.78:65.84:66.99"}</JSON>
       </Entry>
       <Entry>
+        <Identifier>fno-constrain-bool-value</Identifier>
+        <Value>12.8</Value>
+        <RawString>12.8:12.6:13</RawString>
+        <JSON>{"test-run-times":"66.26:66.16:65.93"}</JSON>
+      </Entry>
+      <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
         <Value>13.2</Value>
         <RawString>13.2:13:13.3</RawString>
@@ -428,6 +480,12 @@
         <Value>640.3</Value>
         <RawString>641.9:640.4:638.7</RawString>
         <JSON>{"test-run-times":"65.78:65.84:66.99"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-constrain-bool-value</Identifier>
+        <Value>640.7</Value>
+        <RawString>641.7:636.5:643.9</RawString>
+        <JSON>{"test-run-times":"66.26:66.16:65.93"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
@@ -478,6 +536,12 @@
         <JSON>{"test-run-times":"64.00:64.01:63.76"}</JSON>
       </Entry>
       <Entry>
+        <Identifier>fno-constrain-bool-value</Identifier>
+        <Value>608.1</Value>
+        <RawString>605.1:611.2:607.9</RawString>
+        <JSON>{"test-run-times":"64.48:64.18:63.99"}</JSON>
+      </Entry>
+      <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
         <Value>613.2</Value>
         <RawString>609.2:618.2:612.3</RawString>
@@ -524,6 +588,12 @@
         <Value>723.1</Value>
         <RawString>721.1:725.1:723.2</RawString>
         <JSON>{"test-run-times":"64.00:64.01:63.76"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-constrain-bool-value</Identifier>
+        <Value>716.8</Value>
+        <RawString>712.7:718.7:719</RawString>
+        <JSON>{"test-run-times":"64.48:64.18:63.99"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
@@ -574,6 +644,12 @@
         <JSON>{"test-run-times":"64.04:64.00:64.23"}</JSON>
       </Entry>
       <Entry>
+        <Identifier>fno-constrain-bool-value</Identifier>
+        <Value>418.2</Value>
+        <RawString>420.9:413.1:420.6</RawString>
+        <JSON>{"test-run-times":"64.52:64.61:64.78"}</JSON>
+      </Entry>
+      <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
         <Value>420.8</Value>
         <RawString>421.1:418.4:422.8</RawString>
@@ -620,6 +696,12 @@
         <Value>730.8</Value>
         <RawString>729.6:730.5:732.3</RawString>
         <JSON>{"test-run-times":"64.04:64.00:64.23"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-constrain-bool-value</Identifier>
+        <Value>723.6</Value>
+        <RawString>720.3:723:727.4</RawString>
+        <JSON>{"test-run-times":"64.52:64.61:64.78"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
@@ -670,6 +752,12 @@
         <JSON>{"test-run-times":"63.20:62.39:91.52:90.83:91.76:91.93:90.88:90.87:62.66:62.40:91.97:91.97:91.33:62.81:91.88"}</JSON>
       </Entry>
       <Entry>
+        <Identifier>fno-constrain-bool-value</Identifier>
+        <Value>7.38</Value>
+        <RawString>7.46:7.46:7.21</RawString>
+        <JSON>{"test-run-times":"92.09:90.76:92.73"}</JSON>
+      </Entry>
+      <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
         <Value>7.28</Value>
         <RawString>7.56:7.13:7.22:7.17:7.01:7.22:7.6:7.56:7.08:7.2:7.04:7.32:7.43:7.1:7.52</RawString>
@@ -716,6 +804,12 @@
         <Value>633.5</Value>
         <RawString>634:634:633.2:633.6:629.5:635:634.4:630.4:633.4:635.1:635:633:633.6:634.4:634.1</RawString>
         <JSON>{"test-run-times":"63.20:62.39:91.52:90.83:91.76:91.93:90.88:90.87:62.66:62.40:91.97:91.97:91.33:62.81:91.88"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-constrain-bool-value</Identifier>
+        <Value>633.7</Value>
+        <RawString>631.8:633.6:635.6</RawString>
+        <JSON>{"test-run-times":"92.09:90.76:92.73"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fno-delete-null-pointer-checks</Identifier>
