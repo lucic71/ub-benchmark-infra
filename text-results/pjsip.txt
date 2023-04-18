@@ -1,6 +1,12 @@
 hardware info:
 
 	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L
+fstrict-enums: 
+
+	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L
+
+	OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080
+
 fwrapv: 
 
 	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L
@@ -16,6 +22,7 @@ fconstrain-shift-value ......... 4568 |========================================
 fno-constrain-bool-value ....... 4552 |========================================
 fno-delete-null-pointer-checks . 4560 |========================================
 fno-strict-aliasing ............ 4522 |========================================
+fno-use-default-alignment ...... 4576 |========================================
 fstrict-enums .................. 4661 |=========================================
 fwrapv ......................... 4542 |========================================
 
@@ -28,6 +35,7 @@ fconstrain-shift-value ......... 7588 |======================================
 fno-constrain-bool-value ....... 7430 |======================================
 fno-delete-null-pointer-checks . 7801 |========================================
 fno-strict-aliasing ............ 7816 |========================================
+fno-use-default-alignment ...... 7779 |=======================================
 fstrict-enums .................. 8084 |=========================================
 fwrapv ......................... 7728 |=======================================
 
@@ -40,6 +48,7 @@ fconstrain-shift-value ......... 42300 |========================================
 fno-constrain-bool-value ....... 41988 |========================================
 fno-delete-null-pointer-checks . 41979 |========================================
 fno-strict-aliasing ............ 41842 |========================================
+fno-use-default-alignment ...... 42262 |========================================
 fstrict-enums .................. 41893 |========================================
 fwrapv ......................... 41740 |=======================================
 
