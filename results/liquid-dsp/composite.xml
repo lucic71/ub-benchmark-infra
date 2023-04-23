@@ -3,7 +3,7 @@
 <PhoronixTestSuite>
   <Generated>
     <Title>liquid-dsp</Title>
-    <LastModified>2023-04-18 07:59:16</LastModified>
+    <LastModified>2023-04-23 11:07:26</LastModified>
     <TestClient>Phoronix Test Suite v10.8.4</TestClient>
     <Description>liquid-dsp-base</Description>
     <Notes></Notes>
@@ -63,13 +63,13 @@
   </System>
   <System>
     <Identifier>fno-use-default-alignment</Identifier>
-    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
-    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA Quadro K5000 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-04-18 04:34:44</TimeStamp>
+    <TimeStamp>2023-04-23 07:44:52</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
-    <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+    <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","environment-variables":"LDFLAGS=-latomic","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
     <Identifier>fstrict-enums</Identifier>
@@ -133,8 +133,8 @@
       </Entry>
       <Entry>
         <Identifier>fno-use-default-alignment</Identifier>
-        <Value>38552333</Value>
-        <RawString>38531000:38564000:38562000</RawString>
+        <Value>38554000</Value>
+        <RawString>38384000:38626000:38652000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.56:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
@@ -193,9 +193,9 @@
       </Entry>
       <Entry>
         <Identifier>fno-use-default-alignment</Identifier>
-        <Value>75579667</Value>
-        <RawString>74890000:75934000:75915000</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
+        <Value>75634444</Value>
+        <RawString>79994000:74904000:77315000:74284000:74917000:75403000:74797000:74767000:74329000</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02:20.02:20.02:20.02:20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
@@ -253,9 +253,9 @@
       </Entry>
       <Entry>
         <Identifier>fno-use-default-alignment</Identifier>
-        <Value>149630000</Value>
-        <RawString>147920000:153290000:147680000</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
+        <Value>143615000</Value>
+        <RawString>138790000:144980000:146550000:144140000</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
@@ -313,8 +313,8 @@
       </Entry>
       <Entry>
         <Identifier>fno-use-default-alignment</Identifier>
-        <Value>276413333</Value>
-        <RawString>272100000:279760000:277380000</RawString>
+        <Value>274043333</Value>
+        <RawString>273360000:275260000:273510000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
@@ -373,8 +373,8 @@
       </Entry>
       <Entry>
         <Identifier>fno-use-default-alignment</Identifier>
-        <Value>510790000</Value>
-        <RawString>512290000:508890000:511190000</RawString>
+        <Value>504860000</Value>
+        <RawString>506830000:503060000:504690000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
@@ -433,8 +433,8 @@
       </Entry>
       <Entry>
         <Identifier>fno-use-default-alignment</Identifier>
-        <Value>809080000</Value>
-        <RawString>805750000:811690000:809800000</RawString>
+        <Value>804230000</Value>
+        <RawString>798360000:808650000:805680000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.02:20.02:20.02"}</JSON>
       </Entry>
       <Entry>
@@ -493,8 +493,8 @@
       </Entry>
       <Entry>
         <Identifier>fno-use-default-alignment</Identifier>
-        <Value>907893333</Value>
-        <RawString>906610000:909080000:907990000</RawString>
+        <Value>908553333</Value>
+        <RawString>907040000:908960000:909660000</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-O3 -pthread -lm -lc -lliquid"},"test-run-times":"20.03:20.03:20.03"}</JSON>
       </Entry>
       <Entry>

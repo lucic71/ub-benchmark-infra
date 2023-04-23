@@ -3,7 +3,7 @@
 <PhoronixTestSuite>
   <Generated>
     <Title>jpegxl</Title>
-    <LastModified>2023-04-18 07:57:24</LastModified>
+    <LastModified>2023-04-23 11:06:59</LastModified>
     <TestClient>Phoronix Test Suite v10.8.4</TestClient>
     <Description>jpegxl-base</Description>
     <Notes></Notes>
@@ -60,6 +60,16 @@
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>fno-use-default-alignment</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA Quadro K5000 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>root</User>
+    <TimeStamp>2023-04-23 01:46:06</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","environment-variables":"LDFLAGS=-latomic","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
     <Identifier>fstrict-enums</Identifier>
@@ -122,6 +132,12 @@
         <JSON>{"test-run-times":"144.73:144.25:145.02"}</JSON>
       </Entry>
       <Entry>
+        <Identifier>fno-use-default-alignment</Identifier>
+        <Value>8.32</Value>
+        <RawString>8.37:8.29:8.31</RawString>
+        <JSON>{"test-run-times":"144.48:145.21:144.95"}</JSON>
+      </Entry>
+      <Entry>
         <Identifier>fstrict-enums</Identifier>
         <Value>7.80</Value>
         <RawString>7.82:7.81:7.77</RawString>
@@ -174,6 +190,12 @@
         <Value>8.20</Value>
         <RawString>8.2:8.22:8.18</RawString>
         <JSON>{"test-run-times":"117.64:117.41:117.98"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-use-default-alignment</Identifier>
+        <Value>8.19</Value>
+        <RawString>8.17:8.2:8.21</RawString>
+        <JSON>{"test-run-times":"118.16:117.70:117.47"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
@@ -230,6 +252,12 @@
         <JSON>{"test-run-times":"149.26:150.85:150.20"}</JSON>
       </Entry>
       <Entry>
+        <Identifier>fno-use-default-alignment</Identifier>
+        <Value>7.94</Value>
+        <RawString>7.98:7.93:7.9</RawString>
+        <JSON>{"test-run-times":"150.50:151.50:152.03"}</JSON>
+      </Entry>
+      <Entry>
         <Identifier>fstrict-enums</Identifier>
         <Value>7.11</Value>
         <RawString>7.17:7.29:6.87:7.09</RawString>
@@ -282,6 +310,12 @@
         <Value>7.75</Value>
         <RawString>7.82:7.69:7.73</RawString>
         <JSON>{"test-run-times":"122.86:125.01:124.33"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-use-default-alignment</Identifier>
+        <Value>7.74</Value>
+        <RawString>7.76:7.75:7.7</RawString>
+        <JSON>{"test-run-times":"123.83:124.04:124.85"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
@@ -338,6 +372,12 @@
         <JSON>{"test-run-times":"656.93:660.20:644.51"}</JSON>
       </Entry>
       <Entry>
+        <Identifier>fno-use-default-alignment</Identifier>
+        <Value>0.41</Value>
+        <RawString>0.41:0.41:0.41</RawString>
+        <JSON>{"test-run-times":"588.49:592.56:586.53"}</JSON>
+      </Entry>
+      <Entry>
         <Identifier>fstrict-enums</Identifier>
         <Value>0.41</Value>
         <RawString>0.41:0.41:0.41</RawString>
@@ -390,6 +430,12 @@
         <Value>0.35</Value>
         <RawString>0.36:0.35:0.35</RawString>
         <JSON>{"test-run-times":"666.14:679.62:682.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-use-default-alignment</Identifier>
+        <Value>0.39</Value>
+        <RawString>0.35:0.39:0.39:0.39:0.39:0.39:0.39:0.39:0.39</RawString>
+        <JSON>{"test-run-times":"672.23:618.22:612.40:616.84:618.70:617.81:612.28:617.49:611.91"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>

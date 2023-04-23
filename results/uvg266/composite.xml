@@ -3,7 +3,7 @@
 <PhoronixTestSuite>
   <Generated>
     <Title>uvg266</Title>
-    <LastModified>2023-04-18 07:56:56</LastModified>
+    <LastModified>2023-04-23 11:06:53</LastModified>
     <TestClient>Phoronix Test Suite v10.8.4</TestClient>
     <Description>uvg266-base</Description>
     <Notes></Notes>
@@ -63,13 +63,13 @@
   </System>
   <System>
     <Identifier>fno-use-default-alignment</Identifier>
-    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
-    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA Quadro K5000 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
     <User>root</User>
-    <TimeStamp>2023-04-18 01:06:35</TimeStamp>
+    <TimeStamp>2023-04-23 00:24:50</TimeStamp>
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
-    <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+    <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","environment-variables":"LDFLAGS=-latomic","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
     <Identifier>fstrict-enums</Identifier>
@@ -133,9 +133,9 @@
       </Entry>
       <Entry>
         <Identifier>fno-use-default-alignment</Identifier>
-        <Value>2.35</Value>
-        <RawString>2.35:2.35:2.35</RawString>
-        <JSON>{"test-run-times":"256.35:255.92:255.66"}</JSON>
+        <Value>2.34</Value>
+        <RawString>2.34:2.34:2.34</RawString>
+        <JSON>{"test-run-times":"257.19:256.57:256.82"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
@@ -193,9 +193,9 @@
       </Entry>
       <Entry>
         <Identifier>fno-use-default-alignment</Identifier>
-        <Value>2.61</Value>
-        <RawString>2.61:2.61:2.61</RawString>
-        <JSON>{"test-run-times":"230.03:230.12:230.23"}</JSON>
+        <Value>2.6</Value>
+        <RawString>2.6:2.6:2.6</RawString>
+        <JSON>{"test-run-times":"231.22:230.68:231.10"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
@@ -253,9 +253,9 @@
       </Entry>
       <Entry>
         <Identifier>fno-use-default-alignment</Identifier>
-        <Value>9.07</Value>
-        <RawString>9.09:9.03:9.09</RawString>
-        <JSON>{"test-run-times":"66.04:66.48:66.05"}</JSON>
+        <Value>9.10</Value>
+        <RawString>9.11:9.08:9.1</RawString>
+        <JSON>{"test-run-times":"65.93:66.11:66.01"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
@@ -313,9 +313,9 @@
       </Entry>
       <Entry>
         <Identifier>fno-use-default-alignment</Identifier>
-        <Value>10.14</Value>
-        <RawString>10.13:10.17:10.13</RawString>
-        <JSON>{"test-run-times":"59.29:59.04:59.30"}</JSON>
+        <Value>10.12</Value>
+        <RawString>10.15:10.06:10.14</RawString>
+        <JSON>{"test-run-times":"59.18:59.67:59.23"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
@@ -373,9 +373,9 @@
       </Entry>
       <Entry>
         <Identifier>fno-use-default-alignment</Identifier>
-        <Value>7.33</Value>
-        <RawString>7.34:7.33:7.32</RawString>
-        <JSON>{"test-run-times":"81.84:81.91:82.02"}</JSON>
+        <Value>7.27</Value>
+        <RawString>7.26:7.29:7.27</RawString>
+        <JSON>{"test-run-times":"82.64:82.41:82.63"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
@@ -433,9 +433,9 @@
       </Entry>
       <Entry>
         <Identifier>fno-use-default-alignment</Identifier>
-        <Value>7.61</Value>
-        <RawString>7.61:7.6:7.62</RawString>
-        <JSON>{"test-run-times":"78.93:78.99:78.77"}</JSON>
+        <Value>7.55</Value>
+        <RawString>7.55:7.55:7.54</RawString>
+        <JSON>{"test-run-times":"79.57:79.53:79.62"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
@@ -493,9 +493,9 @@
       </Entry>
       <Entry>
         <Identifier>fno-use-default-alignment</Identifier>
-        <Value>10.54</Value>
-        <RawString>10.57:10.53:10.52</RawString>
-        <JSON>{"test-run-times":"56.84:57.01:57.06"}</JSON>
+        <Value>10.40</Value>
+        <RawString>10.41:10.4:10.39</RawString>
+        <JSON>{"test-run-times":"57.68:57.73:57.79"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
@@ -553,9 +553,9 @@
       </Entry>
       <Entry>
         <Identifier>fno-use-default-alignment</Identifier>
-        <Value>28.40</Value>
-        <RawString>28.48:28.39:28.32</RawString>
-        <JSON>{"test-run-times":"21.12:21.18:21.24"}</JSON>
+        <Value>28.15</Value>
+        <RawString>28.27:28.1:28.08</RawString>
+        <JSON>{"test-run-times":"21.28:21.40:21.42"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
@@ -613,9 +613,9 @@
       </Entry>
       <Entry>
         <Identifier>fno-use-default-alignment</Identifier>
-        <Value>29.55</Value>
-        <RawString>29.57:29.46:29.61</RawString>
-        <JSON>{"test-run-times":"20.34:20.42:20.31"}</JSON>
+        <Value>29.33</Value>
+        <RawString>29.27:29.36:29.35</RawString>
+        <JSON>{"test-run-times":"20.55:20.48:20.50"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
@@ -673,9 +673,9 @@
       </Entry>
       <Entry>
         <Identifier>fno-use-default-alignment</Identifier>
-        <Value>39.44</Value>
-        <RawString>39.4:39.47:39.45</RawString>
-        <JSON>{"test-run-times":"15.28:15.25:15.26"}</JSON>
+        <Value>39.09</Value>
+        <RawString>39.23:39.04:38.99</RawString>
+        <JSON>{"test-run-times":"15.34:15.42:15.44"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>

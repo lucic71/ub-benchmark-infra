@@ -3,7 +3,7 @@
 <PhoronixTestSuite>
   <Generated>
     <Title>apache</Title>
-    <LastModified>2023-04-18 07:59:51</LastModified>
+    <LastModified>2023-04-23 11:07:34</LastModified>
     <TestClient>Phoronix Test Suite v10.8.4</TestClient>
     <Description>apache-base</Description>
     <Notes></Notes>
@@ -60,6 +60,16 @@
     <TestClientVersion>10.8.4</TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <System>
+    <Identifier>fno-use-default-alignment</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA Quadro K5000 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L</Hardware>
+    <Software>OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>root</User>
+    <TimeStamp>2023-04-23 08:41:32</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"Optimized build with assertions; Default target: x86_64-unknown-linux-gnu; Host CPU: ivybridge","cpu-scaling-governor":"intel_cpufreq performance","cpu-microcode":"0x417","kernel-extra-details":"Transparent Huge Pages: always","environment-variables":"LDFLAGS=-latomic","security":"itlb_multihit: KVM: Mitigation of VMX unsupported + l1tf: Mitigation of PTE Inversion + mds: Vulnerable: Clear buffers attempted no microcode; SMT vulnerable + meltdown: Mitigation of PTI + mmio_stale_data: Unknown: No mitigations + retbleed: Not affected + spec_store_bypass: Vulnerable + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Retpolines STIBP: disabled RSB filling PBRSB-eIBRS: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
   </System>
   <System>
     <Identifier>fstrict-enums</Identifier>
@@ -122,6 +132,12 @@
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status."}</JSON>
       </Entry>
       <Entry>
+        <Identifier>fno-use-default-alignment</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-latomic -lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+      <Entry>
         <Identifier>fstrict-enums</Identifier>
         <Value></Value>
         <RawString></RawString>
@@ -174,6 +190,12 @@
         <Value></Value>
         <RawString></RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status."}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-use-default-alignment</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-latomic -lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"0.00:0.00:0.00","error":"The test quit with a non-zero exit status."}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
@@ -230,6 +252,12 @@
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.16:90.15:90.16"}</JSON>
       </Entry>
       <Entry>
+        <Identifier>fno-use-default-alignment</Identifier>
+        <Value>83948.54</Value>
+        <RawString>83908.27:84000.44:83936.92</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-latomic -lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.14:90.17:90.15"}</JSON>
+      </Entry>
+      <Entry>
         <Identifier>fstrict-enums</Identifier>
         <Value>81839.32</Value>
         <RawString>82884.63:81949.43:80683.9</RawString>
@@ -282,6 +310,12 @@
         <Value>105406.16</Value>
         <RawString>104908.45:104941.16:106368.86</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.20:90.22:90.20"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-use-default-alignment</Identifier>
+        <Value>105053.80</Value>
+        <RawString>104304.9:106495.96:104360.53</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-latomic -lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.19:90.21:90.19"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
@@ -338,6 +372,12 @@
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.25:90.29:90.26"}</JSON>
       </Entry>
       <Entry>
+        <Identifier>fno-use-default-alignment</Identifier>
+        <Value>103105.05</Value>
+        <RawString>102744.37:103448.52:103122.27</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-latomic -lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.29:90.31:90.29"}</JSON>
+      </Entry>
+      <Entry>
         <Identifier>fstrict-enums</Identifier>
         <Value>88201.41</Value>
         <RawString>101715.24:95059.57:86965.79:90511.18:84929.43:86304.53:88670.24:85793.24:88766.77:84840.62:87630.03:85206.27:85177.43:84213.53:87237.31</RawString>
@@ -390,6 +430,12 @@
         <Value>91912.26</Value>
         <RawString>90646.22:91229.79:93860.77</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.35:90.35:90.44"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>fno-use-default-alignment</Identifier>
+        <Value>91654.85</Value>
+        <RawString>91289.9:92057.3:91617.34</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"clang","compiler-options":"-latomic -lm -ldl -O2 -fomit-frame-pointer -U_FORTIFY_SOURCE -fno-stack-protector"},"test-run-times":"90.40:90.30:90.33"}</JSON>
       </Entry>
       <Entry>
         <Identifier>fstrict-enums</Identifier>
