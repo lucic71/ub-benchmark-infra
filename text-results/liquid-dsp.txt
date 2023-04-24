@@ -1,2 +1,147 @@
 
+[1;31m
+    [NOTICE] Dynamic result viewer not running or inaccessible [0m
+    [1mDo you want to view the text-based test results? (Y/n): [0mliquid-dsp
+liquid-dsp-base
+
+
+base: 
+
+	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L
+
+	OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080
+
+fconstrain-shift-value: 
+
+	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L
+
+	OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080
+
+fno-constrain-bool-value: 
+
+	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L
+
+	OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080
+
+fno-delete-null-pointer-checks: 
+
+	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L
+
+	OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080
+
+fno-strict-aliasing: 
+
+	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L
+
+	OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080
+
+fno-use-default-alignment: 
+
+	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA Quadro K5000 4GB, Audio: Realtek ALC262, Monitor: LS24A40xU, Network: Intel 82579LM + Intel 82574L
+
+	OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080
+
+fstrict-enums: 
+
+	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L
+
+	OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080
+
+fwrapv: 
+
+	Processor: 2 x Intel Xeon E5-2680 v2 @ 3.60GHz (20 Cores / 40 Threads), Motherboard: HP 158A (J61 v03.69 BIOS), Chipset: Intel Xeon E7 v2/Xeon, Memory: 8 x GB DDR3-1600MT/s HMT41GR7AFR4A-PB, Disk: 2000GB TOSHIBA DT01ACA2 + 256GB SanDisk SD8TB8U2, Graphics: NVIDIA NVE4 4GB, Audio: Realtek ALC262, Network: Intel 82579LM + Intel 82574L
+
+	OS: Debian 11, Kernel: 5.10.0-21-amd64 (x86_64), Display Server: X Server 1.20.11, Display Driver: nouveau, OpenGL: 4.3 Mesa 20.3.5, Vulkan: 1.0.2, Compiler: Clang 15.0.7 + LLVM 15.0.7, File-System: ext4, Screen Resolution: 1920x1080
+
+
+Liquid-DSP 2021.01.31
+Threads: 1 - Buffer Length: 256 - Filter Length: 57
+samples/s > Higher Is Better
+base ........................... 38308333 |=====================================
+fconstrain-shift-value ......... 37881000 |====================================
+fno-constrain-bool-value ....... 37490667 |====================================
+fno-delete-null-pointer-checks . 38505667 |=====================================
+fno-strict-aliasing ............ 38027000 |====================================
+fno-use-default-alignment ...... 38554000 |=====================================
+fstrict-enums .................. 38518455 |=====================================
+fwrapv ......................... 38117000 |=====================================
+
+
+Liquid-DSP 2021.01.31
+Threads: 2 - Buffer Length: 256 - Filter Length: 57
+samples/s > Higher Is Better
+base ........................... 75628333 |=====================================
+fconstrain-shift-value ......... 74610600 |====================================
+fno-constrain-bool-value ....... 73794000 |====================================
+fno-delete-null-pointer-checks . 73543500 |====================================
+fno-strict-aliasing ............ 74617333 |=====================================
+fno-use-default-alignment ...... 75634444 |=====================================
+fstrict-enums .................. 72513000 |===================================
+fwrapv ......................... 74977000 |=====================================
+
+
+Liquid-DSP 2021.01.31
+Threads: 4 - Buffer Length: 256 - Filter Length: 57
+samples/s > Higher Is Better
+base ........................... 142950000 |==================================
+fconstrain-shift-value ......... 150016667 |====================================
+fno-constrain-bool-value ....... 145295000 |===================================
+fno-delete-null-pointer-checks . 142890000 |==================================
+fno-strict-aliasing ............ 144620000 |===================================
+fno-use-default-alignment ...... 143615000 |==================================
+fstrict-enums .................. 145136667 |===================================
+fwrapv ......................... 143080000 |==================================
+
+
+Liquid-DSP 2021.01.31
+Threads: 8 - Buffer Length: 256 - Filter Length: 57
+samples/s > Higher Is Better
+base ........................... 274383333 |====================================
+fconstrain-shift-value ......... 271496667 |===================================
+fno-constrain-bool-value ....... 271486667 |===================================
+fno-delete-null-pointer-checks . 270460000 |===================================
+fno-strict-aliasing ............ 275490000 |====================================
+fno-use-default-alignment ...... 274043333 |====================================
+fstrict-enums .................. 274726667 |====================================
+fwrapv ......................... 275503333 |====================================
+
+
+Liquid-DSP 2021.01.31
+Threads: 16 - Buffer Length: 256 - Filter Length: 57
+samples/s > Higher Is Better
+base ........................... 509486667 |====================================
+fconstrain-shift-value ......... 510626667 |====================================
+fno-constrain-bool-value ....... 507890000 |====================================
+fno-delete-null-pointer-checks . 504933333 |====================================
+fno-strict-aliasing ............ 508986667 |====================================
+fno-use-default-alignment ...... 504860000 |====================================
+fstrict-enums .................. 503596667 |====================================
+fwrapv ......................... 507550000 |====================================
+
+
+Liquid-DSP 2021.01.31
+Threads: 32 - Buffer Length: 256 - Filter Length: 57
+samples/s > Higher Is Better
+base ........................... 799536667 |====================================
+fconstrain-shift-value ......... 801116667 |====================================
+fno-constrain-bool-value ....... 801486667 |====================================
+fno-delete-null-pointer-checks . 801136667 |====================================
+fno-strict-aliasing ............ 800086667 |====================================
+fno-use-default-alignment ...... 804230000 |====================================
+fstrict-enums .................. 802423333 |====================================
+fwrapv ......................... 804456667 |====================================
+
+
+Liquid-DSP 2021.01.31
+Threads: 40 - Buffer Length: 256 - Filter Length: 57
+samples/s > Higher Is Better
+base ........................... 903670000 |====================================
+fconstrain-shift-value ......... 904133333 |====================================
+fno-constrain-bool-value ....... 904046667 |====================================
+fno-delete-null-pointer-checks . 900946667 |====================================
+fno-strict-aliasing ............ 905160000 |====================================
+fno-use-default-alignment ...... 908553333 |====================================
+fstrict-enums .................. 900990000 |====================================
+fwrapv ......................... 902370000 |====================================
+
 
