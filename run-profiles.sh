@@ -6,6 +6,7 @@ batch_setup=`echo y && echo n && echo n && echo y && echo n && echo y && echo y`
 echo $batch_setup | phoronix-test-suite batch-setup
 
 echo performance | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+ulimit -s unlimited
 
 for p in $(grep -v '#' categorized-profiles.txt | grep -v '/build-')
 do

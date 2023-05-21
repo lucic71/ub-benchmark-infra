@@ -1,6 +1,7 @@
 #!/bin/sh -ex
 
-LOG_DIR="install-logs""$@"
+CONCAT_FLAGS=`echo $@ | tr -d ' '`
+LOG_DIR="install-logs""$CONCAT_FLAGS"
 mkdir $LOG_DIR || true
 mkdir $LOG_DIR/pts || true
 mkdir $LOG_DIR/local || true
@@ -38,11 +39,11 @@ PTS_COMMAND=$PTS_COMMAND"wait)"
 eval $PTS_COMMAND
 
 # Install z3 separately because it needs some special grooming
-subshell_flag=""
-if [ "$@" != "-base" ]; then subshell_flag="$@"; fi
+subshell_flags=""
+if [ "$CONCAT_FLAGS" != "-base" ]; then subshell_flags="$@"; fi
 (export PATH="/git/llvm-ub-free/build/bin:$PATH" && \
 	export CC="/git/llvm-ub-free/build/bin/clang" && \
 	export CXX="/git/llvm-ub-free/build/bin/clang++" && \
-	export CPPFLAGS="$subshell_flag" && \
-	export CXXFLAGS="$subshell_flag" && \
+	export CPPFLAGS="$subshell_flags" && \
+	export CXXFLAGS="$subshell_flags" && \
 	$PTS local/z3)

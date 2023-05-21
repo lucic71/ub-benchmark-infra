@@ -1,7 +1,7 @@
 #!/bin/sh -ex
 
 # array of flags separated by :
-FLAGS=":-fwrapv:-fno-strict-aliasing:-fstrict-enums:-fno-delete-null-pointer-checks:-fconstrain-shift-value:-fno-constrain-bool-value"
+FLAGS=":-fwrapv:-fno-strict-aliasing:-fstrict-enums:-fno-delete-null-pointer-checks:-fconstrain-shift-value:-fno-constrain-bool-value:-fno-use-default-alignment"
 FLAGSNO=$((`echo $FLAGS | tr -cd ':' | wc -c`+1))
 
 PTS_DIR=/var/lib/phoronix-test-suite

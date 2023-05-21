@@ -1,15 +1,13 @@
 #!/bin/sh -ex
 
 # array of flags separated by :
-#FLAGS=":-fwrapv:-fno-strict-aliasing:-fstrict-enums"
-FLAGS="-fno-delete-null-pointer-checks:-fconstrain-shift-value"
+FLAGS=":-fwrapv:-fno-strict-aliasing:-fstrict-enums:-fno-delete-null-pointer-checks:-fconstrain-shift-value:-fno-finite-loops:-fno-constrain-bool-value"
+#FLAGS="-fno-use-default-alignment"
 FLAGSNO=$((`echo $FLAGS | tr -cd ':' | wc -c`+1))
 
 rm -rf /var/lib/phoronix-test-suite/installed-tests/*
 rm -rf /var/lib/phoronix-test-suite/test-results/*
 rm -rf /var/lib/phoronix-test-suite/test-results-*
-
-ulimit -s unlimited
 
 for i in $(seq 1 $FLAGSNO);
 do
@@ -19,6 +17,8 @@ do
 	export PATH="/git/llvm-ub-free/build/bin:$PATH"
 	export CC="/git/llvm-ub-free/build/bin/clang $flags"
 	export CXX="/git/llvm-ub-free/build/bin/clang++ $flags"
+	export NUM_CPU_CORES=`nproc`
+	# export LDFLAGS="-latomic" this is only needed when running -fno-use-default-alignment
 
 	if [ "$flags" = "" ]
 	then
@@ -26,7 +26,7 @@ do
 	fi
 	CONCAT_FLAGS=`echo $flags | tr -d ' '`
 
-	/usr/bin/time ./install-profiles.sh $CONCAT_FLAGS
+	/usr/bin/time ./install-profiles.sh $flags
 	/usr/bin/time ./run-profiles.sh     $CONCAT_FLAGS
 
 	mkdir "/var/lib/phoronix-test-suite/test-results$CONCAT_FLAGS/" || true
