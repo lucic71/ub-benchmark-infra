@@ -26,24 +26,31 @@ eval $PTS_COMMAND
 # Process the profiles in LLVM Build Speed
 if [ $(grep -v '#' categorized-profiles.txt | grep '/build-' | wc -l) -gt 0 ]
 then
-	COMPILED_CLANG_PATH=/ssd/llvm-project-llvmorg-15.0.7
-	(cd $COMPILED_CLANG_PATH && rm -rf build/ && ./build.sh)
-fi
+	X86=`lscpu | grep -i x86`
 
-PTS_COMMAND="(trap 'kill 0' INT; "
-for p in $(grep -v '#' categorized-profiles.txt | grep '/build-')
-do
-	PTS_COMMAND=$PTS_COMMAND"PATH='$COMPILED_CLANG_PATH/build/bin:$PATH' CC=$COMPILED_CLANG_PATH/build/bin/clang CXX=$COMPILED_CLANG_PATH/build/bin/clang++ \$PTS $p 2>&1 | tee \$LOG_DIR/$p.log & "
-done
-PTS_COMMAND=$PTS_COMMAND"wait)"
-eval $PTS_COMMAND
+	COMPILED_CLANG_PATH=`pwd`/llvm-project-llvmorg-15.0.7
+	if [ $X86 = 0 ]
+	then
+		(cd $COMPILED_CLANG_PATH && rm -rf build/ && cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DLLVM_TARGETS_TO_BUILD=X86 -DLLVM_ENABLE_ASSERTIONS=ON -DLLVM_ENABLE_PROJECTS="llvm;clang" -S ./llvm -B build/ && ninja -C build)
+	else
+		(cd $COMPILED_CLANG_PATH && rm -rf build/ && cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DLLVM_TARGETS_TO_BUILD=AArch64 -DLLVM_ENABLE_ASSERTIONS=ON -DLLVM_ENABLE_PROJECTS="llvm;clang" -S ./llvm -B build/ && ninja -C build)
+	fi
+
+	PTS_COMMAND="(trap 'kill 0' INT; "
+	for p in $(grep -v '#' categorized-profiles.txt | grep '/build-')
+	do
+		PTS_COMMAND=$PTS_COMMAND"PATH='$COMPILED_CLANG_PATH/build/bin:$PATH' CC=$COMPILED_CLANG_PATH/build/bin/clang CXX=$COMPILED_CLANG_PATH/build/bin/clang++ \$PTS $p 2>&1 | tee \$LOG_DIR/$p.log & "
+	done
+	PTS_COMMAND=$PTS_COMMAND"wait)"
+	eval $PTS_COMMAND
+fi
 
 # Install z3 separately because it needs some special grooming
 subshell_flags=""
 if [ "$CONCAT_FLAGS" != "-base" ]; then subshell_flags="$@"; fi
-(export PATH="/git/llvm-ub-free/build/bin:$PATH" && \
-	export CC="/git/llvm-ub-free/build/bin/clang" && \
-	export CXX="/git/llvm-ub-free/build/bin/clang++" && \
+(export PATH="/git/llvm-project/build/bin:$PATH" && \
+	export CC="/git/llvm-project/build/bin/clang" && \
+	export CXX="/git/llvm-project/build/bin/clang++" && \
 	export CPPFLAGS="$subshell_flags" && \
 	export CXXFLAGS="$subshell_flags" && \
 	$PTS local/z3)
