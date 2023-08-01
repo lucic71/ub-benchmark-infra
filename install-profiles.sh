@@ -27,7 +27,7 @@ eval $PTS_COMMAND
 if [ $(grep -v '#' categorized-profiles.txt | grep '/build-' | wc -l) -gt 0 ]
 then
 	COMPILED_CLANG_PATH=`pwd`/llvm-project-llvmorg-15.0.7
-	if [ `lscpu | grep -i x86` = 1 ]
+	if [ `lscpu | grep -ic x86` = 1 ]
 	then
 		(cd $COMPILED_CLANG_PATH && rm -rf build/ && cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DLLVM_TARGETS_TO_BUILD=X86 -DLLVM_ENABLE_ASSERTIONS=ON -DLLVM_ENABLE_PROJECTS="llvm;clang" -S ./llvm -B build/ && ninja -C build)
 	else
