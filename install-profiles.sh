@@ -26,10 +26,8 @@ eval $PTS_COMMAND
 # Process the profiles in LLVM Build Speed
 if [ $(grep -v '#' categorized-profiles.txt | grep '/build-' | wc -l) -gt 0 ]
 then
-	X86=`lscpu | grep -i x86`
-
 	COMPILED_CLANG_PATH=`pwd`/llvm-project-llvmorg-15.0.7
-	if [ $X86 = 0 ]
+	if [ `lscpu | grep -i x86` = 1 ]
 	then
 		(cd $COMPILED_CLANG_PATH && rm -rf build/ && cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DLLVM_TARGETS_TO_BUILD=X86 -DLLVM_ENABLE_ASSERTIONS=ON -DLLVM_ENABLE_PROJECTS="llvm;clang" -S ./llvm -B build/ && ninja -C build)
 	else
