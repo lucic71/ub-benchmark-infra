@@ -8,7 +8,6 @@ pts/uvg266
 # Simulation
 pts/brl-cad
 # Bioinformatics
-pts/mrbayes
 pts/hmmer
 # Image Processing
 pts/jpegxl
@@ -25,6 +24,7 @@ pts/openssl
 pts/john-the-ripper
 # Database
 pts/redis
+pts/sqlite-2.2.0
 # Audio Encoding
 pts/encode-flac
 # Texture Compression
@@ -36,10 +36,6 @@ pts/compress-pbzip2
 # Speech
 pts/espeak
 pts/rnnoise
-# Software Defined Radio
-pts/liquid-dsp
-# GUI
-pts/gtkperf
 # Finance
 pts/quantlib
 # Telephony
@@ -51,3 +47,5 @@ pts/apache
 pts/nginx
 # Theorem Prover
 local/z3
+# Chess engine
+pts/stockfish-1.4.0
