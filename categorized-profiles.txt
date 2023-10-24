@@ -4,7 +4,6 @@ pts/build-llvm
 pts/fftw
 # Video Encoding
 pts/aom-av1
-pts/uvg266
 # Simulation
 pts/brl-cad
 # Bioinformatics
