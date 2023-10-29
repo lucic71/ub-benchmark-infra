@@ -1,0 +1,2 @@
+#!/bin/sh
+/home/lucian/git/llvm-project/build/bin/clang "$@" "$UB_OPT_FLAG"

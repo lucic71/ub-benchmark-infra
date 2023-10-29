@@ -6,7 +6,7 @@ FLAGSNO=$((`echo $FLAGS | tr -cd ':' | wc -c`+1))
 
 export PTS_BASE=$HOME/.phoronix-test-suite
 export PTS_BM_BASE=/mnt/tmp/pts
-LLVM_DIR=/usr/bin/ub/
+LLVM_DIR=`pwd`/toolchain
 export PTS="php $HOME/git/phoronix-test-suite/pts-core/phoronix-test-suite.php"
 
 # Delete previous compiled binaries and previous results
@@ -65,7 +65,7 @@ do
 	./record-size.sh      `echo $CONCAT_FLAGS | cut -c2-`
 	./run-profiles.sh     $CONCAT_FLAGS
 
-	mkdir "$PTS_BM_BASE/test-results$CONCAT_FLAGS/" || true
-	mv -f  $PTS_BM_BASE/test-results/* "$PTS_BM_BASE/test-results$CONCAT_FLAGS/" || true
+	mkdir "$PTS_BASE/test-results$CONCAT_FLAGS/" || true
+	mv -f  $PTS_BM_BASE/test-results/* "$PTS_BASE/test-results$CONCAT_FLAGS/" || true
 	rm -rf $PTS_BM_BASE/installed-tests/*
 done
