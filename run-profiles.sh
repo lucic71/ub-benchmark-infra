@@ -5,9 +5,6 @@ LOG_FILE="run-logs$@.txt"
 batch_setup=`echo y && echo n && echo n && echo y && echo n && echo y && echo y`
 echo $batch_setup | $PTS batch-setup
 
-# For more statistical significance
-export FORCE_TIMES_TO_RUN=20
-
 # Why did I need this?
 ulimit -s unlimited
 
