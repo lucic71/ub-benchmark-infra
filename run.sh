@@ -1,18 +1,18 @@
 #!/bin/sh -ex
 
 # array of flags separated by :
-#export FLAGS=":-fwrapv:-fignore-pure-const-attrs:-fno-strict-aliasing:-fstrict-enums:-fno-delete-null-pointer-checks:-fconstrain-shift-value:-fno-finite-loops:-fno-constrain-bool-value:-fno-use-default-alignment:-fdrop-inbounds-from-gep -mllvm -disable-oob-analysis:-mllvm -zero-uninit-loads:-mllvm -disable-object-based-analysis:-fcheck-div-rem-overflow:-fdrop-noalias-restrict-attr:-fdrop-align-attr:-fdrop-deref-attr:-Xclang -no-enable-noundef-analysis:-fdrop-ub-builtins:-all"
-export FLAGS=":-fignore-pure-const-attrs"
+export FLAGS=":-fwrapv:-fignore-pure-const-attrs:-fno-strict-aliasing:-fstrict-enums:-fno-delete-null-pointer-checks:-fconstrain-shift-value:-fno-finite-loops:-fno-constrain-bool-value:-fno-use-default-alignment:-fdrop-inbounds-from-gep -mllvm -disable-oob-analysis:-mllvm -zero-uninit-loads:-mllvm -disable-object-based-analysis:-fcheck-div-rem-overflow:-fdrop-noalias-restrict-attr:-fdrop-align-attr:-fdrop-deref-attr:-Xclang -no-enable-noundef-analysis:-fdrop-ub-builtins:-all"
 FLAGSNO=$((`echo $FLAGS | tr -cd ':' | wc -c`+1))
 
 export PTS_BASE=$HOME/.phoronix-test-suite
-LLVM_DIR=$HOME/git/llvm-project/build/bin
+export PTS_BM_BASE=/mnt/tmp/pts
+LLVM_DIR=/usr/bin/ub/
 export PTS="php $HOME/git/phoronix-test-suite/pts-core/phoronix-test-suite.php"
 
 # Delete previous compiled binaries and previous results
-rm -rf $PTS_BASE/installed-tests/*
-rm -rf $PTS_BASE/test-results/*
-rm -rf $PTS_BASE/test-results-*
+rm -rf $PTS_BM_BASE/installed-tests/*
+rm -rf $PTS_BM_BASE/test-results/*
+rm -rf $PTS_BM_BASE/test-results-*
 
 mkdir size-results || true
 
@@ -51,6 +51,7 @@ do
 		export LDFLAGS=""
         fi
 
+	export UB_OPT_FLAG="-O2"
 	export CC="$LLVM_DIR/clang $flags"
 	export CXX="$LLVM_DIR/clang++ $flags"
 
@@ -64,7 +65,7 @@ do
 	./record-size.sh      `echo $CONCAT_FLAGS | cut -c2-`
 	./run-profiles.sh     $CONCAT_FLAGS
 
-	mkdir "$PTS_BASE/test-results$CONCAT_FLAGS/" || true
-	mv -f  $PTS_BASE/test-results/* "$PTS_BASE/test-results$CONCAT_FLAGS/" || true
-	rm -rf $PTS_BASE/installed-tests/*
+	mkdir "$PTS_BM_BASE/test-results$CONCAT_FLAGS/" || true
+	mv -f  $PTS_BM_BASE/test-results/* "$PTS_BM_BASE/test-results$CONCAT_FLAGS/" || true
+	rm -rf $PTS_BM_BASE/installed-tests/*
 done
