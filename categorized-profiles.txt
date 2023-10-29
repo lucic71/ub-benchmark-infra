@@ -4,8 +4,6 @@ pts/build-llvm
 pts/fftw-1.2.0
 # Video Encoding
 pts/aom-av1-3.7.0
-# Simulation
-pts/brl-cad-1.5.0
 # Image Processing
 pts/jpegxl-1.5.0
 pts/graphics-magick-2.1.0
@@ -35,8 +33,6 @@ pts/espeak-1.7.0
 pts/rnnoise-1.0.2
 # Finance
 pts/quantlib-1.2.0
-# Telephony
-pts/pjsip-1.0.1
 # Circuit Simulator
 pts/ngspice-1.0.0
 # Webserver
@@ -44,5 +40,3 @@ pts/apache-3.0.0
 pts/nginx-3.0.1
 # Theorem Prover
 pts/z3-1.0.0
-# Chess engine
-pts/stockfish-1.4.0
