@@ -7,8 +7,8 @@ pts/aom-av1-3.7.0
 # Image Processing
 pts/jpegxl-1.5.0
 pts/graphics-magick-2.1.0
-# Raytracing
-pts/tungsten-1.0.0
+# JIT
+pts/luajit-1.1.0
 # Parallel Processing
 pts/tjbench-1.2.0
 pts/simdjson-2.0.1
