@@ -5,7 +5,7 @@ FLAGS=":-fwrapv:-fignore-pure-const-attrs:-fno-strict-aliasing:-fstrict-enums:-f
 FLAGSNO=$((`echo $FLAGS | tr -cd ':' | wc -c`+1))
 
 PTS_BASE=$HOME/.phoronix-test-suite
-PTS_BM_BASE=/mnt/tmp/pts
+export PTS_BM_BASE=/mnt/tmp/pts
 LLVM_DIR=`pwd`/toolchain
 export PTS="php $HOME/git/phoronix-test-suite/pts-core/phoronix-test-suite.php"
 

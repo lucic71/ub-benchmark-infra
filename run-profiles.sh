@@ -10,7 +10,6 @@ ulimit -s unlimited
 
 unset CPPFLAGS
 unset CXXFLAGS
-unset FLAGS
 
 if [ `lscpu | grep -ic arm` = 1 ]
 then
