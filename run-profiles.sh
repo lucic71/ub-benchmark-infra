@@ -8,6 +8,18 @@ echo $batch_setup | $PTS batch-setup
 # Why did I need this?
 ulimit -s unlimited
 
+unset CPPFLAGS
+unset CXXFLAGS
+unset FLAGS
+
+if [ `lscpu | grep -ic arm` = 1 ]
+then
+	sudo cpupower frequency-set \
+		-g performance \
+		--min 1.00Ghz \
+		--max 1.00GHz
+fi
+
 for p in $(grep -v '#' categorized-profiles.txt | grep -v '/build-')
 do
 	result_name=`echo $p | cut -d'/' -f2`"$@"

@@ -6,21 +6,10 @@ mkdir $LOG_DIR || true
 mkdir $LOG_DIR/pts || true
 mkdir $LOG_DIR/local || true
 
-if [ "$@" = "-all" ]
-then
-	# Delete first character from FLAGS then delete ":-all" then replace ':' with ' '
-	flags=`echo $FLAGS | cut -c2- | rev | cut -c6- | rev | tr ':' ' '`
-	export CC="$LLVM_DIR/clang $flags"
-	export CXX="$LLVM_DIR/clang++ $flags"
-fi
-
 PTS_COMMAND="(trap 'kill 0' INT; "
 # Omit the profiles in LLVM Build Speed as they need special treatment
 for p in $(grep -v '#' categorized-profiles.txt | grep -v '/build-')
 do
-	# Skip z3 for now, it will be installed separately
-	if [ "$p" = "local/z3" ]; then continue; fi
-
 	PTS_COMMAND=$PTS_COMMAND"\$PTS debug-install $p 2>&1 | tee \$LOG_DIR/$p.log & "
 done
 PTS_COMMAND=$PTS_COMMAND"wait)"
@@ -46,8 +35,3 @@ then
 	PTS_COMMAND=$PTS_COMMAND"wait)"
 	eval $PTS_COMMAND
 fi
-
-# Install z3 separately because it needs some special grooming
-subshell_flags=""
-if [ "$CONCAT_FLAGS" != "-base" ]; then subshell_flags="$@"; fi
-(export CPPFLAGS="$subshell_flags" && export CXXFLAGS="$subshell_flags" && $PTS debug-install local/z3)
