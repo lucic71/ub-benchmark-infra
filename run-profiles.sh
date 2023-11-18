@@ -17,6 +17,8 @@ then
 		-g performance \
 		--min 1.00Ghz \
 		--max 1.00GHz
+	NUM_CPU_CORES=80
+	NUM_CPU_PHYSICAL_CORES=80
 fi
 
 for p in $(grep -v '#' categorized-profiles.txt | grep -v '/build-')
@@ -27,8 +29,8 @@ do
 	sh -c "$pts_command" 2>&1| tee -a $LOG_FILE
 done
 
-export CC=`pwd`/llvm-project-llvmorg-15.0.7/build/bin/clang
-export CXX=`pwd`/llvm-project-llvmorg-15.0.7/build/bin/clang++
+CC=`pwd`/llvm-project-llvmorg-15.0.7/build/bin/clang
+CXX=`pwd`/llvm-project-llvmorg-15.0.7/build/bin/clang++
 
 for p in $(grep -v '#' categorized-profiles.txt | grep '/build-')
 do
