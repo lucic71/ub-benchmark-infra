@@ -1,5 +1,5 @@
 # LLVM Build Speed
-pts/build-llvm
+pts/build-llvm-1.4.0
 # HPC
 pts/fftw-1.2.0
 # Video Encoding
