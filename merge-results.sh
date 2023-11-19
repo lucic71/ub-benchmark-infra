@@ -1,10 +1,14 @@
 #!/bin/sh -ex
 
+# sudo apt install php-dom php-xml
+
 # array of flags separated by :
-FLAGS=":-fwrapv:-fno-strict-aliasing:-fstrict-enums:-fno-delete-null-pointer-checks:-fconstrain-shift-value:-fno-constrain-bool-value:-fno-use-default-alignment"
+export FLAGS=":-fwrapv:-fignore-pure-const-attrs:-fno-strict-aliasing:-fstrict-enums:-fno-delete-null-pointer-checks:-fconstrain-shift-value:-fno-finite-loops:-fno-constrain-bool-value:-fno-use-default-alignment:-fdrop-inbounds-from-gep -mllvm -disable-oob-analysis:-mllvm -zero-uninit-loads:-mllvm -disable-object-based-analysis:-fcheck-div-rem-overflow:-fdrop-noalias-restrict-attr:-fdrop-align-attr:-fdrop-deref-attr:-Xclang -no-enable-noundef-analysis:-fdrop-ub-builtins"
 FLAGSNO=$((`echo $FLAGS | tr -cd ':' | wc -c`+1))
 
-PTS_DIR=/var/lib/phoronix-test-suite
+#PTS_DIR=~/pts/home/lucian/.phoronix-test-suite
+PTS_DIR=~/.phoronix-test-suite
+PTS='php /home/lucian/git/phoronix-test-suite/pts-core/phoronix-test-suite.php'
 
 mkdir ./results || true
 
@@ -13,7 +17,7 @@ rm -rf PTS_DIR/test-results/*
 # Copy the results for each flag in test-results/
 for i in $(seq 1 $FLAGSNO);
 do
-	flags=`echo $FLAGS | cut -d':' -f$i`
+	flags=`echo $FLAGS | cut -d':' -f$i | tr -d ' '`
 	if [ "$flags" = "" ]
 	then
 		flags="-base"
@@ -24,8 +28,8 @@ done
 # Merge the results for the same flag into a single result
 for profile in $(cat categorized-profiles.txt | grep -v '#')
 do
-	profile_results=`ls -1 $PTS_DIR/test-results/ | grep $(echo $profile | cut -d'/' -f2)`
-	echo n | phoronix-test-suite merge-results $profile_results
+	profile_results=`ls -1 $PTS_DIR/test-results/ | grep $(echo $profile | cut -d'/' -f2 | tr -d '.')`
+	echo n | $PTS merge-results $profile_results
 done
 
 # Copy the merged results here
