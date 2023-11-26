@@ -6,6 +6,13 @@ mkdir $LOG_DIR || true
 mkdir $LOG_DIR/pts || true
 mkdir $LOG_DIR/local || true
 
+# Put CPUs is performance mode at the max frequency for compiling the benchmarks.
+# For ARM it will be set to 1.00GHz before running the benchmarks.
+sudo cpupower frequency-set \
+	-g performance \
+	--min `cpupower frequency-info | grep "hardware limits" | awk '{print $6,$7}' | tr -d ' '` \
+	--max `cpupower frequency-info | grep "hardware limits" | awk '{print $6,$7}' | tr -d ' '`
+
 PTS_COMMAND="(trap 'kill 0' INT; "
 # Omit the profiles in LLVM Build Speed as they need special treatment
 for p in $(grep -v '#' categorized-profiles.txt | grep -v '/build-')

@@ -37,13 +37,6 @@ then
 	 cp -r test-profiles $PTS_BASE)
 fi
 
-# Put CPUs is performance mode at the max frequency for compiling the benchmarks.
-# For ARM it will be set to 1.00GHz before running the benchmarks.
-sudo cpupower frequency-set \
-	-g performance \
-	--min `cpupower frequency-info | grep "hardware limits" | awk '{print $6,$7}' | tr -d ' '` \
-	--max `cpupower frequency-info | grep "hardware limits" | awk '{print $6,$7}' | tr -d ' '`
-
 # Install dependencies
 sudo apt install -y libnl-genl-3-dev php-xml php-dom
 

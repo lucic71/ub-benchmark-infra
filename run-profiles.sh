@@ -17,8 +17,8 @@ then
 		-g performance \
 		--min 1.00Ghz \
 		--max 1.00GHz
-	NUM_CPU_CORES=80
-	NUM_CPU_PHYSICAL_CORES=80
+	export NUM_CPU_CORES=80
+	export NUM_CPU_PHYSICAL_CORES=80
 fi
 
 for p in $(grep -v '#' categorized-profiles.txt | grep -v '/build-')
@@ -39,3 +39,9 @@ do
 	pts_command="echo -n '$result_name' | $PTS batch-run $p"
 	sh -c "$pts_command" 2>&1| tee -a $LOG_FILE
 done
+
+if [ `lscpu | grep -ic arm` = 1 ]
+then
+	unset NUM_CPU_PHYSICAL_CORES
+	unset NUM_CPU_CORES
+fi
