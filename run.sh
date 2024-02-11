@@ -5,7 +5,12 @@ FLAGS=":-fwrapv:-fignore-pure-const-attrs:-fno-strict-aliasing:-fstrict-enums:-f
 FLAGSNO=$((`echo $FLAGS | tr -cd ':' | wc -c`+1))
 
 PTS_BASE=$HOME/.phoronix-test-suite
-export PTS_BM_BASE=/mnt/tmp/pts
+if [ `lscpu | grep -ic arm` = 1 ]
+then
+	export PTS_BM_BASE=/mnt/tmp/pts
+else
+	export PTS_BM_BASE=/ssd/pts
+fi
 LLVM_DIR=`pwd`/toolchain
 export PTS="php $HOME/git/phoronix-test-suite/pts-core/phoronix-test-suite.php"
 
@@ -13,6 +18,8 @@ export PTS="php $HOME/git/phoronix-test-suite/pts-core/phoronix-test-suite.php"
 rm -rf $PTS_BM_BASE/installed-tests/*
 rm -rf $PTS_BM_BASE/test-results/*
 rm -rf $PTS_BM_BASE/test-results-*
+rm -rf $PTS_BASE/test-results/*
+rm -rf $PTS_BASE/test-results-*
 
 mkdir size-results || true
 
@@ -51,21 +58,17 @@ do
 		export LDFLAGS=""
         fi
 
-	export UB_OPT_FLAG="-O2"
+	export CC=$LLVM_DIR/clang
+	export CXX=$LLVM_DIR/clang++
 
 	if [ "$flags" = "-all" ]
 	then
 		# Delete first character from FLAGS then delete ":-all" then replace ':' with ' '
 		_flags=`echo $FLAGS | cut -c2- | rev | cut -c6- | rev | tr ':' ' '`
-		export CC="$LLVM_DIR/clang $_flags"
-		export CXX="$LLVM_DIR/clang++ $_flags"
-		export CPPFLAGS="$_flags"
-		export CXXFLAGS="$_flags"
+		export UB_OPT_FLAG="$_flags -O2"
+
 	else
-		export CC="$LLVM_DIR/clang $flags"
-		export CXX="$LLVM_DIR/clang++ $flags"
-		export CPPFLAGS="$flags"
-		export CXXFLAGS="$flags"
+		export UB_OPT_FLAG="$flags -O2"
 	fi
 
 	if [ "$flags" = "" ]
@@ -76,6 +79,10 @@ do
 
 	./install-profiles.sh $flags
 	./record-size.sh      `echo $CONCAT_FLAGS | cut -c2-`
+	if [ `lscpu | grep -ic x86` = 1 ]
+	then
+		sudo swapoff -a; sudo swapon -a
+	fi
 	./run-profiles.sh     $CONCAT_FLAGS
 
 	mkdir "$PTS_BASE/test-results$CONCAT_FLAGS/" || true
