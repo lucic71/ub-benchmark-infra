@@ -3,16 +3,16 @@
 # sudo apt install php-dom php-xml
 
 # array of flags separated by :
-export FLAGS=":-fwrapv:-fignore-pure-const-attrs:-fno-strict-aliasing:-fstrict-enums:-fno-delete-null-pointer-checks:-fconstrain-shift-value:-fno-finite-loops:-fno-constrain-bool-value:-fno-use-default-alignment:-fdrop-inbounds-from-gep -mllvm -disable-oob-analysis:-mllvm -zero-uninit-loads:-mllvm -disable-object-based-analysis:-fcheck-div-rem-overflow:-fdrop-noalias-restrict-attr:-fdrop-align-attr:-fdrop-deref-attr:-Xclang -no-enable-noundef-analysis:-fdrop-ub-builtins"
+export FLAGS=":-fwrapv:-fignore-pure-const-attrs:-fno-strict-aliasing:-fstrict-enums:-fno-delete-null-pointer-checks:-fconstrain-shift-value:-fno-finite-loops:-fno-constrain-bool-value:-fno-use-default-alignment:-fdrop-inbounds-from-gep -mllvm -disable-oob-analysis:-mllvm -zero-uninit-loads:-mllvm -disable-object-based-analysis:-fcheck-div-rem-overflow:-fdrop-noalias-restrict-attr:-fdrop-align-attr:-fdrop-deref-attr:-Xclang -no-enable-noundef-analysis:-fdrop-ub-builtins:-all"
 FLAGSNO=$((`echo $FLAGS | tr -cd ':' | wc -c`+1))
 
 #PTS_DIR=~/pts/home/lucian/.phoronix-test-suite
-PTS_DIR=~/.phoronix-test-suite
+PTS_DIR=/home/lucian/.phoronix-test-suite
 PTS='php /home/lucian/git/phoronix-test-suite/pts-core/phoronix-test-suite.php'
 
 mkdir ./results || true
 
-rm -rf PTS_DIR/test-results/*
+rm -rf $PTS_DIR/test-results/*
 
 # Copy the results for each flag in test-results/
 for i in $(seq 1 $FLAGSNO);

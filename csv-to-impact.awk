@@ -6,10 +6,17 @@
 		if (i == NF)
 			ORS=""
 
-		if ($2 ~ /HIB/)
-			print ($i / $3 - 1) * 100
-		else
-			print ($3 / $i - 1) * 100
+		if ($2 ~ /HIB/) {
+			if (length($4) != 0 && length($i) != 0)
+				print ($i / $4 - 1) * 100
+			else
+				print "N/A"
+		} else {
+			if (length($4) != 0 && length($i) != 0)
+				print ($4 / $i - 1) * 100
+			else
+				print "N/A"
+		}
 	}
 	printf "\n"
 }

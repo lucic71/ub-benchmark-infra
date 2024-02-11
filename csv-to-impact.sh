@@ -1,8 +1,10 @@
-#!/bin/sh
+#!/bin/sh -ex
 
-for f in results/*.csv
+mkdir impacts || true
+
+for f in csvs/*
 do
-	result_f=`dirname $f`/`basename $f .csv`-impact.csv
-	tail -n +15 $f | head -n1 > $result_f
-	tail -n +16 $f | head -n -1 | awk -F',' -f csv-to-impact.awk >> $result_f
+	result_f=impacts/`basename $f .csv`-impact.csv
+	head -n1 $f > $result_f
+	tail -n +2 $f | awk -F',' -f csv-to-impact.awk >> $result_f
 done
