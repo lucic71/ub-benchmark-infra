@@ -20,6 +20,7 @@ rm -rf $PTS_BM_BASE/test-results/*
 rm -rf $PTS_BM_BASE/test-results-*
 rm -rf $PTS_BASE/test-results/*
 rm -rf $PTS_BASE/test-results-*
+rm -rf size-results
 
 mkdir size-results || true
 
@@ -47,43 +48,79 @@ fi
 # Install dependencies
 sudo apt install -y libnl-genl-3-dev php-xml php-dom
 
-for i in $(seq 1 $FLAGSNO);
-do
+OLDPATH=$PATH
+NEWPATH=home/lucian/git/llvm-project/build/bin:$PATH
+
+for i in $(seq 1 $FLAGSNO); do
+	for p in $(grep -v '#' categorized-profiles.txt | grep -v '/build-'); do
+		### COMPILE BENCHMARK ###
+		flags=`echo $FLAGS | cut -d':' -f$i`
+
+		if [ "$flags" = "-fno-use-default-alignment" ] || [ "$flags" = "-all" ]
+		then
+			export LDFLAGS="-latomic"
+		else
+			export LDFLAGS=""
+		fi
+
+		export LD_LIBRARY_PATH=/home/lucian/git/llvm-project/build/lib:${LD_LIBRARY_PATH}
+		export PATH=${NEWPATH}
+		export CC=$LLVM_DIR/clang
+		export CXX=$LLVM_DIR/clang++
+
+		if [ "$flags" = "-all" ]
+		then
+			# Delete first character from FLAGS then delete ":-all" then replace ':' with ' '
+			# Also delete -fstrict-enums because it introduces UB
+			_flags=`echo $FLAGS | cut -c2- | rev | cut -c6- | rev | tr ':' ' ' | awk -F"-fstrict-enums" '{print $1 $2}'`
+			export UB_OPT_FLAG="-O2 $_flags -flto -fuse-ld=gold"
+			#export UB_OPT_FLAG="-O2 $_flags"
+
+		else
+			export UB_OPT_FLAG="-O2 $flags -flto -fuse-ld=gold"
+			#export UB_OPT_FLAG="-O2 $flags"
+		fi
+
+		if [ "$flags" = "" ]; then
+			flags="-base"
+		fi
+
+		$PTS debug-install $p
+
+		### GET BINARY SIZE ###
+		CONCAT_FLAGS=`echo $flags | tr -d ' '`
+		PTS_INSTALLED_TESTS=$PTS_BM_BASE/installed-tests/pts
+
+		# Create directory where binary sizes will be saved for current flag
+		mkdir -p size-results/sz$CONCAT_FLAGS || true
+		du -ab $PTS_BM_BASE/installed-tests/$p > size-results/sz$CONCAT_FLAGS/`echo $p | cut -d'/' -f2`
+
+		continue
+
+		### RUN BENCHMARK ###
+		unset CC
+		unset CXX
+		unset UB_OPT_FLAG
+		unset LDFLAGS
+		unset LD_LIBRARY_PATH
+		export PATH=${OLDPATH}
+
+		batch_setup=`echo y && echo n && echo n && echo y && echo n && echo y && echo y`
+		echo $batch_setup | $PTS batch-setup
+
+		result_name=`echo $p | cut -d'/' -f2`"$CONCAT_FLAGS"
+		result_name="$result_name\n$result_name\n$result_name"
+		pts_command="echo -n '$result_name' | $PTS batch-run $p"
+		sh -c "$pts_command" 
+	done
+
+	#./record-size.sh      `echo $CONCAT_FLAGS | cut -c2-`
+
 	flags=`echo $FLAGS | cut -d':' -f$i`
-
-        if [ "$flags" = "-fno-use-default-alignment" ] || [ "$flags" = "-all" ]
-        then
-		export LDFLAGS="-latomic"
-        else
-		export LDFLAGS=""
-        fi
-
-	export CC=$LLVM_DIR/clang
-	export CXX=$LLVM_DIR/clang++
-
-	if [ "$flags" = "-all" ]
-	then
-		# Delete first character from FLAGS then delete ":-all" then replace ':' with ' '
-		_flags=`echo $FLAGS | cut -c2- | rev | cut -c6- | rev | tr ':' ' '`
-		export UB_OPT_FLAG="$_flags -O2"
-
-	else
-		export UB_OPT_FLAG="$flags -O2"
-	fi
-
-	if [ "$flags" = "" ]
-	then
+	if [ "$flags" = "" ]; then
 		flags="-base"
 	fi
 	CONCAT_FLAGS=`echo $flags | tr -d ' '`
-
-	./install-profiles.sh $flags
-	./record-size.sh      `echo $CONCAT_FLAGS | cut -c2-`
-	if [ `lscpu | grep -ic x86` = 1 ]
-	then
-		sudo swapoff -a; sudo swapon -a
-	fi
-	./run-profiles.sh     $CONCAT_FLAGS
 
 	mkdir "$PTS_BASE/test-results$CONCAT_FLAGS/" || true
 	mv -f  $PTS_BM_BASE/test-results/* "$PTS_BASE/test-results$CONCAT_FLAGS/" || true
