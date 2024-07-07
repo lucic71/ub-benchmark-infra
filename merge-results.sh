@@ -7,8 +7,8 @@ export FLAGS=":-fwrapv:-fignore-pure-const-attrs:-fno-strict-aliasing:-fstrict-e
 FLAGSNO=$((`echo $FLAGS | tr -cd ':' | wc -c`+1))
 
 #PTS_DIR=~/pts/home/lucian/.phoronix-test-suite
-PTS_DIR=/home/lucian/.phoronix-test-suite
-PTS='php /home/lucian/git/phoronix-test-suite/pts-core/phoronix-test-suite.php'
+PTS_DIR=~/.phoronix-test-suite
+PTS='php /home/lucianp/git/phoronix-test-suite/pts-core/phoronix-test-suite.php'
 
 mkdir ./results || true
 
