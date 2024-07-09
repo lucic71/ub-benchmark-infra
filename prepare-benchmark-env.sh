@@ -1,4 +1,4 @@
-#!/bin/bash -ex
+#!/bin/bash -x
 
 # Disable turbo boost
 echo "1" | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for p in php g++ binutils-dev libhwy-dev linux-tools-$(uname -r); do
+for p in php g++ binutils-dev libhwy-dev linux-tools-$(uname -r) unzip; do
 	sudo apt install -y $p || true
 done
 
