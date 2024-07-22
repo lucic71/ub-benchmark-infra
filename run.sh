@@ -5,8 +5,9 @@ FLAGS=":-fwrapv:-fignore-pure-const-attrs:-fno-strict-aliasing:-fstrict-enums:-f
 FLAGSNO=$(($(echo $FLAGS | tr -cd ':' | wc -c) + 1))
 
 PTS_BASE=$HOME/.phoronix-test-suite
+mkdir $PTS_BASE || true
 if [ $(lscpu | grep -ic arm) -ne 0 ]; then
-	PTS_BM_BASE=/mnt/tmp/pts
+	PTS_BM_BASE=$HOME/.phoronix-test-suite
 elif [ $(lscpu | grep -ic amd) -ne 0 ]; then
 	PTS_BM_BASE=$HOME/.phoronix-test-suite
 else
