@@ -80,7 +80,7 @@ for i in $(seq 1 $FLAGSNO); do
 
 		else
 			#export UB_OPT_FLAG="-O2 $flags -flto -fuse-ld=gold"
-			export UB_OPT_FLAG=$(echo "-O2 $flags" | sed 's/-base//g')
+			export UB_OPT_FLAG=$(echo "-O2 $flags" | sed 's/-base$//g')
 		fi
 
 		# Compile llvm-15 with UB_OPT_FLAG. llvm-15 will then be used by pts/build-llvm to benchmark the compilation speed
