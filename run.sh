@@ -50,11 +50,10 @@ sudo apt install -y libnl-genl-3-dev php-xml php-dom
 OLDPATH=$PATH
 NEWPATH=/home/lucian/git/llvm-project/build/bin:$PATH
 COMPILED_CLANG_PATH=$(pwd)/llvm-project-llvmorg-15.0.7
-CNEWPATH=$COMPILED_CLANG_PATH:$NEWPATH
-export LD_LIBRARY_PATH=/home/lucian/git/llvm-project/build/lib:${LD_LIBRARY_PATH}
 
 for i in $(seq 1 $FLAGSNO); do
 	flags=$(echo $FLAGS | cut -d':' -f$i)
+
 	if [ "$flags" = "" ]; then
 		flags="-base"
 	fi
@@ -76,12 +75,12 @@ for i in $(seq 1 $FLAGSNO); do
 			# Delete first character from FLAGS then delete ":-all" then replace ':' with ' '
 			# Also delete -fstrict-enums because it introduces UB
 			_flags=$(echo $FLAGS | cut -c2- | rev | cut -c6- | rev | tr ':' ' ' | awk -F"-fstrict-enums" '{print $1 $2}')
-			#export UB_OPT_FLAG="-O2 $_flags -flto -fuse-ld=gold"
-			export UB_OPT_FLAG="-O2 $_flags"
+			export UB_OPT_FLAG="-fPIC -O2 -flto -fuse-ld=gold $_flags"
+			#export UB_OPT_FLAG="-O2 $_flags"
 
 		else
-			#export UB_OPT_FLAG="-O2 $flags -flto -fuse-ld=gold"
-			export UB_OPT_FLAG=$(echo "-O2 $flags" | sed 's/-base$//g')
+			export UB_OPT_FLAG=$(echo "-fPIC -O2 -flto -fuse-ld=gold $flags" | sed 's/-base$//g')
+			#export UB_OPT_FLAG=$(echo "-O2 $flags" | sed 's/-base$//g')
 		fi
 
 		# Compile llvm-15 with UB_OPT_FLAG. llvm-15 will then be used by pts/build-llvm to benchmark the compilation speed
@@ -89,16 +88,16 @@ for i in $(seq 1 $FLAGSNO); do
 			if [ $(lscpu | grep -ic x86) = 1 ]; then
 				(cd $COMPILED_CLANG_PATH &&
 					rm -rf build/ &&
-					cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DLLVM_TARGETS_TO_BUILD=X86 -DLLVM_ENABLE_ASSERTIONS=ON -DLLVM_ENABLE_PROJECTS="llvm;clang" -S llvm -B build/ &&
+					cmake -G Ninja -DLLVM_ENABLE_LTO=$(if $(echo $UB_OPT_FLAG | grep -q lto); then echo -n Full; else echo -n Off; fi) -DDLLVM_PARALLEL_LINK_JOBS=120 -DCMAKE_BUILD_TYPE=Release -DLLVM_TARGETS_TO_BUILD=X86 -DLLVM_ENABLE_ASSERTIONS=ON -DLLVM_ENABLE_PROJECTS="llvm;clang" -S llvm -B build/ &&
 					ninja -C build)
 			else
 				(cd $COMPILED_CLANG_PATH &&
 					rm -rf build/ &&
-					cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DLLVM_TARGETS_TO_BUILD=AArch64 -DLLVM_ENABLE_ASSERTIONS=ON -DLLVM_ENABLE_PROJECTS="llvm;clang" -S llvm -B build/ &&
+					cmake -G Ninja -DLLVM_ENABLE_LTO=$(if $(echo $UB_OPT_FLAG | grep -q lto); then echo -n Full; else echo -n Off; fi) -DDLLVM_PARALLEL_LINK_JOBS=120 -DCMAKE_BUILD_TYPE=Release -DLLVM_TARGETS_TO_BUILD=AArch64 -DLLVM_ENABLE_ASSERTIONS=ON -DLLVM_ENABLE_PROJECTS="llvm;clang" -S llvm -B build/ &&
 					ninja -C build)
 			fi
 
-			export PATH=$CNEWPATH
+			export PATH=$COMPILED_CLANG_PATH/build/bin:$PATH
 			export CC=$COMPILED_CLANG_PATH/build/bin/clang
 			export CXX=$CC++
 		fi
@@ -118,7 +117,6 @@ for i in $(seq 1 $FLAGSNO); do
 		fi
 		unset UB_OPT_FLAG
 		unset LDFLAGS
-		unset LD_LIBRARY_PATH
 		export PATH=${OLDPATH}
 
 		batch_setup=$(echo y && echo n && echo n && echo y && echo n && echo y && echo y)
