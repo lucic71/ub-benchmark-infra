@@ -1,10 +1,10 @@
 # How to run the UB benchmarks
 
-1. Control the flags you want to benchmark by editing flags.sh. For this demo
-   only 3 flags are enabled: baseline, -fwrapv and -fconstrain-shift-value.
-2. Control the benchmarks you want to run by editing benchmarks.txt. For this
-   demo only 2 benchmarks are enabled: pts/simdjson-2.0.1 and
-   pts/compress-pbzip2-1.6.0
+1. Control the flags you want to benchmark by editing `flags.sh`. For this demo
+   only 3 flags are enabled: `baseline`, `-fwrapv` and `-fconstrain-shift-value`.
+2. Control the benchmarks you want to run by editing `benchmarks.txt`. For this
+   demo only 2 benchmarks are enabled: `pts/simdjson-2.0.1` and
+   `pts/compress-pbzip2-1.6.0`
 3. `./run.sh`
 
 # How to view the performance results
@@ -12,6 +12,7 @@
 1. `./merge-results.sh`
 2. `pts list-saved-results`
 ```
+Possible output:
 root@fabbfa03788e:/benchmarks# pts list-saved-results
 
 
@@ -31,6 +32,7 @@ simdjson-201-fwrapv simdjson-2.0.1-fwrapv
 ```
 3. `pts result-file-to-text SAVED_RESULT`, where SAVED\_RESULT is a saved result name listed in step 2
 ```
+Possible output:
 root@fabbfa03788e:/benchmarks# pts result-file-to-text simdjson-2.0.1
 ...
 simdjson 2.0
@@ -71,4 +73,14 @@ fwrapv . 1.71 |=======================================================
 
 # How to view the code size results
 
-TODO
+1. `./get-size-results.sh`
+```
+Possible output:
+-base:
+259976  /var/lib/phoronix-test-suite/installed-tests/pts/compress-pbzip2-1.6.0/pbzip2-1.1.13/pbzip2
+327716  /var/lib/phoronix-test-suite/installed-tests/pts/simdjson-2.0.1/simdjson-2.0.4/build/libsimdjson.a
+
+-fwrapv:
+259304  /var/lib/phoronix-test-suite/installed-tests/pts/compress-pbzip2-1.6.0/pbzip2-1.1.13/pbzip2
+327804  /var/lib/phoronix-test-suite/installed-tests/pts/simdjson-2.0.1/simdjson-2.0.4/build/libsimdjson.a
+```
