@@ -24,10 +24,10 @@ if [ ! -d $HOME/git/phoronix-test-suite ]; then
 fi
 
 # Download my modified test-profiles
-#(cd /var/lib/phoronix-test-suite && rm -rf test-profiles && \
-#	git clone https://github.com/lucic71/test-profiles && \
-#	cd test-profiles && \
-#	git checkout ub)
+(cd /var/lib/phoronix-test-suite && rm -rf test-profiles && \
+	git clone https://github.com/lucic71/test-profiles && \
+	cd test-profiles && \
+	git checkout ub)
 
 # Download llvm-15 used by pts/build-llvm benchmark
 if [ ! -d llvm-project-llvmorg-15.0.7 ]; then
