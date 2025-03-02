@@ -50,7 +50,7 @@ for i in $(seq 1 $FLAGSNO); do
 	fi
 	CONCAT_FLAGS=$(echo $flags | tr -d ' ')
 
-	for p in $(grep -v '#' categorized-profiles.txt); do
+	for p in $(grep -v '#' benchmarks.txt); do
 		### COMPILE BENCHMARK ###
 		if [ "$flags" = "-fno-use-default-alignment" ] || [ "$flags" = "-all" ]; then
 			export LDFLAGS="-latomic"

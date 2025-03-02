@@ -21,7 +21,7 @@ then
 	export NUM_CPU_PHYSICAL_CORES=80
 fi
 
-for p in $(grep -v '#' categorized-profiles.txt | grep -v '/build-')
+for p in $(grep -v '#' benchmarks.txt | grep -v '/build-')
 do
 	result_name=`echo $p | cut -d'/' -f2`"$@"
 	result_name="$result_name\n$result_name\n$result_name"
@@ -32,7 +32,7 @@ done
 CC=`pwd`/llvm-project-llvmorg-15.0.7/build/bin/clang
 CXX=`pwd`/llvm-project-llvmorg-15.0.7/build/bin/clang++
 
-for p in $(grep -v '#' categorized-profiles.txt | grep '/build-')
+for p in $(grep -v '#' benchmarks.txt | grep '/build-')
 do
 	result_name=`echo $p | cut -d'/' -f2`"$@"
 	result_name="$result_name\n$result_name\n$result_name"

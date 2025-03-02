@@ -21,14 +21,14 @@ do
 done
 
 # Merge the results for the same flag into a single result
-for profile in $(cat categorized-profiles.txt | grep -v '#')
+for profile in $(cat benchmarks.txt | grep -v '#')
 do
 	profile_results=`ls -1 $PTS_DIR/test-results/ | grep $(echo $profile | cut -d'/' -f2 | tr -d '.')`
 	echo n | $PTS merge-results $profile_results
 done
 
 # Copy the merged results here
-for profile in $(cat categorized-profiles.txt | grep -v '#')
+for profile in $(cat benchmarks.txt | grep -v '#')
 do
 	profile_name=`echo $profile | cut -d'/' -f2`
 	merged_result=`grep -rl $profile_name-base $PTS_DIR/test-results/merge-* | rev | cut -d'/' -f2- | rev`
