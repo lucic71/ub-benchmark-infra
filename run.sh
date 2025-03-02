@@ -1,6 +1,6 @@
 #!/bin/sh -ex
 
-. ./flags.sh # import FLAGS, FLAGS_NO
+. ./flags.sh # import FLAGS, FLAGSNO
 
 export PTS_BM_BASE=/var/lib/phoronix-test-suite
 export PTS_USER_HOME=$PTS_BM_BASE
