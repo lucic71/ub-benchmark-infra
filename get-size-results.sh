@@ -10,7 +10,7 @@ BMSNO=$((`echo $BMS | tr -cd ':' | wc -c`+1))
 
 for i in $(seq 1 $FLAGSNO); do
         flags=`echo $FLAGS | cut -d':' -f$i | tr -d ' '`
-        if [ $flags = "" ]; then flags="-base"; fi
+        if [ "$flags" = "" ]; then flags="-base"; fi
 
         for j in $(seq 1 $BMSNO); do
                 searchStr=$(echo $SEARCHSTR | cut -d':' -f$j | tr -d ' ')
