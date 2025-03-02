@@ -5,7 +5,6 @@
 export PTS_BM_BASE=/var/lib/phoronix-test-suite
 export PTS_USER_HOME=$PTS_BM_BASE
 mkdir $PTS_USER_HOME || true
-LLVM_DIR=$(pwd)/toolchain
 export PTS="php $HOME/git/phoronix-test-suite/pts-core/phoronix-test-suite.php"
 
 # Delete previous compiled binaries and previous results
@@ -59,8 +58,8 @@ for i in $(seq 1 $FLAGSNO); do
 		fi
 
 		export PATH=${NEWPATH}
-		export CC=clang
-		export CXX=clang++
+		export CC=`pwd`/toolchain/clang
+		export CXX=`pwd`/toolchain/clang++
 
 		if [ "$flags" = "-all" ]; then
 			# Delete first character from FLAGS then delete ":-all" then replace ':' with ' '
