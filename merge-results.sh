@@ -1,14 +1,9 @@
 #!/bin/sh -ex
 
-# sudo apt install php-dom php-xml
+. ./flags.sh # import FLAGS, FLAGS_NO
 
-# array of flags separated by :
-export FLAGS=":-fwrapv:-fignore-pure-const-attrs:-fno-strict-aliasing:-fstrict-enums:-fno-delete-null-pointer-checks:-fconstrain-shift-value:-fno-finite-loops:-fno-constrain-bool-value:-fno-use-default-alignment:-fdrop-inbounds-from-gep -mllvm -disable-oob-analysis:-mllvm -zero-uninit-loads:-mllvm -disable-object-based-analysis:-fcheck-div-rem-overflow:-fdrop-noalias-restrict-attr:-fdrop-align-attr:-fdrop-deref-attr:-Xclang -no-enable-noundef-analysis:-fdrop-ub-builtins:-all"
-FLAGSNO=$((`echo $FLAGS | tr -cd ':' | wc -c`+1))
-
-#PTS_DIR=~/pts/home/lucian/.phoronix-test-suite
-PTS_DIR=~/.phoronix-test-suite
-PTS='php /home/lucianp/git/phoronix-test-suite/pts-core/phoronix-test-suite.php'
+PTS_DIR=/var/lib/phoronix-test-suite
+export PTS="php $HOME/git/phoronix-test-suite/pts-core/phoronix-test-suite.php"
 
 mkdir ./results || true
 
@@ -37,7 +32,7 @@ for profile in $(cat categorized-profiles.txt | grep -v '#')
 do
 	profile_name=`echo $profile | cut -d'/' -f2`
 	merged_result=`grep -rl $profile_name-base $PTS_DIR/test-results/merge-* | rev | cut -d'/' -f2- | rev`
-	cp -r $merged_result ./results/$profile_name
+	mv $merged_result ./results/$profile_name
 done
 
 # Change the title to contain only the name of the test profile
@@ -64,3 +59,5 @@ do
 		sed -i $sed_command $file
 	done
 done
+
+mv ./results/* $PTS_DIR/test-results/

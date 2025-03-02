@@ -1,18 +1,10 @@
 #!/bin/sh -ex
 
-# array of flags separated by :
-FLAGS=":-fwrapv:-fignore-pure-const-attrs:-fno-strict-aliasing:-fstrict-enums:-fno-delete-null-pointer-checks:-fconstrain-shift-value:-fno-finite-loops:-fno-constrain-bool-value:-fno-use-default-alignment:-fdrop-inbounds-from-gep -mllvm -disable-oob-analysis:-mllvm -zero-uninit-loads:-mllvm -disable-object-based-analysis:-fcheck-div-rem-overflow:-fdrop-noalias-restrict-attr:-fdrop-align-attr:-fdrop-deref-attr:-Xclang -no-enable-noundef-analysis:-fdrop-ub-builtins:-all"
-FLAGSNO=$(($(echo $FLAGS | tr -cd ':' | wc -c) + 1))
+. ./flags.sh # import FLAGS, FLAGS_NO
 
-PTS_BASE=$HOME/.phoronix-test-suite
-mkdir $PTS_BASE || true
-if [ $(lscpu | grep -ic arm) -ne 0 ]; then
-	PTS_BM_BASE=$HOME/.phoronix-test-suite
-elif [ $(lscpu | grep -ic amd) -ne 0 ]; then
-	PTS_BM_BASE=$HOME/.phoronix-test-suite
-else
-	PTS_BM_BASE=/ssd/pts
-fi
+export PTS_BM_BASE=/var/lib/phoronix-test-suite
+export PTS_USER_HOME=$PTS_BM_BASE
+mkdir $PTS_USER_HOME || true
 LLVM_DIR=$(pwd)/toolchain
 export PTS="php $HOME/git/phoronix-test-suite/pts-core/phoronix-test-suite.php"
 
@@ -20,8 +12,8 @@ export PTS="php $HOME/git/phoronix-test-suite/pts-core/phoronix-test-suite.php"
 rm -rf $PTS_BM_BASE/installed-tests/*
 rm -rf $PTS_BM_BASE/test-results/*
 rm -rf $PTS_BM_BASE/test-results-*
-rm -rf $PTS_BASE/test-results/*
-rm -rf $PTS_BASE/test-results-*
+rm -rf $PTS_USER_HOME/test-results/*
+rm -rf $PTS_USER_HOME/test-results-*
 rm -rf size-results
 
 mkdir size-results || true
@@ -32,11 +24,10 @@ if [ ! -d $HOME/git/phoronix-test-suite ]; then
 fi
 
 # Download my modified test-profiles
-if [ ! -d $HOME/git/test-profiles ]; then
-	(cd $HOME/git && git clone https://github.com/lucic71/test-profiles &&
-		cd test-profiles && git checkout ub && cd .. && rm -rf $PTS_BASE/test-profiles &&
-		cp -r test-profiles $PTS_BASE/test-profiles)
-fi
+#(cd /var/lib/phoronix-test-suite && rm -rf test-profiles && \
+#	git clone https://github.com/lucic71/test-profiles && \
+#	cd test-profiles && \
+#	git checkout ub)
 
 # Download llvm-15 used by pts/build-llvm benchmark
 if [ ! -d llvm-project-llvmorg-15.0.7 ]; then
@@ -45,7 +36,7 @@ if [ ! -d llvm-project-llvmorg-15.0.7 ]; then
 fi
 
 # Install dependencies
-sudo apt install -y libnl-genl-3-dev php-xml php-dom
+apt install -y libnl-genl-3-dev php-xml php-dom
 
 OLDPATH=$PATH
 NEWPATH=/home/lucian/git/llvm-project/build/bin:$PATH
@@ -68,8 +59,8 @@ for i in $(seq 1 $FLAGSNO); do
 		fi
 
 		export PATH=${NEWPATH}
-		export CC=$LLVM_DIR/clang
-		export CXX=$LLVM_DIR/clang++
+		export CC=clang
+		export CXX=clang++
 
 		if [ "$flags" = "-all" ]; then
 			# Delete first character from FLAGS then delete ":-all" then replace ':' with ' '
@@ -128,7 +119,7 @@ for i in $(seq 1 $FLAGSNO); do
 		sh -c "$pts_command"
 	done
 
-	mkdir "$PTS_BASE/test-results$CONCAT_FLAGS/" || true
-	mv -f $PTS_BM_BASE/test-results/* "$PTS_BASE/test-results$CONCAT_FLAGS/" || true
+	mkdir "$PTS_USER_HOME/test-results$CONCAT_FLAGS/" || true
+	mv -f $PTS_BM_BASE/test-results/* "$PTS_USER_HOME/test-results$CONCAT_FLAGS/" || true
 	rm -rf $PTS_BM_BASE/installed-tests/*
 done
