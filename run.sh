@@ -41,6 +41,9 @@ OLDPATH=$PATH
 NEWPATH=/home/lucian/git/llvm-project/build/bin:$PATH
 COMPILED_CLANG_PATH=$(pwd)/llvm-project-llvmorg-15.0.7
 
+# XXX: remove
+export FORCE_TIMES_TO_RUN=1
+
 for i in $(seq 1 $FLAGSNO); do
 	flags=$(echo $FLAGS | cut -d':' -f$i)
 
@@ -65,12 +68,12 @@ for i in $(seq 1 $FLAGSNO); do
 			# Delete first character from FLAGS then delete ":-all" then replace ':' with ' '
 			# Also delete -fstrict-enums because it introduces UB
 			_flags=$(echo $FLAGS | cut -c2- | rev | cut -c6- | rev | tr ':' ' ' | awk -F"-fstrict-enums" '{print $1 $2}')
-			export UB_OPT_FLAG="-fPIC -O2 -flto -fuse-ld=gold $_flags"
-			#export UB_OPT_FLAG="-O2 $_flags"
+			#export UB_OPT_FLAG="-fPIC -O2 -flto -fuse-ld=gold $_flags"
+			export UB_OPT_FLAG="-O2 $_flags"
 
 		else
-			export UB_OPT_FLAG=$(echo "-fPIC -O2 -flto -fuse-ld=gold $flags" | sed 's/-base$//g')
-			#export UB_OPT_FLAG=$(echo "-O2 $flags" | sed 's/-base$//g')
+			#export UB_OPT_FLAG=$(echo "-fPIC -O2 -flto -fuse-ld=gold $flags" | sed 's/-base$//g')
+			export UB_OPT_FLAG=$(echo "-O2 $flags" | sed 's/-base$//g')
 		fi
 
 		# Compile llvm-15 with UB_OPT_FLAG. llvm-15 will then be used by pts/build-llvm to benchmark the compilation speed

@@ -5,8 +5,8 @@
 
 # Empty string: baseline.
 FLAGS=""
-FLAGS="$FLAGS:-fwrapv"
-FLAGS="$FLAGS:-fconstrain-shift-value"
+#FLAGS="$FLAGS:-fwrapv"
+#FLAGS="$FLAGS:-fconstrain-shift-value"
 #FLAGS="$FLAGS:-fignore-pure-const-attrs"
 #FLAGS="$FLAGS:-fno-strict-aliasing"
 #FLAGS="$FLAGS:-fstrict-enums"
