@@ -28,12 +28,6 @@ fi
 	cd test-profiles && \
 	git checkout ub)
 
-# Download llvm-15 used by pts/build-llvm benchmark
-if [ ! -d llvm-project-llvmorg-15.0.7 ]; then
-	wget https://codeload.github.com/llvm/llvm-project/tar.gz/refs/tags/llvmorg-15.0.7
-	tar xzvf llvmorg-15.0.7
-fi
-
 # Install dependencies
 apt install -y libnl-genl-3-dev php-xml php-dom
 
@@ -68,16 +62,21 @@ for i in $(seq 1 $FLAGSNO); do
 			# Delete first character from FLAGS then delete ":-all" then replace ':' with ' '
 			# Also delete -fstrict-enums because it introduces UB
 			_flags=$(echo $FLAGS | cut -c2- | rev | cut -c6- | rev | tr ':' ' ' | awk -F"-fstrict-enums" '{print $1 $2}')
-			#export UB_OPT_FLAG="-fPIC -O2 -flto -fuse-ld=gold $_flags"
-			export UB_OPT_FLAG="-O2 $_flags"
+			export UB_OPT_FLAG="-fPIC -O2 -flto -fuse-ld=gold $_flags"
+			#export UB_OPT_FLAG="-O2 $_flags"
 
 		else
-			#export UB_OPT_FLAG=$(echo "-fPIC -O2 -flto -fuse-ld=gold $flags" | sed 's/-base$//g')
-			export UB_OPT_FLAG=$(echo "-O2 $flags" | sed 's/-base$//g')
+			export UB_OPT_FLAG=$(echo "-fPIC -O2 -flto -fuse-ld=gold $flags" | sed 's/-base$//g')
+			#export UB_OPT_FLAG=$(echo "-O2 $flags" | sed 's/-base$//g')
 		fi
 
 		# Compile llvm-15 with UB_OPT_FLAG. llvm-15 will then be used by pts/build-llvm to benchmark the compilation speed
 		if $(echo $p | grep -q build-llvm); then
+  			if [ ! -d llvm-project-llvmorg-15.0.7 ]; then
+				wget https://codeload.github.com/llvm/llvm-project/tar.gz/refs/tags/llvmorg-15.0.7
+				tar xzvf llvmorg-15.0.7
+			fi
+   
 			if [ $(lscpu | grep -ic x86) = 1 ]; then
 				(cd $COMPILED_CLANG_PATH &&
 					rm -rf build/ &&
