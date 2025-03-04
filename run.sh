@@ -104,7 +104,7 @@ for i in $(seq 1 $FLAGSNO); do
 
 		### RUN BENCHMARK ###
 		# For build-llvm leave CC and CXX exported as we want to build with our compiled llvm-15
-		if [ $(echo $p | grep -q build-llvm) -ne 0 ]; then
+		if [ $(echo $p | grep -c build-llvm) -ne 0 ]; then
 			unset CC
 			unset CXX
 		fi
