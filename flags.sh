@@ -4,7 +4,7 @@
 # a flag. To run -all, uncomment all the flags beforehand.
 
 # Empty string: baseline.
-FLAGS=""
+FLAGS="-fwrapv"
 #FLAGS="$FLAGS:-fwrapv"
 #FLAGS="$FLAGS:-fconstrain-shift-value"
 #FLAGS="$FLAGS:-fignore-pure-const-attrs"
