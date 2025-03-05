@@ -1,2 +1,2 @@
 #!/bin/sh
-/usr/local/llvm-16/bin/clang++ "$@" $UB_OPT_FLAG -Wno-unused
+/usr/local/llvm-16/bin/clang++ "$@" $UB_OPT_FLAG -Wno-unused -Wno-unused-command-line-argument
