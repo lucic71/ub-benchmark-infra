@@ -1,5 +1,13 @@
 #!/bin/sh -ex
 
+WITH_LTO=0
+for arg in "$@"; do
+        if [ "$arg" = "--lto" ]; then
+                WITH_LTO=1
+                break
+        fi
+done
+
 . ./flags.sh # import FLAGS, FLAGSNO
 
 export PTS_BM_BASE=/var/lib/phoronix-test-suite
@@ -62,14 +70,20 @@ for i in $(seq 1 $FLAGSNO); do
 			# Delete first character from FLAGS then delete ":-all" then replace ':' with ' '
 			# Also delete -fstrict-enums because it introduces UB
 			_flags=$(echo $FLAGS | cut -c2- | rev | cut -c6- | rev | tr ':' ' ' | awk -F"-fstrict-enums" '{print $1 $2}')
-			export UB_OPT_FLAG="-fPIC -O2 -flto -fuse-ld=gold $_flags"
-   			export LDFLAGS="$UB_OPT_FLAG"
-			#export UB_OPT_FLAG="-O2 $_flags"
+                        if [ "$WITH_LTO" = "1" ]; then
+                                export UB_OPT_FLAG="-fPIC -O2 -flto -fuse-ld=gold $_flags"
+                                export LDFLAGS="$UB_OPT_FLAG"
+                        else
+                                export UB_OPT_FLAG="-O2 $_flags"
+                        fi
 
 		else
-			export UB_OPT_FLAG=$(echo "-fPIC -O2 -flto -fuse-ld=gold $flags" | sed 's/-base$//g')
-   			export LDFLAGS="$UB_OPT_FLAG"
-			#export UB_OPT_FLAG=$(echo "-O2 $flags" | sed 's/-base$//g')
+                        if [ "$WITH_LTO" = "1" ]; then
+                                export UB_OPT_FLAG=$(echo "-fPIC -O2 -flto -fuse-ld=gold $flags" | sed 's/-base$//g')
+                                export LDFLAGS="$UB_OPT_FLAG"
+                        else
+                                export UB_OPT_FLAG=$(echo "-O2 $flags" | sed 's/-base$//g')
+                        fi
 		fi
 
 		# Compile llvm-15 with UB_OPT_FLAG. llvm-15 will then be used by pts/build-llvm to benchmark the compilation speed
