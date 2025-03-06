@@ -8,6 +8,14 @@ for arg in "$@"; do
         fi
 done
 
+RUN_ONLY_ALL=0
+for arg in "$@"; do
+        if [ "$arg" = "--run-only-all" ]; then
+                RUN_ONLY_ALL=1
+                break
+        fi
+done
+
 . ./flags.sh # import FLAGS, FLAGSNO
 
 export PTS_BM_BASE=/var/lib/phoronix-test-suite
@@ -48,6 +56,10 @@ export FORCE_TIMES_TO_RUN=1
 
 for i in $(seq 1 $FLAGSNO); do
 	flags=$(echo $FLAGS | cut -d':' -f$i)
+
+        if [ "$RUN_ONLY_ALL" = "1" -a "$flags" != "-all" ]; then
+                continue;
+        fi
 
 	if [ "$flags" = "" ]; then
 		flags="-base"
