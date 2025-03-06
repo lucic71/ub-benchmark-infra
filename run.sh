@@ -92,8 +92,8 @@ for i in $(seq 1 $FLAGSNO); do
 			fi
 
 			export PATH=$COMPILED_CLANG_PATH/build/bin:$PATH
-			export CC=$COMPILED_CLANG_PATH/build/bin/clang
-			export CXX=$CC++
+   			echo $COMPILED_CLANG_PATH/build/bin/clang > /tmp/compiled-cc
+			echo $COMPILED_CLANG_PATH/build/bin/clang++ > /tmp/compiled-cxx
 		fi
 
 		$PTS debug-install $p
@@ -104,11 +104,8 @@ for i in $(seq 1 $FLAGSNO); do
 		du -ab $PTS_BM_BASE/installed-tests/$p >size-results/sz$CONCAT_FLAGS/$(echo $p | cut -d'/' -f2)
 
 		### RUN BENCHMARK ###
-		# For build-llvm leave CC and CXX exported as we want to build with our compiled llvm-15
-		if [ $(echo $p | grep -c build-llvm) -ne 0 ]; then
-			unset CC
-			unset CXX
-		fi
+		unset CC
+		unset CXX
 		unset UB_OPT_FLAG
 		unset LDFLAGS
 		export PATH=${OLDPATH}
