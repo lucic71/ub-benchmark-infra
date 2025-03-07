@@ -84,7 +84,7 @@ for i in $(seq 1 $FLAGSNO); do
 			_flags=$(echo $FLAGS | cut -c2- | rev | cut -c6- | rev | tr ':' ' ' | awk -F"-fstrict-enums" '{print $1 $2}')
                         if [ "$WITH_LTO" = "1" ]; then
                                 export UB_OPT_FLAG="-fPIC -O2 -flto -fuse-ld=gold $_flags"
-                                export LDFLAGS="$UB_OPT_FLAG"
+                                export LDFLAGS="$UB_OPT_FLAG $LDFLAGS"
                         else
                                 export UB_OPT_FLAG="-O2 $_flags"
                         fi
@@ -92,7 +92,7 @@ for i in $(seq 1 $FLAGSNO); do
 		else
                         if [ "$WITH_LTO" = "1" ]; then
                                 export UB_OPT_FLAG=$(echo "-fPIC -O2 -flto -fuse-ld=gold $flags" | sed 's/-base$//g')
-                                export LDFLAGS="$UB_OPT_FLAG"
+                                export LDFLAGS="$UB_OPT_FLAG $LDFLAGS"
                         else
                                 export UB_OPT_FLAG=$(echo "-O2 $flags" | sed 's/-base$//g')
                         fi
