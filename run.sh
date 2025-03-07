@@ -44,9 +44,6 @@ fi
 	cd test-profiles && \
 	git checkout ub)
 
-# Install dependencies
-apt install -y libnl-genl-3-dev php-xml php-dom
-
 OLDPATH=$PATH
 NEWPATH=/home/lucian/git/llvm-project/build/bin:$PATH
 COMPILED_CLANG_PATH=$(pwd)/llvm-project-llvmorg-15.0.7
