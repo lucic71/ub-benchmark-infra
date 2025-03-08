@@ -126,6 +126,11 @@ for i in $(seq 1 $FLAGSNO); do
 		mkdir -p size-results/sz$CONCAT_FLAGS || true
 		du -ab $PTS_BM_BASE/installed-tests/$p >size-results/sz$CONCAT_FLAGS/$(echo $p | cut -d'/' -f2)
 
+		# Only for Docker, run the image with --privileged --pid=host
+  		# Flush swap back to memory to have the benchmarks run in a fresh memory environment.
+    		nsenter --mount=/proc/1/ns/mnt -- /sbin/swapoff -a
+      		nsenter --mount=/proc/1/ns/mnt -- /sbin/swapon -a
+
 		### RUN BENCHMARK ###
 		unset CC
 		unset CXX
