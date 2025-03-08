@@ -1,6 +1,10 @@
 # Getting Started Guide
 
-1. Run the docker image using the following command:
+1. The artifact provides full reproducibility of benchmark execution. However,
+performance numbers may vary between different host systems. All benchmarks used
+for these experiments are publicly available.
+
+2. Run the docker image using the following command:
 ```
 docker run --rm -it --privileged --pid=host ub-benchmarks /bin/bash
 ```
@@ -8,7 +12,7 @@ The `privileged` flag is needed in order to run the benchmarks using `nice`,
 which affects process scheduling. `pid=host` is needed in order to flush the
 swap back to main memory after a demanding benchmark, such as build-llvm, runs.
 
-2. Below is a description of each file in the '/benchmarks' directory, where you
+3. Below is a description of each file in the '/benchmarks' directory, where you
 you will land after launching the docker image:
 ```
 benchmarks.txt: 
