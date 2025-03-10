@@ -15,8 +15,9 @@ $ docker run --rm -it --privileged --pid=host ub-benchmarks /bin/bash
 ```
 
 The `privileged` flag is needed in order to run the benchmarks using `nice`,
-which affects process scheduling. `pid=host` is needed in order to flush the
-swap back to main memory after a demanding benchmark, such as `build-llvm`, runs.
+which affects process scheduling, and to optionally disable hyperthreading,
+turbo-boost, etc on host. `pid=host` is needed in order to flush the swap back
+to main memory after a demanding benchmark, such as `build-llvm`, runs.
 
 After launching the docker image, you will land in the `/benchmarks` directory
 which contains our experimental infrastructure. The `./run.sh` runs the Phoronix
@@ -83,19 +84,15 @@ There are 24 benchmarks and 19 flag configurations in our suite. It takes around
 doubles to 5 weeks when considering that we can run the benchmarks in LTO and
 non-LTO modes.
 
-For quick testing the artifact, we enabled a limited number of benchmarks and
-flags. However, you can freely edit the `flags.sh` and `benchmarks.txt` files to
-enabled more flags and bechmarks.
+For quick testing the artifact, we enabled a limited number of benchmarks
+(encode-flac, draco, espeak) and flags (baseline, -fwrapv,
+-fno-constrain-shift-value). However, you can freely edit the `flags.sh` and
+`benchmarks.txt` files to enabled more flags and bechmarks.
 
-Besides that, you can find the install scripts for the benchmarks in
-`/var/lib/phoronix-test-suite/test-profiles`. This directory is created after
-running `/benchmarks/run.sh` once. Alternatively, the test profiles are
-available in this Github repo:
-[test-profiles](https://github.com/lucic71/test-profiles).
-
-The modified clang version that implements most of the flags used for
-benchmarking can be found in `/llvm-project`. Alternatively, it is available as
-well in this Github repo:
+The install scripts for the benchmarks can be found in the following Github
+repo: [test-profiles](https://github.com/lucic71/test-profiles). The modified
+clang version that implements most of the flags used for benchmarking can be
+found in the following Github repo:
 [llvm-project](https://github.com/lucic71/llvm-project/tree/release/16.x-ub).
 
 ## System Requirements
@@ -111,11 +108,16 @@ especially in LTO mode.
 ## How to run the benchmarks
 
 1. Control the flags you want to benchmark by editing `flags.sh`. For this demo
-   only 2 flags are enabled: `baseline` and `-fwrapv`.
+   only 3 flags are enabled: `baseline`, `-fwrapv`, `-fconstrain-shift-value`.
 2. Control the benchmarks you want to run by editing `benchmarks.txt`. For this
-   demo only 2 benchmarks are enabled: `pts/simdjson-2.0.1` and
-   `pts/compress-pbzip2-1.6.0`
-3. `$ ./run.sh`. ETA: TODO
+   demo only 3 benchmarks are enabled: `pts/draco-1.6.0`, `pts/luajit-1.1.0`,
+   `pts/rnnoise-1.0.2`.
+3. Optional: `export FORCE_TIMES_TO_RUN=1`. To reduce the runs per benchmark
+   from 3 (default) to 1. Useful for quick testing the benchmark suite.
+4. Optional: `./prepare-benchmark-env.sh`. Disables (on host) turbo-boost,
+   hyperthreading, put CPU at fixed frequency and disable ASLR. Useful for
+   getting stable results.
+3. `$ ./run.sh`. ETA: 15 minutes with step 3 and 4 applied
 
 ## How to view the performance results
 
@@ -125,56 +127,67 @@ Run the below commands after you successfully ran the benchmarks.
 2. `$ pts list-saved-results`
     ```
     Possible output:
-    root@fabbfa03788e:/benchmarks# pts list-saved-results
-
-
-    Phoronix Test Suite v10.8.4
-    3 Saved Results
-
-    simdjson-2.0.1 simdjson-2.0.1
+    draco-1.6.0 draco-1.6.0
             - base
+            - fconstrain-shift-value
             - fwrapv
 
-    simdjson-201-base simdjson-2.0.1-base
-            - simdjson-2.0.1-base
+    draco-160-base draco-1.6.0-base
+            - draco-1.6.0-base
 
-    simdjson-201-fwrapv simdjson-2.0.1-fwrapv
-            - simdjson-2.0.1-fwrapv
+    draco-160-fconstrain-shift-value draco-1.6.0-fconstrain-shift-value
+            - draco-1.6.0-fconstrain-shift-value
+
+    draco-160-fwrapv draco-1.6.0-fwrapv
+            - draco-1.6.0-fwrapv
+
+    luajit-1.1.0 luajit-1.1.0
+            - base
+            - fconstrain-shift-value
+            - fwrapv
+
+    luajit-110-base luajit-1.1.0-base
+            - luajit-1.1.0-base
+
+    luajit-110-fconstrain-shift-value luajit-1.1.0-fconstrain-shift-value
+            - luajit-1.1.0-fconstrain-shift-value
+
+    luajit-110-fwrapv luajit-1.1.0-fwrapv
+            - luajit-1.1.0-fwrapv
+
+    rnnoise-1.0.2 rnnoise-1.0.2
+            - base
+            - fconstrain-shift-value
+            - fwrapv
+
+    rnnoise-102-base rnnoise-1.0.2-base
+            - rnnoise-1.0.2-base
+
+    rnnoise-102-fconstrain-shift-value rnnoise-1.0.2-fconstrain-shift-value
+            - rnnoise-1.0.2-fconstrain-shift-value
+
+    rnnoise-102-fwrapv rnnoise-1.0.2-fwrapv
+            - rnnoise-1.0.2-fwrapv
     ```
 3. `$ pts result-file-to-text SAVED_RESULT`, where SAVED\_RESULT is a saved result name listed in step 2
     ```
     Possible output:
-    root@fabbfa03788e:/benchmarks# pts result-file-to-text simdjson-2.0.1
+    root@fabbfa03788e:/benchmarks# pts result-file-to-text draco-1.6.0
     ...
-    simdjson 2.0
-    Throughput Test: Kostya
-    GB/s > Higher Is Better
-    base ... 1.32 |======================================================
-    fwrapv . 1.34 |=======================================================
+    Google Draco 1.5.6
+    Model: Lion
+    ms < Lower Is Better
+    base ................... 8137 |==============================================
+    fconstrain-shift-value . 8203 |==============================================
+    fwrapv ................. 8098 |=============================================
 
-    simdjson 2.0
-    Throughput Test: TopTweet
-    GB/s > Higher Is Better
-    base ... 1.68 |=======================================================
-    fwrapv . 1.68 |=======================================================
 
-    simdjson 2.0
-    Throughput Test: LargeRandom
-    GB/s > Higher Is Better
-    base ... 0.52 |======================================================
-    fwrapv . 0.53 |=======================================================
-
-    simdjson 2.0
-    Throughput Test: PartialTweets
-    GB/s > Higher Is Better
-    base ... 1.42 |=======================================================
-    fwrapv . 1.00 |==================================
-
-    simdjson 2.0
-    Throughput Test: DistinctUserID
-    GB/s > Higher Is Better
-    base ... 1.60 |================================================
-    fwrapv . 1.71 |=======================================================
+    Google Draco 1.5.6
+    Model: Church Facade
+    ms < Lower Is Better
+    base ................... 10410 |=============================================
+    fconstrain-shift-value . 10319 |============================================
+    fwrapv ................. 10440 |=============================================
     ```
 
 ## How to view the code size results
@@ -184,11 +197,18 @@ Run the below commands after you successfully ran the benchmarks.
 1. `$ ./get-size-results.sh`
     ```
     Possible output:
-    -base:
-    259976  /var/lib/phoronix-test-suite/installed-tests/pts/compress-pbzip2-1.6.0/pbzip2-1.1.13/pbzip2
-    327716  /var/lib/phoronix-test-suite/installed-tests/pts/simdjson-2.0.1/simdjson-2.0.4/build/libsimdjson.a
+    -base
+    1521360 /var/lib/phoronix-test-suite/installed-tests/pts/draco-1.6.0/draco-1.5.6/build/draco_encoder-1.5.6
+    568384  /var/lib/phoronix-test-suite/installed-tests/pts/luajit-1.1.0/LuaJIT-Git/src/luajit
+    200616  /var/lib/phoronix-test-suite/installed-tests/pts/rnnoise-1.0.2/rnnoise-git/.libs/librnnoise.so.0.4.1
 
-    -fwrapv:
-    259304  /var/lib/phoronix-test-suite/installed-tests/pts/compress-pbzip2-1.6.0/pbzip2-1.1.13/pbzip2
-    327804  /var/lib/phoronix-test-suite/installed-tests/pts/simdjson-2.0.1/simdjson-2.0.4/build/libsimdjson.a
+    -fwrapv
+    1517552 /var/lib/phoronix-test-suite/installed-tests/pts/draco-1.6.0/draco-1.5.6/build/draco_encoder-1.5.6
+    568384  /var/lib/phoronix-test-suite/installed-tests/pts/luajit-1.1.0/LuaJIT-Git/src/luajit
+    201544  /var/lib/phoronix-test-suite/installed-tests/pts/rnnoise-1.0.2/rnnoise-git/.libs/librnnoise.so.0.4.1
+
+    -fconstrain-shift-value
+    1521360 /var/lib/phoronix-test-suite/installed-tests/pts/draco-1.6.0/draco-1.5.6/build/draco_encoder-1.5.6
+    560192  /var/lib/phoronix-test-suite/installed-tests/pts/luajit-1.1.0/LuaJIT-Git/src/luajit
+    200600  /var/lib/phoronix-test-suite/installed-tests/pts/rnnoise-1.0.2/rnnoise-git/.libs/librnnoise.so.0.4.1
     ```

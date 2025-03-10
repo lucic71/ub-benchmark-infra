@@ -1,6 +1,6 @@
 # This file controls the benchmarks that run.sh uses. To disable a benchmark #
 # simply comment the line using '#' at the beginning of the line. For this
-# artifact, only draco, encode-flac and espeak are enabled.
+# artifact, only luajit, draco and rnnoise are enabled.
 # LLVM Build Speed
 #pts/build-llvm-1.5.0
 # HPC
@@ -11,7 +11,7 @@
 #pts/jpegxl-1.5.0
 #pts/graphics-magick-2.1.0
 # JIT
-#pts/luajit-1.1.0
+pts/luajit-1.1.0
 # Parallel Processing
 #pts/tjbench-1.2.0
 #pts/simdjson-2.0.1
@@ -24,15 +24,15 @@
 # Database
 #pts/sqlite-speedtest-1.0.1
 # Audio Encoding
-pts/encode-flac-1.8.1
+# pts/encode-flac-1.8.1
 # Texture Compression
 pts/draco-1.6.0
 # Compression
 #pts/compress-zstd-1.6.0
 #pts/compress-pbzip2-1.6.0
 # Speech
-pts/espeak-1.7.0
-#pts/rnnoise-1.0.2
+# pts/espeak-1.7.0
+pts/rnnoise-1.0.2
 # Finance
 #pts/quantlib-1.2.0
 # Circuit Simulator
