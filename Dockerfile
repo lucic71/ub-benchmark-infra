@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM ubuntu:22.04 as initial
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV LLVM_SRC_DIR=/llvm-project
@@ -59,13 +59,15 @@ RUN mv /usr/bin/ranlib /usr/bin/_ranlib && \
   echo '/usr/bin/_ranlib --plugin=/usr/local/llvm-16/lib/LLVMgold.so "$@"' >> /usr/bin/ranlib && \
   chmod +x /usr/bin/ranlib
 
-WORKDIR /benchmarks
-
 # Fetch Phoronix test suite and the benchmarks used for our tests.
 RUN git clone --branch artefact https://github.com/lucic71/ub-benchmark-infra.git /benchmarks \
     && rm -rf /benchmarks/.git
 RUN git clone https://github.com/lucic71/phoronix-test-suite $HOME/git/phoronix-test-suite \
     && rm -rf $HOME/git/phoronix-test-suite/.git
 RUN echo 'alias pts="$HOME/git/phoronix-test-suite/phoronix-test-suite"' >> ~/.bashrc
+
+FROM ubuntu:22.04
+COPY --from=initial / /
+WORKDIR /benchmarks
 
 CMD ["/bin/bash"]

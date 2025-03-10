@@ -48,9 +48,6 @@ OLDPATH=$PATH
 NEWPATH=/home/lucian/git/llvm-project/build/bin:$PATH
 COMPILED_CLANG_PATH=$(pwd)/llvm-project-llvmorg-15.0.7
 
-# XXX: remove
-export FORCE_TIMES_TO_RUN=1
-
 for i in $(seq 1 $FLAGSNO); do
 	flags=$(echo $FLAGS | cut -d':' -f$i)
 
