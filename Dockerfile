@@ -31,8 +31,7 @@ RUN apt update && apt install -y \
     libnl-genl-3-dev \
     php-xml \
     php-dom \
-    libtool \
-    && rm -rf /var/lib/apt/lists/*
+    libtool
 
 # Use modified Clang that contains the UB flags
 RUN git clone --depth 1 --branch release/16.x-ub https://github.com/lucic71/llvm-project.git $LLVM_SRC_DIR
