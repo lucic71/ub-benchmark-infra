@@ -105,6 +105,14 @@ There are no strict memory or CPU requirements for running the benchmarks. If
 you are limited on RAM, avoid running benchmarks such as `build-llvm`,
 especially in LTO mode.
 
+Some benchmarks might not compile due to unsatisfied hardware requirements. For
+example fftw refuses to compile on a Intel(R) Core(TM) i7-8850H CPU @ 2.60GHz
+with the following error:
+```
+configure: error: SSE requires single precision
+make: *** No targets specified and no makefile found.  Stop.
+```
+
 ## How to run the benchmarks
 
 1. Control the flags you want to benchmark by editing `flags.sh`. For this demo
